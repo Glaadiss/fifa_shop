@@ -1,0 +1,31 @@
+
+<%= simple_form_for @account do |f| %>
+  <%=  t '.email'%>
+  <%= f.input :email, label: false %>
+  <%= f.input :skype %>
+  <%= f.input :twitter %>
+  <%= t '.console_type' %>
+  <%= f.input :console_type, label: false , collection: ['ds','dsaa','wqeqw']  %>
+  <%= t '.console_email' %>
+  <%= f.input :console_email, label: false  %>
+  <%= t '.console_password' %>
+  <%= f.input :console_password, label: false , as: :password %>
+  <%= t '.web_email' %>
+  <%= f.input :web_email, label: false %>
+  <%= t '.web_password' %>
+  <%= f.input :web_password, label: false , as: :password %>
+  <%= t '.web_answer' %>
+  <%= f.input :web_answer, label: false  %>
+  <%= t '.origin_answer' %>
+  <%= f.input :origin_answer, label: false  %>
+  <%= t '.origin_email' %>
+  <%= f.input :origin_email, label: false  %>
+  <%= t '.origin_password' %>
+  <%= f.input :origin_password, label: false , as: :password %>
+  <%= t '.payment_method' %>
+  <%= f.input :payment_method, label: false , collection: ['ds','dsaa','wqeqw']  %>
+  <%= t '.payment_email' %>
+  <%= f.input :payment_email, label: false  %>
+  <%= f.button :submit, class: 'btn btn-success' %>
+  <hr>
+<% end %>

@@ -17,9 +17,8 @@ gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
 # bundle exec rake doc:rails generates the API under doc/api.
 gem 'sdoc', '~> 0.4.0', group: :doc
-
+gem 'rails-i18n', github: 'svenfuchs/rails-i18n', branch: 'rails-4-x'
 gem 'simple_form'
-gem "passenger", ">= 5.0.25", require: "phusion_passenger/rack_handler"
 gem 'bootstrap-sass', '~> 3.3.6'
 gem 'devise'
 

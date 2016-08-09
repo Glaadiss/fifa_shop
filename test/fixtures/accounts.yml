@@ -1,0 +1,35 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  email: MyString
+  skype: MyString
+  twitter: MyString
+  console_type: MyString
+  console_email: MyString
+  console_password: MyString
+  web_email: MyString
+  web_password: MyString
+  web_answer: MyText
+  origin_answer: MyText
+  origin_email: MyString
+  origin_password: MyString
+  payment_method: MyString
+  payment_email: MyString
+  confirmed: false
+
+two:
+  email: MyString
+  skype: MyString
+  twitter: MyString
+  console_type: MyString
+  console_email: MyString
+  console_password: MyString
+  web_email: MyString
+  web_password: MyString
+  web_answer: MyText
+  origin_answer: MyText
+  origin_email: MyString
+  origin_password: MyString
+  payment_method: MyString
+  payment_email: MyString
+  confirmed: false

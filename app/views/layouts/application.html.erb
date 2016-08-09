@@ -7,8 +7,12 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-
-<%= yield %>
-
+  <div id="nav">
+    <%= link_to_unless_current 'english', locale: 'en' %>
+    <%= link_to_unless_current 'polski', locale: 'pl' %>
+  </div>
+  <div class="container">
+    <%= yield %>
+  </div>
 </body>
 </html>
