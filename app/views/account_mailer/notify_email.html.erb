@@ -1,12 +1,2 @@
-<h2> Witaj <%= @account.email %> </h2>
-
-<h4> W twoim zamówienie pojawiło się parę błędów.</h4>
-<h5> Proszę popraw następujące pola w formularzu:</h5>
-<ul>
-<% @account.errors.split(',').each do |error| %>
-  <li> <strog> error </strog></li>
-<% end %>
-</ul>
-
-<p> link do formularza: <a href="http://localhost:3000/accounts/<%= @account.token %>/edit"> link </a> </p>
-<p>Pozdrawiam.</p>
+<h1>Na panelu pojawiło się nowe zamówienie od <%= @account.email %></h1>
+<p> link: http://localhost:3000/accounts/<%=@account.token %></p>

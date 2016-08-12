@@ -16,6 +16,8 @@ class CreateAccounts < ActiveRecord::Migration
       t.string :payment_method
       t.string :payment_email
       t.boolean :confirmed
+      t.string :failures
+      t.string :token
 
       t.timestamps null: false
     end

@@ -3,7 +3,7 @@ Witaj <%= @account.email %>
 ==========================
 W twoim zamówienie pojawiło się parę błędów.
 Proszę popraw następujące pola w formularzu:
-<% @account.errors.split(' ').each do |error| %>
+<% @account.failures.split(' ').each do |error| %>
   =======
    error
   =======

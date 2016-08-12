@@ -1,6 +1,6 @@
 class AccountsController < ApplicationController
 
-  before_action :authenticate_user!, except: [:new]
+  before_action :authenticate_user!, except: [:new, :create, :edit, :update]
 
   def new
     @account = Account.new
@@ -11,26 +11,26 @@ class AccountsController < ApplicationController
   end
 
   def show
-    @account = Account.find(params[:token])
+    @account = Account.find_by_token(params[:id])
   end
 
   def correction
-    @account = Account.find(params[:token])
+    @account = Account.find_by_token(params[:id])
     @account.update_attributes(failures: params[:account][:failures])
     if @account.failures.present?
-      AccountMailer.edit_email(@account).deliver_later
+      AccountMailer.edit_email(@account).deliver
     else
-      AccountMailer.information_email(@account).deliver_later
+      AccountMailer.information_email(@account).deliver
     end
     redirect_to accounts_path
   end
 
   def edit
-    @account = Account.find(params[:token])
+    @account = Account.find_by_token(params[:id])
   end
 
   def destroy
-    @account = Account.find(params[:id])
+    @account = Account.find_by_token(params[:id])
     @account.destroy
     redirect_to accounts_path
   end
@@ -39,10 +39,12 @@ class AccountsController < ApplicationController
   def create
     @account = Account.new(account_params)
     if @account.save
-      AccountMailer.confirmation_email(@account).deliver_later
-      AccountMailer.notify_email(@account).deliver_later
-      redirect_to home_path, notice: 'Pomyślnie wypełniono formularz, sprawdź skrzynkę pocztową'
+      p 'wqe'
+      AccountMailer.confirmation_email(@account).deliver
+      AccountMailer.notify_email(@account).deliver
+      redirect_to root_path, notice: 'Pomyślnie wypełniono formularz, sprawdź skrzynkę pocztową'
     else
+      p 'ewq'
       render 'new', alert: 'Wypełnij jeszcze raz :('
     end
 
