@@ -11,7 +11,22 @@ class AccountsController < ApplicationController
   end
 
   def show
-    @account = Account.find(params[:id])
+    @account = Account.find(params[:token])
+  end
+
+  def correction
+    @account = Account.find(params[:token])
+    @account.update_attributes(failures: params[:account][:failures])
+    if @account.failures.present?
+      AccountMailer.edit_email(@account).deliver_later
+    else
+      AccountMailer.information_email(@account).deliver_later
+    end
+    redirect_to accounts_path
+  end
+
+  def edit
+    @account = Account.find(params[:token])
   end
 
   def destroy
@@ -24,10 +39,11 @@ class AccountsController < ApplicationController
   def create
     @account = Account.new(account_params)
     if @account.save
-
-      redirect_to home_path
+      AccountMailer.confirmation_email(@account).deliver_later
+      AccountMailer.notify_email(@account).deliver_later
+      redirect_to home_path, notice: 'Pomyślnie wypełniono formularz, sprawdź skrzynkę pocztową'
     else
-      render 'new'
+      render 'new', alert: 'Wypełnij jeszcze raz :('
     end
 
   end

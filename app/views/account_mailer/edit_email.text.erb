@@ -1,0 +1,14 @@
+
+Witaj <%= @account.email %>
+==========================
+W twoim zamówienie pojawiło się parę błędów.
+Proszę popraw następujące pola w formularzu:
+<% @account.errors.split(' ').each do |error| %>
+  =======
+   error
+  =======
+<% end %>
+
+link do formularza: http://localhost:3000/accounts/<%= @account.token %>/edit
+
+Pozdrawiam.
