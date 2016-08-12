@@ -21,7 +21,7 @@ gem 'rails-i18n', github: 'svenfuchs/rails-i18n', branch: 'rails-4-x'
 gem 'simple_form'
 gem 'bootstrap-sass', '~> 3.3.6'
 gem 'devise'
-
+gem 'rails_12factor'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
