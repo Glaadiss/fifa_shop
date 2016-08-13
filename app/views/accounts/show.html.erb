@@ -1,0 +1,21 @@
+
+
+<%= form_tag account_correction_path(@account.token), method: :put do %>
+  <% @account.attributes.each_with_index do |name_value, index| %>
+    <% break if index == 15 %>
+    <div class="row">
+      <div class="col-md-4">
+        <%=  t name_value[0] %>
+      </div>
+      <div class="col-md-4">
+        <%= name_value[1] %>
+      </div>
+      <div class="col-md-4">
+        <%= check_box('account',name_value[0], {}, name_value[0]) %>
+      </div>
+    </div>
+    <hr>
+  <% end %>
+
+  <%= submit_tag 'Wyślij', class: 'btn btn-success' %>
+<%end %>

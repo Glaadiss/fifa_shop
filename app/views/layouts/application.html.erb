@@ -15,14 +15,8 @@
       <ul class="nav navbar-nav">
         <li class="active"><a href="/">Regulamin</a></li>
         <li><a href="/accounts/new"> Formularz </a></li>
-        <li class="dropdown">
-
-          <span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li><%= link_to_unless_current 'english', locale: 'en' %></li>
-            <li><%= link_to_unless_current 'polski', locale: 'pl' %></li>
-          </ul>
-        </li>
+        <li><%= link_to_unless_current 'english', locale: 'en' %></li>
+        <li><%= link_to_unless_current 'polski', locale: 'pl' %></li>
       </ul>
     </div>
   </nav>

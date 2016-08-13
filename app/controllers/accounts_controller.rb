@@ -15,8 +15,9 @@ class AccountsController < ApplicationController
   end
 
   def correction
-    @account = Account.find_by_token(params[:id])
-    @account.update_attributes(failures: params[:account][:failures])
+    @account = Account.find_by_token(params[:account_id])
+    failures = params[:account].to_a.select{ |par,val| val!='0'}.join(',')
+    @account.update_attributes(failures: failures)
     if @account.failures.present?
       AccountMailer.edit_email(@account).deliver
     else

@@ -3,10 +3,10 @@
 <h4> W twoim zamówienie pojawiło się parę błędów.</h4>
 <h5> Proszę popraw następujące pola w formularzu:</h5>
 <ul>
-<% @account.failures.split(' ').each do |error| %>
-  <li> <strog> error </strog></li>
+<% @account.failures.split(',').uniq.each do |error| %>
+  <li> <strog> <%= error %> </strog></li>
 <% end %>
 </ul>
 
-<p> link do formularza: <a href="http://localhost:3000/accounts/<%= @account.token %>/edit"> link </a> </p>
+<p> link do formularza: http://skupkont.herokuapp.com/accounts/<%=@account.token %>/edit </p>
 <p>Pozdrawiam.</p>
