@@ -106,8 +106,8 @@
   <div class="panel panel-primary">
     <div class="panel-heading">  <h3><%=  t 'who_are_you'%></h3> </div>
     <div class="panel-body">
-      <%= f.input :email, label: false, placeholder: 'email' %>
-      <%= f.input :facebook_or_skype, label: false, placeholder: 'skype or facebook' %>
+      <%= f.input :email, label: false, placeholder: (t 'email') %>
+      <%= f.input :facebook_or_skype, label: false, placeholder: (t 'facebook_or_skype') %>
     </div>
   </div>
   <div class="panel panel-primary">
@@ -154,7 +154,7 @@
   <div class="panel panel-primary">
     <div class="panel-heading"><h3> <%= t 'choose_payment' %></h3></div>
     <div class="panel-body">
-      <%= f.input :payment_method, label: false , collection: ["PayPal adress","Skrill adress",'PaySafeCard ', 'FUT 17 Coins']  %>
+      <%= f.input :payment_method, label: false , collection: ["PayPal adress","Skrill adress",'PaySafeCard', 'FUT 17 Coins'], prompt: 'Payment method'  %>
       <%= f.input :payment_email, label: false, placeholder: 'Payment email address'  %>
       <div id="players"></div>
     </div>
@@ -176,6 +176,11 @@
 
 <script>
   $(document).ready(function(){
+
+    $('input[type="password"]').each(function(){
+      $(this).attr('type', 'text');
+    })
+
     var x = 0;
 
     function loadX(){
@@ -209,6 +214,9 @@
           var div = '<div class="row"> <div class="col-md-6">'+input+'</div><div class="col-md-6">'+overall+'</div></div> <hr>';
           $('#players').append(''+div+'');
         }
+      }
+      else if( $('#account_payment_method').val() == 'PaySafeCard'){
+        $('#players').html(' <p><strong>Kod PSC zostanie wysłany na Twój adres email. </strong></p>');
       }
     }
 

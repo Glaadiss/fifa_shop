@@ -10,7 +10,8 @@ pl:
     new:
 
   intro: 'Zamień swoje konto w grze na prawdziwe pieniądze'
-  email: 'Adres email: '
+  email: 'Twój email'
+  facebook_or_skype: "Link do profilu Facebook lub login Skype"
   console_type: 'Typ konsoli: '
   console_email: 'Adres email konsoli: '
   console_password: 'Hasło do konsoli: '
