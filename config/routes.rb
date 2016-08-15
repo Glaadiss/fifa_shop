@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
 
     root 'home#index'
+    resources :users
     resources :accounts do
       put '/correction' => 'accounts#correction'
     end
