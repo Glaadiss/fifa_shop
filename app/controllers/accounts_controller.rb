@@ -41,7 +41,7 @@ class AccountsController < ApplicationController
   def create
     @account = Account.new(account_params)
     @account.language = session[:locale]
-    if @account.save
+    if verify_recaptcha(model: @account) && @account.save
       if params[:players].present?
         players = params[:players].values.zip(params[:overalls].values)
         players.each do |player|
@@ -59,7 +59,7 @@ class AccountsController < ApplicationController
 
   def update
     @account = Account.find_by_token(params[:account][:token])
-    if @account.update_attributes(account_params)
+    if verify_recaptcha(model: @account) && @account.update_attributes(account_params)
       @account.players.destroy_all if @account.players.any?
       if params[:players].present?
         players = params[:players].values.zip(params[:overalls].values)
