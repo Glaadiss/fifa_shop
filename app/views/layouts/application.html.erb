@@ -5,6 +5,7 @@
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
+  <script src='https://www.google.com/recaptcha/api.js'></script>
 </head>
 <body>
   <nav class="navbar navbar-inverse">
@@ -33,7 +34,7 @@
           </li>
         <% end %>
         <% if current_user.try(:role) == 2 %>
-          <%= link_to 'Pracownicy', userss_index_path %>
+          <li><%= link_to 'Pracownicy', userss_index_path %></li>
         <% end %>
         <li><%= link_to_unless_current 'english', locale: 'en' %></li>
         <li><%= link_to_unless_current 'polski', locale: 'pl' %></li>

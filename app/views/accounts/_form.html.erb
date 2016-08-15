@@ -1,8 +1,7 @@
 
 <div class="panel panel-success">
-  <div class="panel-heading"><h2> <%= t 'header' %> </h1></div>
-  <div class="panel-body"><p> <%= t 'second_header' %> </p></div>
-</div>
+  <div class="panel-heading"><h1> <%= t 'header' %> </h1></div>
+  <div class="panel-body"><p> <%= t 'second_header' %> </p>
 
 <div class="panel panel-primary">
   <div class="panel-heading"><h3> <%= t 'actual' %></h3></div>
@@ -19,7 +18,7 @@
         </thead>
         <tbody>
           <tr>
-            <td> Xbox one</td>
+            <td> Xbox One</td>
             <td> 20 zł </td>
             <td> 50,000 </td>
             <td> 20 zł </td>
@@ -55,7 +54,7 @@
         </thead>
         <tbody>
           <tr>
-            <td> Xbox one</td>
+            <td> Xbox One</td>
             <td> &euro; 5,00 </td>
             <td> 50,000 </td>
           </tr>
@@ -81,16 +80,16 @@
 </div>
 
 <div class="panel panel-success">
-  <div class="panel-heading"><h2> <%= t 'form_title' %></h2></div>
-  <div class="panel-body"> <p> <%= t 'form_header' %> </p></div>
-</div>
+  <div class="panel-heading"><h1> <%= t 'form_title' %></h1></div>
+  <div class="panel-body"> <p> <%= t 'form_header' %> </p>
+
 
 <div class="panel panel-warning">
-  <div class="panel-heading"><h3> <%= t 'instruction' %></h2></div>
+  <div class="panel-heading"><h2> <%= t 'instruction' %></h2></div>
   <div class="panel-body">
     <h5> <%= t 'requirements' %></h5>
     <ul>
-      <li> <%= t 'req_first' %> </li>
+      <li> <%= t 'req_first' %> <%=link_to (t 'req_first_here'), "https://www.easports.com/fifa/ultimate-team/web-app", target: "_blank" %> <i><%= t 'req_first_next' %> </i> </li>
       <li> <%= t 'req_second' %> </li>
       <li> <%= t 'req_third' %> </li>
     </ul>
@@ -115,18 +114,22 @@
   <div class="panel panel-primary">
     <div class="panel-heading"><h3><%= t 'which_account' %> </h3></div>
     <div class="panel-body">
-      <h4><%= t 'login_data' %></h4>
-      <%= t 'choose_console' %>
-      <%= f.input :console_type, label: false , collection: ['Console / GamerTag email address','Console / GamerTag password','Console / GamerTag date of birth']  %>
-      <i><%= t 'console_tip' %> </i>
-    </div>
-  </div>
+      <div class="panel panel-primary">
+        <div class="panel-heading"><h4><%= t 'login_data' %></h4></div>
+        <div class="panel-body">
+          <%= t 'choose_console' %>
+          <%= f.input :console_type, label: false , collection: [''], prompt: 'Select Your Console'  %>
+          <%= f.input :console_email, label:false, placeholder: 'Console / GamerTag email address' %>
+          <%= f.input :console_password, label:false, placeholder: 'Console / GamerTag password' %>
+          <i><%= t 'console_tip' %> </i>
+        </div>
+      </div>
   <div class="panel panel-primary">
     <div class="panel-heading">  <h4><%= t 'webApp_data' %> </h4> </div>
     <div class="panel-body">
       <%= t 'give_webApp' %>
       <%= f.input :web_email, label: false,placeholder: 'WebApp email adress' %>
-      <%= f.input :web_password, label: false , as: :password,  placeholder: 'WebApp password' %>
+      <%= f.input :web_password, label: false ,  placeholder: 'WebApp password' %>
       <%= f.input :web_answer, label: false , placeholder: 'Webapp answer to secret question' %>
     </div>
   </div>
@@ -135,8 +138,8 @@
     <div class="panel-heading"><h4> <%= t 'origin_security' %> </h4></div>
     <div class="panel-body">
       <%= t 'origin_security_info' %>
-      <%= f.input :origin_answer, label: false, placeholder: 'Origin answer to security question'   %>
-      <i> <%= t 'origin_tip'%></i>
+      <%= f.input :origin_answer, label: false,  placeholder: 'Origin answer to security question'   %>
+      <i> <%= t 'origin_tip'%><%= link_to ( t 'origin_tip_here'), "https://account.origin.com/cp-ui/security/index", target: "_blank"%><%= t 'origin_tip_next'%></i>
     </div>
   </div>
   <div class="panel panel-primary">
@@ -144,9 +147,11 @@
     <div class="panel-body">
       <%= t 'email_box_info' %>
       <%= f.input :origin_email, label: false, placeholder: 'Email address' %>
-      <%= f.input :origin_password, label: false , as: :password, placeholder: 'Email password to your inbox' %>
+      <%= f.input :origin_password, label: false ,  placeholder: 'Email password to your inbox' %>
     </div>
   </div>
+</div>
+</div>
   <div class="panel panel-primary">
     <div class="panel-heading"><h3> <%= t 'choose_payment' %></h3></div>
     <div class="panel-body">
@@ -154,7 +159,8 @@
       <%= f.input :payment_email, label: false, placeholder: 'Payment email address'  %>
     </div>
   </div>
-
+  
+  <div class="g-recaptcha" data-sitekey="6LerqCcTAAAAAPNQJVfRCx-9FeqVPL_31VYqTllc"></div>
   <% if @account.confirmed == true %>
     <%= f.button :submit, class: 'btn btn-warning', value: 'To konto zostało już potwierdzone!' %>
   <% else %>
@@ -162,3 +168,7 @@
   <% end %>
 
   <% end %>
+</div>
+</div>
+</div>
+</div>

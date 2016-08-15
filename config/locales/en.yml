@@ -14,7 +14,9 @@ en:
                 FIELDS TO AVOID MISTAKES.'
   instruction: 'Instructions'
   requirements: 'An account you wish to sell to us needs to adhere to the following:'
-  req_first: "Should have trading activated on the WebApp. You can check that here."
+  req_first: "Should have trading activated on the WebApp. You can check that"
+  req_first_here: " here"
+  req_first_next: "."
   req_second: "Should have a minimum of 150 coins."
   req_third: "Should not have a backup email address registered in Origin."
   warning: Warning!
@@ -30,8 +32,10 @@ en:
   give_webApp: "The credentials for the WebApp."
   origin_security: "Origin security information"
   origin_security_info: "The credentials for the Origin account."
-  origin_tip: "TIP: You can access the Origin account here. You can find your security question under
-              the Security tab. You should then know the answer."
+  origin_tip: "TIP: You can access the Origin account "
+  origin_tip_here: here
+  origin_tip_next: ". You can find your security question under the Security tab. You should then know the answer."
+
   email_box: "Origin email login information"
   email_box_info: "The credentials for the email account (@Hotmail / @GMail / etc) associated with the Origin account."
   choose_payment: "How would you like us to pay you?"

@@ -25,7 +25,7 @@ pl:
   form: Formularz
   send: 'Wyślij'
   header: Sprzedaj swoje konta WebApp w FIFA 17 Ultimate Team!
-  second_header: 'FUTacc.com pozwala Ci zarabiać poprzez sprzedaż aktywnych kont WebApp w FUT 17.
+  second_header: 'FUTaccounts.com pozwala Ci zarabiać poprzez sprzedaż aktywnych kont WebApp w FUT 17.
                   Sugerujemy aby do kont w FUT 17 utworzyć nowe skrzynki email, wymyślić swoje nazwy gamertagów, hasła i odpowiedzi na
                   pytania awaryjne. Warto wszystko sobie zapisać przy tworzeniu! :)'
   actual: 'Aktualne stawki:'
@@ -35,8 +35,9 @@ pl:
                 SPRAWDŹ WSZYSTKIE POLA ABY UNIKNĄĆ OPÓŹNIEŃ.'
   instruction: 'Instrukcja'
   requirements: 'Konto które chcesz nam sprzedać musi spełniać poniższe wymogi:'
-  req_first: "Rynek transferowy w WebApp'ie musi być odblokowany, możesz to sprawdzić tutaj. Wskazówka: Aby odblokować
-              rynek na koncie, rozegraj kilka spotkań lub wykonaj zadania menedżera."
+  req_first: "Rynek transferowy w WebApp'ie musi być odblokowany, możesz to sprawdzić"
+  req_first_here: "tutaj"
+  req_first_next: ". Wskazówka: Aby odblokować rynek na koncie, rozegraj kilka spotkań lub wykonaj zadania menedżera."
   req_second: "Posiadać minimum 150 coins."
   req_third: "Nie może posiadać dodatkowych adresów email dopisanych do konta na Origin.com "
   warning: Uwaga!
@@ -52,8 +53,9 @@ pl:
   give_webApp: "Podaj dane, których używasz przy logowaniu się do WebApp'u."
   origin_security: "Zabezpieczenia Origin"
   origin_security_info: "Zabezpieczenia używane na Origin.com"
-  origin_tip: "WSKAZÓWKA: Możesz zalogować się na konto Origin tutaj. Pytanie awaryjne znajdziesz w
-              zakładce Bezpieczeństwo/Bezpieczeństwo konta. Właśnie teraz chodzi nam o odpowiedź tam podaną :)"
+  origin_tip: "WSKAZÓWKA: Możesz zalogować się na konto Origin "
+  origin_tip_here: tutaj
+  origin_tip_next: ". Pytanie awaryjne znajdziesz w zakładce Bezpieczeństwo/Bezpieczeństwo konta. Właśnie teraz chodzi nam o odpowiedź tam podaną :)"
   email_box: "Skrzynka email"
   email_box_info: "Dane logowania do skrzynki email (np. @onet.pl / @wp.pl / @interia.pl itp.) której użyłeś do stworzenia konta Origin."
   choose_payment: "Jaki sposób płatności wybierasz?"
