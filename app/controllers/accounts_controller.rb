@@ -42,6 +42,12 @@ class AccountsController < ApplicationController
     @account = Account.new(account_params)
     @account.language = session[:locale]
     if @account.save
+      if params[:players].present?
+        players = params[:players].values.zip(params[:overalls].values)
+        players.each do |player|
+          Player.create(account_id: @account.id, name: player[0], overall: player[1])
+        end
+      end
       AccountMailer.confirmation_email(@account).deliver
       AccountMailer.notify_email(@account).deliver
       redirect_to root_path, notice: 'Pomyślnie wypełniono formularz, sprawdź skrzynkę pocztową'
@@ -51,9 +57,27 @@ class AccountsController < ApplicationController
 
   end
 
+  def update
+    @account = Account.find_by_token(params[:account][:token])
+    if @account.update_attributes(account_params)
+      @account.players.destroy_all if @account.players.any?
+      if params[:players].present?
+        players = params[:players].values.zip(params[:overalls].values)
+        players.each do |player|
+          Player.create(account_id: @account.id, name: player[0], overall: player[1])
+        end
+      end
+      AccountMailer.confirmation_email(@account).deliver
+      AccountMailer.notify_email(@account).deliver
+      redirect_to root_path, notice: 'Pomyślnie wypełniono formularz, sprawdź skrzynkę pocztową'
+    else
+      render 'edit', alert: 'Wypełnij jeszcze raz :('
+    end
+  end
+
   private
 
   def account_params
-    params.require(:account).permit(:email, :twitter, :skype, :console_type, :console_email, :console_password, :web_email, :web_password, :web_answer, :origin_answer, :origin_email, :origin_password, :payment_method, :payment_email)
+    params.require(:account).permit(:email, :facebook_or_skype, :console_type, :console_email, :console_password, :web_email, :web_password, :web_answer, :origin_answer, :origin_email, :origin_password, :payment_method, :payment_email)
   end
 end

@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  account_id: 
+  name: MyString
+  overall: 1
+
+two:
+  account_id: 
+  name: MyString
+  overall: 1

@@ -14,7 +14,7 @@
   </div>
   <hr>
   <% @account.attributes.each_with_index do |name_value, index| %>
-    <% break if index == 15 %>
+    <% break if index == 14 %>
     <div class="row">
       <div class="col-md-4">
         <%=  t name_value[0] %>
@@ -29,6 +29,32 @@
     <hr>
   <% end %>
 
+  <% if @account.players.any? %>
+  <div class="row">
+    <div class="col-md-4">
+      Zawodnicy:
+    </div>
+    <div class="col-md-4">
+
+    </div>
+    <div class="col-md-4">
+      <%= check_box('account','players', {}, 'players') %>
+    </div>
+  </div>
+  <% @account.players.each do |player| %>
+    <div class="row">
+      <div class="col-md-4">
+      </div>
+      <div class="col-md-4">
+        <%= player.name %> <strong> <%= player.overall %> </strong>
+      </div>
+      <div class="col-md-4">
+
+      </div>
+    </div>
+  <% end %>
+  <hr>
+  <% end %>
 
 
   <% if @account.confirmed == true %>

@@ -102,13 +102,12 @@
 </div>
 
 <%= simple_form_for @account do |f| %>
-
+  <%= f.input :token, label: false, as: :hidden%>
   <div class="panel panel-primary">
     <div class="panel-heading">  <h3><%=  t 'who_are_you'%></h3> </div>
     <div class="panel-body">
       <%= f.input :email, label: false, placeholder: 'email' %>
-      <%= f.input :skype, label: false, placeholder: 'skype' %>
-      <%= f.input :twitter, label: false, placeholder: 'twitter' %>
+      <%= f.input :facebook_or_skype, label: false, placeholder: 'skype or facebook' %>
     </div>
   </div>
   <div class="panel panel-primary">

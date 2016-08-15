@@ -2,15 +2,14 @@ class CreateAccounts < ActiveRecord::Migration
   def change
     create_table :accounts do |t|
       t.string :email
-      t.string :skype
-      t.string :twitter
+      t.string :facebook_or_skype
       t.string :console_type
       t.string :console_email
       t.string :console_password
       t.string :web_email
       t.string :web_password
-      t.text :web_answer
-      t.text :origin_answer
+      t.string :web_answer
+      t.string :origin_answer
       t.string :origin_email
       t.string :origin_password
       t.string :payment_method
