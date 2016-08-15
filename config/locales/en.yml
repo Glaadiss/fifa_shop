@@ -1,23 +1,33 @@
-# Files in the config/locales directory are used for internationalization
-# and are automatically loaded by Rails. If you want to use locales other
-# than English, add the necessary files in this directory.
-#
-# To use the locales, use `I18n.t`:
-#
-#     I18n.t 'hello'
-#
-# In views, this is aliased to just `t`:
-#
-#     <%= t('hello') %>
-#
-# To use a different locale, set it with `I18n.locale`:
-#
-#     I18n.locale = :es
-#
-# This would use the information in config/locales/es.yml.
-#
-# To learn more, please read the Rails Internationalization guide
-# available at http://guides.rubyonrails.org/i18n.html.
+
 
 en:
-  hello: "Hello world"
+  header: "Sell your FIFA 17 Ultimate Team WebApp ready accounts!"
+  second_header: 'FUTacc.com allows you to make money by selling WebApp ready accounts to us.
+                  We recommend you to create dummy email addresses, dummy gamertags and dummy webapp accounts and make money
+                  selling each!'
+  actual: 'Current prices:'
+  form_title: 'Sell account form'
+  form_header: 'Please complete the following form to sell your account. We will check the details provided and payment will be instant
+                after the login information has been changed and the transaction has been completed. PLEASE DOUBLE CHECK AL THE
+                FIELDS TO AVOID MISTAKES.'
+  instruction: 'Instructions'
+  requirements: 'An account you wish to sell to us needs to adhere to the following:'
+  req_first: "Should have trading activated on the WebApp. You can check that here."
+  req_second: "Should have a minimum of 150 coins."
+  req_third: "Should not have a backup email address registered in Origin."
+  warning: Warning!
+  final_info: "We will change all login information. Please make sure you no longer need access to the account and ensure the account
+              has no valuables."
+  who_are_you: "Who are you"
+  which_account: "Which account do you want to sell to us?"
+  login_data: "Console login information"
+  choose_console: "The credentials for the console GamerTag."
+  webApp_data: "WebApp login information"
+  give_webApp: "The credentials for the WebApp."
+  origin_security: "Origin security information"
+  origin_security_info: "The credentials for the Origin account."
+  origin_tip: "TIP: You can access the Origin account here. You can find your security question under
+              the Security tab. You should then know the answer."
+  email_box: "Origin email login information"
+  email_box_info: "The credentials for the email account (@Hotmail / @GMail / etc) associated with the Origin account."
+  choose_payment: "How would you like us to pay you?"

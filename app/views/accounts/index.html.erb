@@ -1,9 +1,10 @@
 
 
 <% @accounts.each do |account| %>
-  <div class="container">
-    <div class="col-md-4"> <strong><%= account.email %> </strong></div>
-    <div class="col-md-4"><%= link_to 'Pokaż', account_path(account.token), class:'btn btn-info'%></div>
-    <div class="col-md-4"><%= link_to 'Usuń', account_path(account.token), method: :delete, class:'btn btn-danger', data:{confirm:'Napewno?'}%></div>
+  <div class="container alert alert-<%= return_color(account.confirmed, account.failures)%>">
+    <div class="col-md-4"> <strong><%= account.email %></strong></div>
+    <div class="col-md-4"> <strong><%= account.web_email %></strong></div>
+    <div class="col-md-4"><%= link_to ' Pokaż', account_path(account.token), class:'btn btn-info'%></div>
+    <!-- <div class="col-md-4"><%= link_to 'Usuń', account_path(account.token), method: :delete, class:'btn btn-danger', data:{confirm:'Napewno?'}%></div> -->
   </div><hr>
 <% end %>

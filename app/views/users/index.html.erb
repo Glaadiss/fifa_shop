@@ -1,0 +1,10 @@
+
+<% @users.each do |user| %>
+  <div class="row">
+    <div class="col-md-3"> <strong> <%= user.email %> </strong></div>
+    <div class="col-md-3"> <strong> <%= user.accounts_count %> </strong></div>
+    <div class="col-md-3"> <strong> <%= user.accounts_count_in_month %> </strong></div>
+    <div class="col-md-3"></div>
+  </div>
+  <hr>
+<% end %>

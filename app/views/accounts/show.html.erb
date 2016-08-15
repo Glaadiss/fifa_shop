@@ -1,6 +1,18 @@
 
 
 <%= form_tag account_correction_path(@account.token), method: :put do %>
+  <div class="row">
+    <div class="col-md-4">
+      <strong> Pole: </strong>
+    </div>
+    <div class="col-md-4">
+      <strong> Wartość: </strong>
+    </div>
+    <div class="col-md-4">
+      <strong> Zaznacz, jeżeli wymagana jest poprawa!</strong>
+    </div>
+  </div>
+  <hr>
   <% @account.attributes.each_with_index do |name_value, index| %>
     <% break if index == 15 %>
     <div class="row">

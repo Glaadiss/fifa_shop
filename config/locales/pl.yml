@@ -22,3 +22,37 @@ pl:
   origin_password: 'Hasło do Origin: '
   payment_method: 'Metoda płatności: '
   payment_email: 'Adres email do płatności: '
+
+  header: Sprzedaj swoje konta WebApp w FIFA 17 Ultimate Team!
+  second_header: 'FUTacc.com pozwala Ci zarabiać poprzez sprzedaż aktywnych kont WebApp w FUT 17.
+                  Sugerujemy aby do kont w FUT 17 utworzyć nowe skrzynki email, wymyślić swoje nazwy gamertagów, hasła i odpowiedzi na
+                  pytania awaryjne. Warto wszystko sobie zapisać przy tworzeniu! :)'
+  actual: 'Aktualne stawki:'
+  form_title: 'Formularz sprzedaży konta '
+  form_header: 'Wypełnij poprawnie poniższy formularz aby sprzedać konto. Sprawdzimy dane które podałeś/aś i zmienimy je jeśli będą
+                poprawne, następnie wyślemy Twoją zapłatę / kupimy zawodników. Nie powinno to potrwać dłużej niż 24h. DWUKROTNIE
+                SPRAWDŹ WSZYSTKIE POLA ABY UNIKNĄĆ OPÓŹNIEŃ.'
+  instruction: 'Instrukcja'
+  requirements: 'Konto które chcesz nam sprzedać musi spełniać poniższe wymogi:'
+  req_first: "Rynek transferowy w WebApp'ie musi być odblokowany, możesz to sprawdzić tutaj. Wskazówka: Aby odblokować
+              rynek na koncie, rozegraj kilka spotkań lub wykonaj zadania menedżera."
+  req_second: "Posiadać minimum 150 coins."
+  req_third: "Nie może posiadać dodatkowych adresów email dopisanych do konta na Origin.com "
+  warning: Uwaga!
+  final_info: "Zmienimy wszystkie dane logowania. Upewnij się, że nie potrzebujesz już dostępu do konta oraz czy nie zostawiłeś na
+              nim czegoś wartościowego :)"
+  who_are_you: "Kim jesteś?"
+  which_account: "Które konto chciałbyś nam sprzedać?"
+  login_data: "Dane logowania na konsoli"
+  choose_console: "Wybierz konsolę i podaj dane logowania do utworzonego wcześniej profilu."
+  console_tip: ' WSKAZÓWKA: Niektóre platformy wymagają podania daty urodzin do zalogowania,
+                upewnij się że podajesz poprawną datę.'
+  webApp_data: "Dane logowania do WebApp'u"
+  give_webApp: "Podaj dane, których używasz przy logowaniu się do WebApp'u."
+  origin_security: "Zabezpieczenia Origin"
+  origin_security_info: "Zabezpieczenia używane na Origin.com"
+  origin_tip: "WSKAZÓWKA: Możesz zalogować się na konto Origin tutaj. Pytanie awaryjne znajdziesz w
+              zakładce Bezpieczeństwo/Bezpieczeństwo konta. Właśnie teraz chodzi nam o odpowiedź tam podaną :)"
+  email_box: "Skrzynka email"
+  email_box_info: "Dane logowania do skrzynki email (np. @onet.pl / @wp.pl / @interia.pl itp.) której użyłeś do stworzenia konta Origin."
+  choose_payment: "Jaki sposób płatności wybierasz?"

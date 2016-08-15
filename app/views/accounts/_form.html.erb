@@ -1,31 +1,164 @@
 
+<div class="panel panel-success">
+  <div class="panel-heading"><h2> <%= t 'header' %> </h1></div>
+  <div class="panel-body"><p> <%= t 'second_header' %> </p></div>
+</div>
+
+<div class="panel panel-primary">
+  <div class="panel-heading"><h3> <%= t 'actual' %></h3></div>
+  <div class="panel-body">
+    <% if session[:locale] == 'pl' %>
+      <table class="table">
+        <thead>
+          <tr>
+            <td> <strong> Konsola</strong></td>
+            <td> <strong> Stawka (PLN) </strong></td>
+            <td> <strong> Stawka (Fifa 17 Coins)</strong></td>
+            <td> <strong> Stawka (PSC) </strong></td>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td> Xbox one</td>
+            <td> 20 zł </td>
+            <td> 50,000 </td>
+            <td> 20 zł </td>
+          </tr>
+          <tr>
+            <td> Xbox 360 </td>
+            <td> 10 zł </td>
+            <td> 20,000 </td>
+            <td> 10 zł </td>
+          </tr>
+          <tr>
+            <td> PlayStation 4</td>
+            <td> 20 zł </td>
+            <td> 50,000 </td>
+            <td> 20 zł </td>
+          </tr>
+          <tr>
+            <td> PlayStation 3 </td>
+            <td> 10 zł </td>
+            <td> 10,000 </td>
+            <td> 5 zł </td>
+          </tr>
+        </tbody>
+      </table>
+    <% else %>
+      <table class="table">
+        <thead>
+          <tr>
+            <td> <strong> Console </strong></td>
+            <td> <strong> Price (EUR) </strong></td>
+            <td> <strong> Pice(Fifa 17 Coins)</strong></td>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td> Xbox one</td>
+            <td> &euro; 5,00 </td>
+            <td> 50,000 </td>
+          </tr>
+          <tr>
+            <td> Xbox 360 </td>
+            <td> &euro; 3,00 </td>
+            <td> 20,000 </td>
+          </tr>
+          <tr>
+            <td> PlayStation 4</td>
+            <td> &euro; 5,00 </td>
+            <td> 50,000 </td>
+          </tr>
+          <tr>
+            <td> PlayStation 3 </td>
+            <td> &euro; 4,00 </td>
+            <td> 10,000 </td>
+          </tr>
+        </tbody>
+      </table>
+    <% end %>
+  </div>
+</div>
+
+<div class="panel panel-success">
+  <div class="panel-heading"><h2> <%= t 'form_title' %></h2></div>
+  <div class="panel-body"> <p> <%= t 'form_header' %> </p></div>
+</div>
+
+<div class="panel panel-warning">
+  <div class="panel-heading"><h3> <%= t 'instruction' %></h2></div>
+  <div class="panel-body">
+    <h5> <%= t 'requirements' %></h5>
+    <ul>
+      <li> <%= t 'req_first' %> </li>
+      <li> <%= t 'req_second' %> </li>
+      <li> <%= t 'req_third' %> </li>
+    </ul>
+  </div>
+</div>
+
+<div class="panel panel-danger">
+  <div class="panel-heading"><h2> <%= t 'warning' %> </h1></div>
+  <div class="panel-body"><p> <%= t 'final_info' %> </p> </div>
+</div>
+
 <%= simple_form_for @account do |f| %>
-  <%=  t 'email'%>
-  <%= f.input :email, label: false %>
-  <%= f.input :skype %>
-  <%= f.input :twitter %>
-  <%= t 'console_type' %>
-  <%= f.input :console_type, label: false , collection: ['ds','dsaa','wqeqw']  %>
-  <%= t 'console_email' %>
-  <%= f.input :console_email, label: false  %>
-  <%= t 'console_password' %>
-  <%= f.input :console_password, label: false , as: :password %>
-  <%= t 'web_email' %>
-  <%= f.input :web_email, label: false %>
-  <%= t 'web_password' %>
-  <%= f.input :web_password, label: false , as: :password %>
-  <%= t 'web_answer' %>
-  <%= f.input :web_answer, label: false  %>
-  <%= t 'origin_answer' %>
-  <%= f.input :origin_answer, label: false  %>
-  <%= t 'origin_email' %>
-  <%= f.input :origin_email, label: false  %>
-  <%= t 'origin_password' %>
-  <%= f.input :origin_password, label: false , as: :password %>
-  <%= t 'payment_method' %>
-  <%= f.input :payment_method, label: false , collection: ['ds','dsaa','wqeqw']  %>
-  <%= t 'payment_email' %>
-  <%= f.input :payment_email, label: false  %>
-  <%= f.button :submit, class: 'btn btn-success', value: 'Wyślij' %>
+
+  <div class="panel panel-primary">
+    <div class="panel-heading">  <h3><%=  t 'who_are_you'%></h3> </div>
+    <div class="panel-body">
+      <%= f.input :email, label: false, placeholder: 'email' %>
+      <%= f.input :skype, label: false, placeholder: 'skype' %>
+      <%= f.input :twitter, label: false, placeholder: 'twitter' %>
+    </div>
+  </div>
+  <div class="panel panel-primary">
+    <div class="panel-heading"><h3><%= t 'which_account' %> </h3></div>
+    <div class="panel-body">
+      <h4><%= t 'login_data' %></h4>
+      <%= t 'choose_console' %>
+      <%= f.input :console_type, label: false , collection: ['Console / GamerTag email address','Console / GamerTag password','Console / GamerTag date of birth']  %>
+      <i><%= t 'console_tip' %> </i>
+    </div>
+  </div>
+  <div class="panel panel-primary">
+    <div class="panel-heading">  <h4><%= t 'webApp_data' %> </h4> </div>
+    <div class="panel-body">
+      <%= t 'give_webApp' %>
+      <%= f.input :web_email, label: false,placeholder: 'WebApp email adress' %>
+      <%= f.input :web_password, label: false , as: :password,  placeholder: 'WebApp password' %>
+      <%= f.input :web_answer, label: false , placeholder: 'Webapp answer to secret question' %>
+    </div>
+  </div>
+
+  <div class="panel panel-primary">
+    <div class="panel-heading"><h4> <%= t 'origin_security' %> </h4></div>
+    <div class="panel-body">
+      <%= t 'origin_security_info' %>
+      <%= f.input :origin_answer, label: false, placeholder: 'Origin answer to security question'   %>
+      <i> <%= t 'origin_tip'%></i>
+    </div>
+  </div>
+  <div class="panel panel-primary">
+    <div class="panel-heading"><h4> <%= t 'email_box' %></h4></div>
+    <div class="panel-body">
+      <%= t 'email_box_info' %>
+      <%= f.input :origin_email, label: false, placeholder: 'Email address' %>
+      <%= f.input :origin_password, label: false , as: :password, placeholder: 'Email password to your inbox' %>
+    </div>
+  </div>
+  <div class="panel panel-primary">
+    <div class="panel-heading"><h3> <%= t 'choose_payment' %></h3></div>
+    <div class="panel-body">
+      <%= f.input :payment_method, label: false , collection: ['ds','dsaa','wqeqw']  %>
+      <%= f.input :payment_email, label: false, placeholder: 'Payment email address'  %>
+    </div>
+  </div>
+
+  <% if @account.confirmed %>
+    <%= f.button :submit, class: 'btn btn-warning', value: 'To konto zostało już potwierdzone!' %>
+  <% else %>
+    <%= f.button :submit, class: 'btn btn-success', value: 'Wyślij' %>
+  <% end %>
   <hr>
-<% end %>
+  <% end %>

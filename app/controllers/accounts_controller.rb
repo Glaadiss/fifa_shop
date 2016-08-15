@@ -17,10 +17,11 @@ class AccountsController < ApplicationController
   def correction
     @account = Account.find_by_token(params[:account_id])
     failures = params[:account].to_a.select{ |par,val| val!='0'}.join(',')
-    @account.update_attributes(failures: failures)
+    @account.update_attributes(failures: failures, user_id: current_user.id)
     if @account.failures.present?
       AccountMailer.edit_email(@account).deliver
     else
+      @accounts.update_attributes(confirmed: true)
       AccountMailer.information_email(@account).deliver
     end
     redirect_to accounts_path
@@ -39,13 +40,12 @@ class AccountsController < ApplicationController
 
   def create
     @account = Account.new(account_params)
+    @account.language = session[:locale]
     if @account.save
-      p 'wqe'
       AccountMailer.confirmation_email(@account).deliver
       AccountMailer.notify_email(@account).deliver
       redirect_to root_path, notice: 'Pomyślnie wypełniono formularz, sprawdź skrzynkę pocztową'
     else
-      p 'ewq'
       render 'new', alert: 'Wypełnij jeszcze raz :('
     end
 
