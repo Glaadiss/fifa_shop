@@ -1,12 +1,40 @@
-<h2> Witaj <%= @account.email %> </h2>
 
-<h4> W twoim zamówienie pojawiło się parę błędów.</h4>
-<h5> Proszę popraw następujące pola w formularzu:</h5>
-<ul>
-<% @account.failures.split(',').uniq.each do |error| %>
-  <li> <strog> <%= error %> </strog></li>
+<% if @account.language == 'pl' %>
+
+<div class="panel-heading"><h2> Witaj <%= @account.email %> </h2></div>
+
+<div class="panel-body">
+  <h4> W twoim zamówienie pojawiło się parę błędów.</h4>
+  <h5> Proszę popraw następujące pola w formularzu:</h5>
+  <ul>
+  <% @account.failures.split(',').uniq.each do |error| %>
+    <li> <strog> <%= error %> </strog></li>
+  <% end %>
+  </ul>
+
+  <p> link do formularza: http://skupkont.herokuapp.com/accounts/<%=@account.token %>/edit </p>
+  <p>Pozdrawiam.</p>
+</div>
+
+
+<% else %>
+
+<div class="panel-heading"><h2> Welcome <%= @account.email %> </h2></div>
+
+<div class="panel-body">
+  <h4> We found some errors in your order</h4>
+  <h5> Correct below fields:</h5>
+  <ul>
+  <% @account.failures.split(',').uniq.each do |error| %>
+    <li> <strog> <%= error %> </strog></li>
+  <% end %>
+  </ul>
+
+  <p> link to form: http://skupkont.herokuapp.com/accounts/<%=@account.token %>/edit </p>
+  <p>Regards</p>
+</div>
+
+
+
+
 <% end %>
-</ul>
-
-<p> link do formularza: http://skupkont.herokuapp.com/accounts/<%=@account.token %>/edit </p>
-<p>Pozdrawiam.</p>

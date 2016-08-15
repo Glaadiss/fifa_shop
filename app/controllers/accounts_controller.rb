@@ -21,7 +21,7 @@ class AccountsController < ApplicationController
     if @account.failures.present?
       AccountMailer.edit_email(@account).deliver
     else
-      @accounts.update_attributes(confirmed: true)
+      @account.update_attributes(confirmed: true)
       AccountMailer.information_email(@account).deliver
     end
     redirect_to accounts_path

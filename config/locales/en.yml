@@ -1,6 +1,8 @@
 
 
 en:
+  form: Form
+  send: 'Send'
   header: "Sell your FIFA 17 Ultimate Team WebApp ready accounts!"
   second_header: 'FUTacc.com allows you to make money by selling WebApp ready accounts to us.
                   We recommend you to create dummy email addresses, dummy gamertags and dummy webapp accounts and make money
@@ -22,6 +24,8 @@ en:
   which_account: "Which account do you want to sell to us?"
   login_data: "Console login information"
   choose_console: "The credentials for the console GamerTag."
+  console_tip: ' NOTE: On some platforms the date of birth is require to access the GamerTag
+                credentials.'
   webApp_data: "WebApp login information"
   give_webApp: "The credentials for the WebApp."
   origin_security: "Origin security information"

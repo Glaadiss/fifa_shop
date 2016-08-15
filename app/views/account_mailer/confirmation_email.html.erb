@@ -1,6 +1,22 @@
 
-<h1>Witaj  <%= @account.email %>.</h1>
-<p>
-  Twoje konto jest w fazie weryfikacji :)
-</p>
-<p>Pozdrawiam</p>
+
+<% if @account.language == 'pl' %>
+<div class="panel-heading"><h1>Witaj  <%= @account.email %>.</h1></div>
+<div class="panel-body">
+  <p>
+    Twoje konto <%= @account.web_email %> jest w fazie weryfikacji :)
+  </p>
+  <p>Pozdrawiam</p>
+</div>
+<% else %>
+
+<div class="panel-heading"><h1>Welcome  <%= @account.email %>.</h1></div>
+<div class="panel-body">
+  <p>
+    Your account <%= @account.web_email %> is under verificate stage :)
+  </p>
+  <p>Regards</p>
+</div>
+
+
+<% end %>

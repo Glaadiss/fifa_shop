@@ -155,10 +155,10 @@
     </div>
   </div>
 
-  <% if @account.confirmed %>
+  <% if @account.confirmed == true %>
     <%= f.button :submit, class: 'btn btn-warning', value: 'To konto zostało już potwierdzone!' %>
   <% else %>
-    <%= f.button :submit, class: 'btn btn-success', value: 'Wyślij' %>
+    <%= f.button :submit, class: 'btn btn-success', value: (t 'send') %>
   <% end %>
-  <hr>
+
   <% end %>

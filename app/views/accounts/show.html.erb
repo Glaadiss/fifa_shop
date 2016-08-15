@@ -29,5 +29,11 @@
     <hr>
   <% end %>
 
-  <%= submit_tag 'Wyślij', class: 'btn btn-success' %>
+
+
+  <% if @account.confirmed == true %>
+    <%= submit_tag 'To konto zostało już potwierdzone!' , class: 'btn btn-warning', disabled: true %>
+  <% else %>
+    <%= submit_tag (t 'send') , class: 'btn btn-success' %>
+  <% end %>
 <%end %>

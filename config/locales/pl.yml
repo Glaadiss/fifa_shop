@@ -22,7 +22,8 @@ pl:
   origin_password: 'Hasło do Origin: '
   payment_method: 'Metoda płatności: '
   payment_email: 'Adres email do płatności: '
-
+  form: Formularz
+  send: 'Wyślij'
   header: Sprzedaj swoje konta WebApp w FIFA 17 Ultimate Team!
   second_header: 'FUTacc.com pozwala Ci zarabiać poprzez sprzedaż aktywnych kont WebApp w FUT 17.
                   Sugerujemy aby do kont w FUT 17 utworzyć nowe skrzynki email, wymyślić swoje nazwy gamertagów, hasła i odpowiedzi na
