@@ -33,7 +33,7 @@
           </li>
         <% end %>
         <% if current_user.try(:role) == 2 %>
-          <%= link_to 'Pracownicy', userss_path %>
+          <%= link_to 'Pracownicy', userss_index_path %>
         <% end %>
         <li><%= link_to_unless_current 'english', locale: 'en' %></li>
         <li><%= link_to_unless_current 'polski', locale: 'pl' %></li>
