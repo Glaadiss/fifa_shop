@@ -14,33 +14,31 @@
         <a class="navbar-brand" href="#">FUTaccounts</a>
       </div>
       <ul class="nav navbar-nav">
+        <li><a href="/accounts/new"> <%= t 'regulations' %></a></li>
         <li><a href="/accounts/new"> <%= t 'form' %></a></li>
         <% if user_signed_in? %>
-          <li>
-          <%= link_to('Wyloguj', destroy_user_session_path, :method => :delete) %>
-          </li>
-        <% else %>
-          <li>
-          <%= link_to('Login', new_user_session_path)  %>
-          </li>
-        <% end %>
-        <% if user_signed_in? %>
-          <li>
-          <%= link_to('Edytuj konto', edit_user_registration_path) %>
-          </li>
-          <li>
-          <%= link_to('Zamówienia', accounts_path ) %>
-          </li>
-        <% else %>
-          <li>
-          <%= link_to('Register', new_user_registration_path)  %>
-          </li>
+          <li><%= link_to('Edytuj konto', edit_user_registration_path) %></li>
+          <li><%= link_to('Zamówienia', accounts_path ) %></li>
         <% end %>
         <% if current_user.try(:role) == 2 %>
           <li><%= link_to 'Pracownicy', userss_index_path %></li>
+          <li><%= link_to 'Dodaj moderatora', new_userss_path %></li>
         <% end %>
-        <li><%= link_to_unless_current 'english', locale: 'en' %></li>
-        <li><%= link_to_unless_current 'polski', locale: 'pl' %></li>
+      </ul>
+
+      <ul class="nav navbar-nav navbar-right">
+        <% if session[:locale] == 'en' %>
+          <li><%= link_to 'ustaw język polski', locale: 'pl' %></li>
+        <% else %>
+          <li><%= link_to 'set english', locale: 'en' %></li>
+        <% end %>
+        <li>
+        <% if user_signed_in? %>
+          <%= link_to('<span class="glyphicon glyphicon-user"></span> Wyloguj'.html_safe, destroy_user_session_path, :method => :delete) %>
+        <% else %>
+          <%= link_to('<span class="glyphicon glyphicon-log-in"></span> Login'.html_safe, new_user_session_path)  %>
+        <% end %>
+        </li>
       </ul>
     </div>
   </nav>
@@ -52,7 +50,7 @@
   </div>
 <% end %>
 
-  <div class="container" style="background: white; padding: 15px;">
+  <div class="container">
     <%= yield %>
   </div>
 
