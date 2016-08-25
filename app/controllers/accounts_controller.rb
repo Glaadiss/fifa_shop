@@ -4,6 +4,7 @@ class AccountsController < ApplicationController
 
   def new
     @account = Account.new
+    @config = AppConfiguration.first
   end
 
   def index
@@ -19,15 +20,16 @@ class AccountsController < ApplicationController
     failures = params[:account].to_a.select{ |par,val| val!='0'}.join(',')
     @account.update_attributes(failures: failures, user_id: current_user.id)
     if @account.failures.present?
-      AccountMailer.edit_email(@account).deliver
+      AccountMailer.edit_email(@account).deliver_later if AppConfiguration.first.work?
     else
       @account.update_attributes(confirmed: true)
-      AccountMailer.information_email(@account).deliver
+      AccountMailer.information_email(@account).deliver_later if AppConfiguration.first.work?
     end
     redirect_to accounts_path
   end
 
   def edit
+    @config = AppConfiguration.first
     @account = Account.find_by_token(params[:id])
   end
 
@@ -39,17 +41,20 @@ class AccountsController < ApplicationController
 
 
   def create
+    @config = AppConfiguration.first
     @account = Account.new(account_params)
     @account.language = session[:locale]
-    if  @account.save
+    if verify_recaptcha(model: @account) && @account.save
       if params[:players].present?
         players = params[:players].values.zip(params[:overalls].values)
         players.each do |player|
           Player.create(account_id: @account.id, name: player[0], overall: player[1])
         end
       end
-      AccountMailer.confirmation_email(@account).deliver
-      AccountMailer.notify_email(@account).deliver
+      if AppConfiguration.first.work?
+        AccountMailer.confirmation_email(@account).deliver_later
+        AccountMailer.notify_email(@account).deliver_later
+      end
       redirect_to root_path, notice: 'Pomyślnie wypełniono formularz, sprawdź skrzynkę pocztową'
     else
       render 'new', alert: 'Wypełnij jeszcze raz :('
@@ -58,6 +63,7 @@ class AccountsController < ApplicationController
   end
 
   def update
+    @config = AppConfiguration.first
     @account = Account.find_by_token(params[:account][:token])
     if verify_recaptcha(model: @account) && @account.update_attributes(account_params)
       @account.players.destroy_all if @account.players.any?
@@ -67,8 +73,10 @@ class AccountsController < ApplicationController
           Player.create(account_id: @account.id, name: player[0], overall: player[1])
         end
       end
-      AccountMailer.confirmation_email(@account).deliver
-      AccountMailer.notify_email(@account).deliver
+      if AppConfiguration.first.work?
+        AccountMailer.confirmation_email(@account).deliver
+        AccountMailer.notify_email(@account).deliver
+      end
       redirect_to root_path, notice: 'Pomyślnie wypełniono formularz, sprawdź skrzynkę pocztową'
     else
       render 'edit', alert: 'Wypełnij jeszcze raz :('
