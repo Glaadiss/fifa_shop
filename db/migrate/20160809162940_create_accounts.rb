@@ -6,6 +6,7 @@ class CreateAccounts < ActiveRecord::Migration
       t.string :console_type
       t.string :console_email
       t.string :console_password
+      t.datetime :console_data
       t.string :web_email
       t.string :web_password
       t.string :web_answer
@@ -17,6 +18,8 @@ class CreateAccounts < ActiveRecord::Migration
       t.boolean :confirmed
       t.string :failures
       t.string :token
+      t.integer :user_id
+      t.string :language
 
       t.timestamps null: false
     end

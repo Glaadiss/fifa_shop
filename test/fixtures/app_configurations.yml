@@ -1,0 +1,39 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  work?: false
+  x1_pln: 1
+  x1_coins: 1
+  x1_psc: 1
+  x1_eur: 1
+  x3_pln: 1
+  x3_coins: 1
+  x3_psc: 1
+  x3_eur: 1
+  ps4_pln: 1
+  ps4_coins: 1
+  ps4_psc: 1
+  ps4_eur: 1
+  ps3_pln: 1
+  ps3_coins: 1
+  ps3_psc: 1
+  ps3_eur: 1
+
+two:
+  work?: false
+  x1_pln: 1
+  x1_coins: 1
+  x1_psc: 1
+  x1_eur: 1
+  x3_pln: 1
+  x3_coins: 1
+  x3_psc: 1
+  x3_eur: 1
+  ps4_pln: 1
+  ps4_coins: 1
+  ps4_psc: 1
+  ps4_eur: 1
+  ps3_pln: 1
+  ps3_coins: 1
+  ps3_psc: 1
+  ps3_eur: 1

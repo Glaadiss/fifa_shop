@@ -1,4 +1,9 @@
+<style>
 
+*{
+  color: black;
+}
+</style>
 
 <% @accounts.each do |account| %>
   <div class="container alert alert-<%= return_color(account.confirmed, account.failures)%>">

@@ -23,6 +23,7 @@
         <% if current_user.try(:role) == 2 %>
           <li><%= link_to 'Pracownicy', userss_index_path %></li>
           <li><%= link_to 'Dodaj moderatora', new_userss_path %></li>
+          <li><%= link_to 'Konfiguracja', edit_configuration_path(AppConfiguration.first) %> </li>
         <% end %>
       </ul>
 

@@ -125,6 +125,8 @@
           <%= f.input :console_type, label: false , collection: ['Xbox One', 'Xbox 360', 'PlayStation 4','PlayStation 3'], prompt: 'Select Your Console'  %>
           <%= f.input :console_email, label:false, placeholder: 'Console / GamerTag email address' %>
           <%= f.input :console_password, label:false, placeholder: 'Console / GamerTag password' %>
+          <%= f.input :console_data, label:'Console / GamerTag birthday',
+          :as => :date, :start_year => Date.today.year - 3,:end_year => 1900%>
           <i><%= t 'console_tip' %> </i>
         </div>
       </div>
@@ -159,13 +161,12 @@
   <div class="panel panel-primary">
     <div class="panel-heading"><h3> <%= t 'choose_payment' %></h3></div>
     <div class="panel-body">
-      <%= f.input :payment_method, label: false , collection: ["PayPal adress","Skrill adress",'PaySafeCard', 'FUT 17 Coins'], prompt: 'Payment method'  %>
+      <%= f.input :payment_method, label: false , collection: ["PayPal","Skrill",'PaySafeCard', 'FUT 17 Coins'], prompt: 'Payment method'  %>
       <%= f.input :payment_email, label: false, placeholder: 'Payment email address'  %>
       <div id="players"></div>
     </div>
   </div>
-
-  <div class="g-recaptcha" data-sitekey="6LerqCcTAAAAAPNQJVfRCx-9FeqVPL_31VYqTllc"></div>
+  <div class="captcha"></div>
   <% if @account.confirmed == true %>
     <%= f.button :submit, class: 'btn btn-warning', value: 'To konto zostało już potwierdzone!' %>
   <% else %>
@@ -207,7 +208,7 @@
     function loadPlayers(){
       $('#players').html('');
       if( $('#account_payment_method').val() == 'FUT 17 Coins'){
-        $('#players').html('<p><strong> Wystaw '+x+' brązowych zawodników za cenę wywoławczą 4400 i kup teraz 10000, poniżej wpisz ich nazwiska i podaj ocenę ogólną. </strong></p>');
+        $('#players').html('<p><strong> <%= t 'put_out' %> '+x+' <%= t'  brown_footballer_for_4400_and_buy_now_for_10000_below_write_their_surnames_and_overall'%>. </strong></p>');
         for( var i =0; i<x; i++){
           var input = '<input name="players['+ i +']" class="form-control" placeholder="Player">';
           var overall = '<select name="overalls['+ i +']" class="select form-control">';
@@ -220,18 +221,22 @@
         }
       }
       else if( $('#account_payment_method').val() == 'PaySafeCard'){
-        $('#players').html(' <p><strong>Kod PSC zostanie wysłany na Twój adres email. </strong></p>');
+        $('#players').html(' <p><strong> <%= t 'psc_key_will_be_send_on_your_email_adress' %> </strong></p>');
       }
+
     }
 
     $('#account_console_type').on('change', function(){
       loadX();
       loadPlayers();
+      $('.captcha').html('<div class="g-recaptcha" data-sitekey="6LerqCcTAAAAAPNQJVfRCx-9FeqVPL_31VYqTllc"></div>');
     });
 
     $('#account_payment_method').on('change', function(){
         loadX();
         loadPlayers();
+        $('.captcha').html('<div class="g-recaptcha" data-sitekey="6LerqCcTAAAAAPNQJVfRCx-9FeqVPL_31VYqTllc"></div>');
     });
+    $('.captcha').html('<div class="g-recaptcha" data-sitekey="6LerqCcTAAAAAPNQJVfRCx-9FeqVPL_31VYqTllc"></div>');
   });
 </script>

@@ -1,0 +1,69 @@
+
+<%= simple_form_for @config, url: configuration_path(@config), method: :put  do |f| %>
+  <div class="row">
+  <div class="col-md-4">
+    <%= f.input :work?, label: 'Zaznacz by włączyć obsługę formularza'%>
+
+  </div> <div class="col-md-8"></div></div>
+  <h3>Xbox one</h3>
+  <div class="row">
+  <div class="col-md-4">
+    <%= f.input :x1_pln %>
+  </div> <div class="col-md-8"></div></div> <div class="row">
+  <div class="col-md-4">
+    <%= f.input :x1_psc %>
+  </div> <div class="col-md-8"></div></div> <div class="row">
+  <div class="col-md-4">
+    <%= f.input :x1_coins %>
+  </div> <div class="col-md-8"></div></div> <div class="row">
+  <div class="col-md-4">
+    <%= f.input :x1_eur %>
+  </div> <div class="col-md-8"></div></div>
+    <hr>
+    <h3>Xbox 360</h3>
+  <div class="row">
+  <div class="col-md-4">
+    <%= f.input :x3_pln %>
+  </div> <div class="col-md-8"></div></div> <div class="row">
+  <div class="col-md-4">
+    <%= f.input :x3_psc %>
+  </div> <div class="col-md-8"></div></div> <div class="row">
+  <div class="col-md-4">
+    <%= f.input :x3_coins %>
+  </div> <div class="col-md-8"></div></div> <div class="row">
+  <div class="col-md-4">
+    <%= f.input :x3_eur %>
+  </div> <div class="col-md-8"></div></div>
+  <hr>
+  <h3>PlayStation 4</h3>
+  <div class="row">
+  <div class="col-md-4">
+    <%= f.input :ps4_pln %>
+  </div> <div class="col-md-8"></div></div> <div class="row">
+  <div class="col-md-4">
+    <%= f.input :ps4_psc %>
+  </div> <div class="col-md-8"></div></div> <div class="row">
+  <div class="col-md-4">
+    <%= f.input :ps4_coins %>
+  </div> <div class="col-md-8"></div></div> <div class="row">
+  <div class="col-md-4">
+    <%= f.input :ps4_eur %>
+  </div> <div class="col-md-8"></div></div>
+  <hr>
+  <h3>PlayStation 3</h3>
+  <div class="row">
+  <div class="col-md-4">
+    <%= f.input :ps3_pln %>
+  </div> <div class="col-md-8"></div></div> <div class="row">
+  <div class="col-md-4">
+    <%= f.input :ps3_psc %>
+  </div> <div class="col-md-8"></div></div> <div class="row">
+  <div class="col-md-4">
+    <%= f.input :ps3_coins %>
+  </div> <div class="col-md-8"></div></div> <div class="row">
+  <div class="col-md-4">
+    <%= f.input :ps3_eur %>
+  </div> <div class="col-md-8"></div></div>
+
+  <%= f.button :submit, class: 'btn btn-success' %>
+<% end %>

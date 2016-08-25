@@ -1,7 +1,13 @@
 
+<style>
+*{
+  color:black;
+}
 
+
+</style>
 <%= form_tag account_correction_path(@account.token), method: :put do %>
-  <div class="row">
+  <div class="row panel panel-info">
     <div class="col-md-4">
       <strong> Pole: </strong>
     </div>
@@ -12,49 +18,182 @@
       <strong> Zaznacz, jeżeli wymagana jest poprawa!</strong>
     </div>
   </div>
-  <hr>
-  <% @account.attributes.each_with_index do |name_value, index| %>
-    <% break if index == 14 %>
-    <div class="row">
-      <div class="col-md-4">
-        <%=  t name_value[0] %>
-      </div>
-      <div class="col-md-4">
-        <%= name_value[1] %>
-      </div>
-      <div class="col-md-4">
-        <%= check_box('account',name_value[0], {}, name_value[0]) %>
-      </div>
-    </div>
-    <hr>
-  <% end %>
+  <%
+    attributes =  @account.attributes
+    keys = attributes.keys
+    values = attributes.values
+  %>
 
-  <% if @account.players.any? %>
-  <div class="row">
-    <div class="col-md-4">
-      Zawodnicy:
-    </div>
-    <div class="col-md-4">
 
-    </div>
-    <div class="col-md-4">
-      <%= check_box('account','players', {}, 'players') %>
+  <div class="panel panel-info" style="">
+    <div class="panel-heading"><h4> Dane kontaktowe klienta</h4></div>
+    <div class="panel-body">
+      <% [1,2].each do |num| %>
+        <div class="row">
+          <div class="col-md-4">
+            <% if num == 1 %>
+              email
+            <% else %>
+            <%= t keys[num]  %>
+            <% end %>
+          </div>
+          <div class="col-md-4">
+            <%= values[num] %>
+          </div>
+          <div class="col-md-4">
+            <%= check_box('account',keys[num], {}, keys[num]) %>
+          </div>
+        </div>
+      <% end %>
+
     </div>
   </div>
-  <% @account.players.each do |player| %>
-    <div class="row">
-      <div class="col-md-4">
-      </div>
-      <div class="col-md-4">
-        <%= player.name %> <strong> <%= player.overall %> </strong>
-      </div>
-      <div class="col-md-4">
 
-      </div>
+
+
+  <div class="panel panel-info" style="">
+    <div class="panel-heading"><h4>Profil konsolowy / gamertag </h4></div>
+    <div class="panel-body">
+      <%= link_to 'Strona: Xbox', 'https://account.live.com/password/Change', target: "_blank", class: 'btn btn-warning'  %>
+      <%= link_to 'Strona: PlayStation', 'https://account.sonyentertainmentnetwork.com/liquid/cam/account/profile/view-security.action', target: "_blank", class: 'btn btn-warning'  %>
+      <hr>
+      <% [3,4,5,6].each do |num| %>
+        <div class="row">
+          <div class="col-md-4">
+            <%= t keys[num] %>
+          </div>
+          <div class="col-md-4">
+            <%= values[num] %>
+          </div>
+          <div class="col-md-4">
+            <%= check_box('account',keys[num], {}, keys[num]) %>
+          </div>
+        </div>
+      <% end %>
+
     </div>
-  <% end %>
-  <hr>
-  <% end %>
+  </div>
+
+  <div class="panel panel-info" style="">
+    <div class="panel-heading"><h4> Dostęp WebApp</h4></div>
+    <div class="panel-body">
+      <%= link_to 'Strona: WebApp', 'https://www.easports.com/fifa/ultimate-team/web-app', target: "_blank", class: 'btn btn-warning'  %>
+      <hr>
+      <% [7,8,9].each do |num| %>
+        <div class="row">
+          <div class="col-md-4">
+            <%= t keys[num] %>
+          </div>
+          <div class="col-md-4">
+            <%= values[num] %>
+          </div>
+          <div class="col-md-4">
+            <%= check_box('account',keys[num], {}, keys[num]) %>
+          </div>
+        </div>
+      <% end %>
+
+    </div>
+  </div>
+
+  <div class="panel panel-info" style="">
+    <div class="panel-heading"><h4> Dostęp Origin </h4></div>
+    <div class="panel-body">
+      <%= link_to 'Strona: Origin', 'https://account.origin.com/cp-ui/security/index', target: "_blank", class: 'btn btn-warning'  %>
+      <hr>
+        <div class="row">
+          <div class="col-md-4">
+            <%= t keys[10] %>
+          </div>
+          <div class="col-md-4">
+            <%= values[10] %>
+          </div>
+          <div class="col-md-4">
+            <%= check_box('account',keys[10], {}, keys[10]) %>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4">
+            Skrzynka email
+          </div>
+          <div class="col-md-4">
+            <%= values[11] %>
+          </div>
+          <div class="col-md-4">
+            <%= check_box('account',keys[11], {}, keys[11]) %>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4">
+            Hasło do skrzynki email
+          </div>
+          <div class="col-md-4">
+            <%= values[12] %>
+          </div>
+          <div class="col-md-4">
+            <%= check_box('account',keys[12], {}, keys[12]) %>
+          </div>
+        </div>
+    </div>
+  </div>
+
+  <div class="panel panel-info" style="">
+    <div class="panel-heading"><h4> Płatność </h4></div>
+    <div class="panel-body">
+      <% [13,14].each do |num| %>
+        <div class="row">
+          <div class="col-md-4">
+            <%= t keys[num] %>
+          </div>
+          <div class="col-md-4">
+            <%= values[num] %>
+          </div>
+          <div class="col-md-4">
+            <%= check_box('account',keys[num], {}, keys[num]) %>
+          </div>
+        </div>
+      <% end %>
+
+    </div>
+  </div>
+
+  <div class="panel panel-info" >
+    <div class="panel-heading"><h4>Zawodnicy do wymiany</h4></div>
+    <div class="panel-body">
+      <% if @account.players.any? %>
+      <div class="row">
+        <div class="col-md-4">
+          Zawodnicy:
+        </div>
+        <div class="col-md-4">
+
+        </div>
+        <div class="col-md-4">
+          <%= check_box('account','players', {}, 'players') %>
+        </div>
+      </div>
+      <% @account.players.each do |player| %>
+        <div class="row">
+          <div class="col-md-4">
+          </div>
+          <div class="col-md-4">
+            <%= player.name %> <strong> <%= player.overall %> </strong>
+          </div>
+          <div class="col-md-4">
+
+          </div>
+        </div>
+      <% end %>
+
+      <% end %>
+
+    </div>
+  </div>
+
+
+
+
+
 
 
   <% if @account.confirmed == true %>

@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160815190013) do
+ActiveRecord::Schema.define(version: 20160825185034) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -22,6 +22,7 @@ ActiveRecord::Schema.define(version: 20160815190013) do
     t.string   "console_type"
     t.string   "console_email"
     t.string   "console_password"
+    t.datetime "console_data"
     t.string   "web_email"
     t.string   "web_password"
     t.string   "web_answer"
@@ -33,10 +34,32 @@ ActiveRecord::Schema.define(version: 20160815190013) do
     t.boolean  "confirmed"
     t.string   "failures"
     t.string   "token"
-    t.datetime "created_at",        null: false
-    t.datetime "updated_at",        null: false
     t.integer  "user_id"
     t.string   "language"
+    t.datetime "created_at",        null: false
+    t.datetime "updated_at",        null: false
+  end
+
+  create_table "app_configurations", force: :cascade do |t|
+    t.boolean  "work?",      default: false
+    t.integer  "x1_pln",     default: 20
+    t.integer  "x1_coins",   default: 50000
+    t.integer  "x1_psc",     default: 20
+    t.integer  "x1_eur",     default: 5
+    t.integer  "x3_pln",     default: 10
+    t.integer  "x3_coins",   default: 20000
+    t.integer  "x3_psc",     default: 10
+    t.integer  "x3_eur",     default: 3
+    t.integer  "ps4_pln",    default: 20
+    t.integer  "ps4_coins",  default: 50000
+    t.integer  "ps4_psc",    default: 20
+    t.integer  "ps4_eur",    default: 5
+    t.integer  "ps3_pln",    default: 10
+    t.integer  "ps3_coins",  default: 10000
+    t.integer  "ps3_psc",    default: 5
+    t.integer  "ps3_eur",    default: 4
+    t.datetime "created_at",                 null: false
+    t.datetime "updated_at",                 null: false
   end
 
   create_table "players", force: :cascade do |t|
