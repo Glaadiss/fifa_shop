@@ -1,7 +1,7 @@
 module AccountsHelper
   def return_color(confirmed, failures)
     if confirmed.nil? && failures.nil?
-      return 'info'
+      return 'warning'
     elsif confirmed.present?
       return 'success'
     else

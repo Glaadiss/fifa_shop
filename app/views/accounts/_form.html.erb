@@ -2,6 +2,11 @@
 *{
   color:black;
 }
+
+.panel{
+  border: none;
+}
+
 </style>
 <div class="panel panel-success">
   <div class="panel-heading"><h1> <%= t 'header' %> </h1></div>
@@ -166,7 +171,7 @@
       <div id="players"></div>
     </div>
   </div>
-  <div class="captcha"></div>
+   <div class="g-recaptcha" data-sitekey="6LerqCcTAAAAAPNQJVfRCx-9FeqVPL_31VYqTllc"></div>
   <% if @account.confirmed == true %>
     <%= f.button :submit, class: 'btn btn-warning', value: 'To konto zostało już potwierdzone!' %>
   <% else %>

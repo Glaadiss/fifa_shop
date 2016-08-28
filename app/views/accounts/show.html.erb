@@ -100,6 +100,7 @@
     <div class="panel-heading"><h4> Dostęp Origin </h4></div>
     <div class="panel-body">
       <%= link_to 'Strona: Origin', 'https://account.origin.com/cp-ui/security/index', target: "_blank", class: 'btn btn-warning'  %>
+      <%= link_to 'Poczta',  'http://'+values[11].partition('@').last, target: "_blank", class: 'btn btn-warning' %> 
       <hr>
         <div class="row">
           <div class="col-md-4">
@@ -157,10 +158,11 @@
     </div>
   </div>
 
+
+  <% if @account.players.any? %>
   <div class="panel panel-info" >
     <div class="panel-heading"><h4>Zawodnicy do wymiany</h4></div>
     <div class="panel-body">
-      <% if @account.players.any? %>
       <div class="row">
         <div class="col-md-4">
           Zawodnicy:
@@ -184,12 +186,9 @@
           </div>
         </div>
       <% end %>
-
-      <% end %>
-
     </div>
   </div>
-
+  <% end %>
 
 
 
