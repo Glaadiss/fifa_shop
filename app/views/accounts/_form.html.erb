@@ -117,49 +117,148 @@
   <div class="panel panel-primary">
     <div class="panel-heading">  <h3><%=  t 'who_are_you'%></h3> </div>
     <div class="panel-body">
-      <%= f.input :email, label: false, placeholder: (t 'email') %>
-      <%= f.input :facebook_or_skype, label: false, placeholder: (t 'facebook_or_skype') %>
+      <div class="row">
+        <div class="col-md-7">
+          <div class="col-md-1"><i> <%= image_tag 'email/new-post-24.png'%> </i></div>
+          <div class="col-md-11">
+            <%= f.input :email, label: false, placeholder: (t 'email')  %>
+          </div>
+        </div>
+        <div class="col-md-5"></div>
+      </div>
+      <div class="row">
+        <div class="col-md-7">
+          <div class="col-md-1"><i> <%= image_tag 'skype/skype-24.png'%> </i></div>
+          <div class="col-md-11">
+            <%= f.input :facebook_or_skype, label: false, placeholder: (t 'facebook_or_skype') %>
+          </div>
+        </div>
+        <div class="col-md-5"></div>
+      </div>
+
+
     </div>
   </div>
   <div class="panel panel-primary">
     <div class="panel-heading"><h3><%= t 'which_account' %> </h3></div>
     <div class="panel-body">
       <div class="panel panel-primary">
-        <div class="panel-heading"><h4><%= t 'login_data' %></h4></div>
+        <div class="panel-heading"><h4> <i> <%= image_tag 'xb_32x32.png'%> </i><i> <%= image_tag 'ps_32x32.png'%> </i><%= t 'login_data' %></h4></div>
         <div class="panel-body">
           <%= t 'choose_console' %>
-          <%= f.input :console_type, label: false , collection: ['Xbox One', 'Xbox 360', 'PlayStation 4','PlayStation 3'], prompt: 'Select Your Console'  %>
-          <%= f.input :console_email, label:false, placeholder: 'Console / GamerTag email address' %>
-          <%= f.input :console_password, label:false, placeholder: 'Console / GamerTag password' %>
+          <hr>
+          <div class="row">
+            <div class="col-md-7">
+              <div class="col-md-1"></div>
+              <div class="col-md-11">
+                <%= f.input :console_type, label: false , collection: ['Xbox One', 'Xbox 360', 'PlayStation 4','PlayStation 3'], prompt: 'Select Your Console'  %>
+              </div>
+            </div>
+            <div class="col-md-5"></div>
+          </div>
+          <div class="row">
+            <div class="col-md-7">
+              <div class="col-md-1"><i> <%= image_tag 'email/new-post-24.png'%> </i></div>
+              <div class="col-md-11">
+                <%= f.input :console_email, label:false, placeholder: 'Console / GamerTag email address' %>
+              </div>
+            </div>
+            <div class="col-md-5"></div>
+          </div>
+          <div class="row">
+            <div class="col-md-7">
+              <div class="col-md-1"><i> <%= image_tag 'klodka/lock-7-24.png'%> </i></div>
+              <div class="col-md-11">
+                <%= f.input :console_password, label:false, placeholder: 'Console / GamerTag password' %>
+              </div>
+            </div>
+            <div class="col-md-5"></div>
+          </div>
+
+
           <%= f.input :console_data, label:'Console / GamerTag birthday',
           :as => :date, :start_year => Date.today.year - 3,:end_year => 1900%>
           <i><%= t 'console_tip' %> </i>
         </div>
       </div>
   <div class="panel panel-primary">
-    <div class="panel-heading">  <h4><%= t 'webApp_data' %> </h4> </div>
+    <div class="panel-heading">  <h4>  <i> <%= image_tag 'ea_32x32.png'%> </i><%= t 'webApp_data' %> </h4> </div>
     <div class="panel-body">
       <%= t 'give_webApp' %>
-      <%= f.input :web_email, label: false,placeholder: 'WebApp email adress' %>
-      <%= f.input :web_password, label: false ,  placeholder: 'WebApp password' %>
-      <%= f.input :web_answer, label: false , placeholder: 'Webapp answer to secret question' %>
+      <hr>
+      <div class="row">
+        <div class="col-md-7">
+          <div class="col-md-1"><i> <%= image_tag 'email/new-post-24.png'%> </i></div>
+          <div class="col-md-11">
+            <%= f.input :web_email, label: false,placeholder: 'WebApp email adress' %>
+          </div>
+        </div>
+        <div class="col-md-5"></div>
+      </div>
+      <div class="row">
+        <div class="col-md-7">
+          <div class="col-md-1"><i> <%= image_tag 'klodka/lock-7-24.png'%> </i></div>
+          <div class="col-md-11">
+            <%= f.input :web_password, label: false ,  placeholder: 'WebApp password' %>
+          </div>
+        </div>
+        <div class="col-md-5"></div>
+      </div>
+      <div class="row">
+        <div class="col-md-7">
+          <div class="col-md-1"><i> <%= image_tag 'klodka/lock-7-24.png'%> </i></div>
+          <div class="col-md-11">
+            <%= f.input :web_answer, label: false , placeholder: 'Webapp answer to secret question' %>
+          </div>
+        </div>
+        <div class="col-md-5"></div>
+      </div>
+
     </div>
   </div>
 
   <div class="panel panel-primary">
-    <div class="panel-heading"><h4> <%= t 'origin_security' %> </h4></div>
+    <div class="panel-heading"><h4>  <i> <%= image_tag 'origin_32x32.png'%> </i> <%= t 'origin_security' %> </h4></div>
     <div class="panel-body">
       <%= t 'origin_security_info' %>
-      <%= f.input :origin_answer, label: false,  placeholder: 'Origin answer to security question'   %>
+      <hr>
+      <div class="row">
+        <div class="col-md-7">
+          <div class="col-md-1"><i> <%= image_tag 'klodka/lock-7-24.png'%> </i></div>
+          <div class="col-md-11">
+            <%= f.input :origin_answer, label: false,  placeholder: 'Origin answer to security question'   %>
+          </div>
+        </div>
+        <div class="col-md-5"></div>
+      </div>
+      <hr>
       <i> <%= t 'origin_tip'%><%= link_to ( t 'origin_tip_here'), "https://account.origin.com/cp-ui/security/index", target: "_blank"%><%= t 'origin_tip_next'%></i>
     </div>
   </div>
   <div class="panel panel-primary">
-    <div class="panel-heading"><h4> <%= t 'email_box' %></h4></div>
+    <div class="panel-heading"><h4> <i> <%= image_tag 'origin_32x32.png'%> </i> <%= t 'email_box' %></h4></div>
     <div class="panel-body">
       <%= t 'email_box_info' %>
-      <%= f.input :origin_email, label: false, placeholder: 'Email address' %>
-      <%= f.input :origin_password, label: false ,  placeholder: 'Email password to your inbox' %>
+      <hr>
+      <div class="row">
+        <div class="col-md-7">
+          <div class="col-md-1"><i> <%= image_tag 'email/new-post-24.png'%> </i></div>
+          <div class="col-md-11">
+            <%= f.input :origin_email, label: false, placeholder: 'Email address' %>
+          </div>
+        </div>
+        <div class="col-md-5"></div>
+      </div>
+      <div class="row">
+        <div class="col-md-7">
+          <div class="col-md-1"><i> <%= image_tag 'klodka/lock-7-24.png'%> </i></div>
+          <div class="col-md-11">
+            <%= f.input :origin_password, label: false ,  placeholder: 'Email password to your inbox' %>
+          </div>
+        </div>
+        <div class="col-md-5"></div>
+      </div>
+
     </div>
   </div>
 </div>
@@ -167,8 +266,25 @@
   <div class="panel panel-primary">
     <div class="panel-heading"><h3> <%= t 'choose_payment' %></h3></div>
     <div class="panel-body">
-      <%= f.input :payment_method, label: false , collection: ["PayPal","Skrill",'PaySafeCard', 'FUT 17 Coins'], prompt: 'Payment method'  %>
-      <%= f.input :payment_email, label: false, placeholder: 'Payment email address'  %>
+      <div class="row">
+        <div class="col-md-7">
+          <div class="col-md-1"></div>
+          <div class="col-md-11">
+            <%= f.input :payment_method, label: false , collection: ["PayPal","Skrill",'PaySafeCard', 'FUT 17 Coins'], prompt: 'Payment method'  %>
+          </div>
+        </div>
+        <div class="col-md-5"></div>
+      </div>
+      <div class="row">
+        <div class="col-md-7">
+          <div class="col-md-1"><i> <%= image_tag 'email/new-post-24.png'%> </i></div>
+          <div class="col-md-11">
+            <%= f.input :payment_email, label: false, placeholder: 'Payment email address'  %>
+          </div>
+        </div>
+        <div class="col-md-5"></div>
+      </div>
+
       <div id="players"></div>
     </div>
   </div>
@@ -214,7 +330,7 @@
     function loadPlayers(){
       $('#players').html('');
       if( $('#account_payment_method').val() == 'FUT 17 Coins'){
-        $('#players').html('<p><strong> <%= t 'put_out' %> '+x+' <%= t'  brown_footballer_for_4400_and_buy_now_for_10000_below_write_their_surnames_and_overall'%>. </strong></p>');
+        $('#players').html('<p><strong> <%= t 'put_out' %> '+x+' <%= t 'brown_footballer_for_4400_and_buy_now_for_10000_below_write_their_surnames_and_overall'%>. </strong></p>');
         for( var i =0; i<x; i++){
           var input = '<input name="players['+ i +']" class="form-control" placeholder="Player">';
           var overall = '<select name="overalls['+ i +']" class="select form-control">';
