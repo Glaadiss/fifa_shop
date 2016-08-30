@@ -1,3 +1,5 @@
+
+
 <style>
 *{
   color:black;
@@ -151,7 +153,7 @@
             <div class="col-md-7">
               <div class="col-md-1"></div>
               <div class="col-md-11">
-                <%= f.input :console_type, label: false , collection: ['Xbox One', 'Xbox 360', 'PlayStation 4','PlayStation 3'], prompt: 'Select Your Console'  %>
+                <%= f.input :console_type, label: false , collection: ['Xbox One', 'Xbox 360', 'PlayStation 4','PlayStation 3'], prompt: (t 'select_your_consolep')  %>
               </div>
             </div>
             <div class="col-md-5"></div>
@@ -160,7 +162,7 @@
             <div class="col-md-7">
               <div class="col-md-1"><i> <%= image_tag 'email/new-post-24.png'%> </i></div>
               <div class="col-md-11">
-                <%= f.input :console_email, label:false, placeholder: 'Console / GamerTag email address' %>
+                <%= f.input :console_email, label:false, placeholder: (t 'console_email_adressp') %>
               </div>
             </div>
             <div class="col-md-5"></div>
@@ -169,14 +171,14 @@
             <div class="col-md-7">
               <div class="col-md-1"><i> <%= image_tag 'klodka/lock-7-24.png'%> </i></div>
               <div class="col-md-11">
-                <%= f.input :console_password, label:false, placeholder: 'Console / GamerTag password' %>
+                <%= f.input :console_password, label:false, placeholder: (t 'console_passwordp') %>
               </div>
             </div>
             <div class="col-md-5"></div>
           </div>
 
 
-          <%= f.input :console_data, label:'Console / GamerTag birthday',
+          <%= f.input :console_data, label: (t 'console_birthdayp'),
           :as => :date, :start_year => Date.today.year - 3,:end_year => 1900%>
           <i><%= t 'console_tip' %> </i>
         </div>
@@ -190,7 +192,7 @@
         <div class="col-md-7">
           <div class="col-md-1"><i> <%= image_tag 'email/new-post-24.png'%> </i></div>
           <div class="col-md-11">
-            <%= f.input :web_email, label: false,placeholder: 'WebApp email adress' %>
+            <%= f.input :web_email, label: false,placeholder: (t 'webapp_emailp') %>
           </div>
         </div>
         <div class="col-md-5"></div>
@@ -199,7 +201,7 @@
         <div class="col-md-7">
           <div class="col-md-1"><i> <%= image_tag 'klodka/lock-7-24.png'%> </i></div>
           <div class="col-md-11">
-            <%= f.input :web_password, label: false ,  placeholder: 'WebApp password' %>
+            <%= f.input :web_password, label: false ,  placeholder: (t 'webapp_passwordp') %>
           </div>
         </div>
         <div class="col-md-5"></div>
@@ -208,7 +210,7 @@
         <div class="col-md-7">
           <div class="col-md-1"><i> <%= image_tag 'klodka/lock-7-24.png'%> </i></div>
           <div class="col-md-11">
-            <%= f.input :web_answer, label: false , placeholder: 'Webapp answer to secret question' %>
+            <%= f.input :web_answer, label: false , placeholder: (t 'webapp_answerp') %>
           </div>
         </div>
         <div class="col-md-5"></div>
@@ -226,7 +228,7 @@
         <div class="col-md-7">
           <div class="col-md-1"><i> <%= image_tag 'klodka/lock-7-24.png'%> </i></div>
           <div class="col-md-11">
-            <%= f.input :origin_answer, label: false,  placeholder: 'Origin answer to security question'   %>
+            <%= f.input :origin_answer, label: false,  placeholder: (t 'origin_answerp')   %>
           </div>
         </div>
         <div class="col-md-5"></div>
@@ -244,7 +246,7 @@
         <div class="col-md-7">
           <div class="col-md-1"><i> <%= image_tag 'email/new-post-24.png'%> </i></div>
           <div class="col-md-11">
-            <%= f.input :origin_email, label: false, placeholder: 'Email address' %>
+            <%= f.input :origin_email, label: false, placeholder: (t 'email_adressp') %>
           </div>
         </div>
         <div class="col-md-5"></div>
@@ -253,7 +255,7 @@
         <div class="col-md-7">
           <div class="col-md-1"><i> <%= image_tag 'klodka/lock-7-24.png'%> </i></div>
           <div class="col-md-11">
-            <%= f.input :origin_password, label: false ,  placeholder: 'Email password to your inbox' %>
+            <%= f.input :origin_password, label: false ,  placeholder: (t 'email_passwordp') %>
           </div>
         </div>
         <div class="col-md-5"></div>
@@ -270,7 +272,7 @@
         <div class="col-md-7">
           <div class="col-md-1"></div>
           <div class="col-md-11">
-            <%= f.input :payment_method, label: false , collection: ["PayPal","Skrill",'PaySafeCard', 'FUT 17 Coins'], prompt: 'Payment method'  %>
+            <%= f.input :payment_method, label: false , collection: ["PayPal","Skrill",'PaySafeCard', 'FUT 17 Coins'], prompt: (t 'payment_methodp') %>
           </div>
         </div>
         <div class="col-md-5"></div>
@@ -279,7 +281,7 @@
         <div class="col-md-7">
           <div class="col-md-1"><i> <%= image_tag 'email/new-post-24.png'%> </i></div>
           <div class="col-md-11">
-            <%= f.input :payment_email, label: false, placeholder: 'Payment email address'  %>
+            <%= f.input :payment_email, label: false, placeholder: (t 'payment_emailp')  %>
           </div>
         </div>
         <div class="col-md-5"></div>
