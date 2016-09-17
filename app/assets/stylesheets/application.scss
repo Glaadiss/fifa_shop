@@ -15,8 +15,50 @@
  @import "bootstrap-sprockets";
  @import "bootstrap";
 
+$opacity: 0.7;
+
+@media (max-width: 992px){
+
+  .col-md-1 > i{
+   display: none;
+  }
+
+}
+
+.form-control{
+  width: 400px;
+}
+
+.panel-heading {
+    padding: 1px 0px 0px 15px !important;
+}
+.panel-success > .panel-heading {
+  background-color: rgba(223,255, 216, $opacity) !important;
+}
+
+.panel-primary > .panel-heading {
+  background-color: rgba(51,122, 183, $opacity) !important;
+}
+
+.panel-warning > .panel-heading {
+  background-color: rgba(252,248, 227, $opacity) !important;
+
+}
+
+.panel-danger > .panel-heading {
+  background-color: rgba(242,222, 222, $opacity) !important;
+}
+.panel{
+  background-color: rgba(255,255, 255, 0.3) !important;
+
+}
+.panel-body{
+  background-color: rgba(255,255, 255, 0.3) !important;
+}
+
 body{
-  background-color: #333333
+  background-image: url('https://weu1-api.asm.skype.com/v1/objects/0-weu-d1-95465e54d8d24712b47564b746e3c23f/views/imgpsh_fullsize');
+  background-attachment:fixed;
 
 }
 *{

@@ -21,7 +21,7 @@ pl:
   payment_methodp: Metoda płatności
   payment_emailp: Adres email do płatności
   not_robotp: Nie jestem robotem
-  brown_footballer_for_4400_and_buy_now_for_10000_below_write_their_surnames_and_overall: brązowych zawodników za cenę wywoławczą 4400 i kup teraz 10000, poniżej wpisz ich nazwiska i podaj ocenę ogólną
+  brown_footballer_for_4400_and_buy_now_for_10000_below_write_their_surnames_and_overall: brązowych zawodników na okres 3 DNI, za cenę wywoławczą 4400 i kup teraz 10000
   put_out: Wystaw
   psc_key_will_be_send_on_your_email_adress: Kod PSC zostanie wysłany na Twój adres email.
   regulations: 'Regulamin'
@@ -42,16 +42,14 @@ pl:
   form: Formularz
   send: 'Wyślij'
   header: Sprzedaj swoje konta WebApp w FIFA 17 Ultimate Team!
-  second_header: 'FUTaccounts.com pozwala Ci zarabiać poprzez sprzedaż aktywnych kont WebApp w FUT 17.
-                  Sugerujemy aby do kont w FUT 17 utworzyć nowe skrzynki email, wymyślić swoje nazwy gamertagów, hasła i odpowiedzi na
-                  pytania awaryjne. Warto wszystko sobie zapisać przy tworzeniu! :)'
+  second_header: 'FUTaccounts.com pozwala Ci zarabiać poprzez sprzedaż dostępu do Twoich kont WebApp w FUT 17. Sugerujemy aby do kont w FUT 17 utworzyć nowe skrzynki email, wymyślić swoje nazwy gamertagów, hasła i odpowiedzi na pytania awaryjne. Warto wszystko sobie zapisać przy tworzeniu!'
   actual: 'Aktualne stawki:'
   form_title: 'Formularz sprzedaży konta '
-  form_header: 'Wypełnij poprawnie poniższy formularz aby sprzedać konto. Sprawdzimy dane które podałeś/aś i zmienimy je jeśli będą
+  form_header: 'Wypełnij poprawnie poniższy formularz aby sprzedać dostęp do konta. Sprawdzimy dane które podałeś/aś i zmienimy je jeśli będą
                 poprawne, następnie wyślemy Twoją zapłatę / kupimy zawodników. Nie powinno to potrwać dłużej niż 24h. DWUKROTNIE
                 SPRAWDŹ WSZYSTKIE POLA ABY UNIKNĄĆ OPÓŹNIEŃ.'
   instruction: 'Instrukcja'
-  requirements: 'Konto które chcesz nam sprzedać musi spełniać poniższe wymogi:'
+  requirements: 'Konto do którego dostęp chcesz nam sprzedać musi spełniać poniższe wymogi:'
   req_first: "Rynek transferowy w WebApp'ie musi być odblokowany, możesz to sprawdzić"
   req_first_here: "tutaj"
   req_first_next: ". Wskazówka: Aby odblokować rynek na koncie, rozegraj kilka spotkań lub wykonaj zadania menedżera."

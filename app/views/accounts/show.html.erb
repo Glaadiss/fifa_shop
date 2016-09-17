@@ -22,6 +22,10 @@
     attributes =  @account.attributes
     keys = attributes.keys
     values = attributes.values
+    pl_keys = ["id", "email", "facebook lub skype", "typ konsoli", "email konsoli", "hasło konsoli", "data urodzenia na konsoli", "web-app email",
+              "hasło web-app", "odpowiedź na pytanie web-app", "odpowiedź na pytanie origin", "email origin", "origin hasło", "metoda płatności",
+              "email do płatnośći", "confirmed", "failures", "token", "user_id", "language", "created_at", "updated_at"]
+    keys = pl_keys if @account.language == 'pl'
   %>
 
 
@@ -100,7 +104,7 @@
     <div class="panel-heading"><h4> Dostęp Origin </h4></div>
     <div class="panel-body">
       <%= link_to 'Strona: Origin', 'https://account.origin.com/cp-ui/security/index', target: "_blank", class: 'btn btn-warning'  %>
-      <%= link_to 'Poczta',  'http://'+values[11].partition('@').last, target: "_blank", class: 'btn btn-warning' %> 
+      <%= link_to 'Poczta',  'http://'+values[11].partition('@').last, target: "_blank", class: 'btn btn-warning' %>
       <hr>
         <div class="row">
           <div class="col-md-4">
