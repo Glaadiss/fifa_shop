@@ -23,7 +23,7 @@ class AccountsController < ApplicationController
     keys = @account.attributes.keys
     pl_hash = Hash[keys.zip(pl_keys)]
     failures = params[:account].to_a.select{ |par,val| val==par }.join(',')
-    failures = failures.map{|k| pl_hash[k] } if @account.language == 'pl'
+    failures = failures.split(',').map{|k| pl_hash[k] }.join(',') if @account.language == 'pl'
     @account.update_attributes(failures: failures, user_id: current_user.id)
     if @account.failures.present?
       AccountMailer.edit_email(@account).deliver_later if AppConfiguration.first.work?
