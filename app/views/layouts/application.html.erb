@@ -5,42 +5,49 @@
   <%= stylesheet_link_tag    'application', media: 'all' %>
   <%= javascript_include_tag 'application' %>
   <%= csrf_meta_tags %>
+  <link href="https://fonts.googleapis.com/css?family=Rajdhani:600" rel="stylesheet">
   <script src='https://www.google.com/recaptcha/api.js'></script>
 </head>
 <body>
   <nav class="navbar navbar-inverse">
-    <div class="container-fluid">
-      <div class="navbar-header">
-        <a class="navbar-brand" href="#">FUTaccounts</a>
-      </div>
+    <div class="container">
+
       <ul class="nav navbar-nav">
         <li><a href="/accounts/new"> <%= t 'regulations' %></a></li>
         <li><a href="/accounts/new"> <%= t 'form' %></a></li>
-        <% if user_signed_in? %>
-          <li><%= link_to('Edytuj konto', edit_user_registration_path) %></li>
-          <li><%= link_to('Zamówienia', accounts_path ) %></li>
-        <% end %>
-        <% if current_user.try(:role) == 2 %>
-          <li><%= link_to 'Pracownicy', userss_index_path %></li>
-          <li><%= link_to 'Dodaj moderatora', new_userss_path %></li>
-          <li><%= link_to 'Konfiguracja', edit_configuration_path(AppConfiguration.first) %> </li>
-        <% end %>
-      </ul>
 
-      <ul class="nav navbar-nav navbar-right">
+        <li style="background-color: rgba(0,0,0,0);"> <%= image_tag('/assets/images/logo.png', width: '240px')%> </li>
+
         <% if session[:locale] == 'en' %>
           <li><%= link_to 'ustaw język polski', locale: 'pl' %></li>
         <% else %>
           <li><%= link_to 'set english', locale: 'en' %></li>
         <% end %>
-        <li>
+
         <% if user_signed_in? %>
-          <%= link_to('<span class="glyphicon glyphicon-user"></span> Wyloguj'.html_safe, destroy_user_session_path, :method => :delete) %>
+          <li><%= link_to('<span class="glyphicon glyphicon-user"></span> Wyloguj'.html_safe, destroy_user_session_path, :method => :delete) %></li>
         <% else %>
-          <%= link_to('<span class="glyphicon glyphicon-log-in"></span> Login'.html_safe, new_user_session_path)  %>
+          <li><%= link_to('<span class="glyphicon glyphicon-log-in"></span> Login'.html_safe, new_user_session_path)  %></li>
         <% end %>
-        </li>
+
+
       </ul>
+      <% if user_signed_in? %>
+        <ul class="nav navbar-right">
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Akcje<span class="caret"></span></a>
+            <ul class="dropdown-menu">
+                <li><%= link_to('Edytuj konto', edit_user_registration_path) %></li>
+                <li><%= link_to('Zamówienia', accounts_path ) %></li>
+              <% if current_user.try(:role) == 2 %>
+                <li><%= link_to 'Pracownicy', userss_index_path %></li>
+                <li><%= link_to 'Dodaj moderatora', new_userss_path %></li>
+                <li><%= link_to 'Konfiguracja', edit_configuration_path(AppConfiguration.first) %> </li>
+              <% end %>
+             </ul>
+           </li>
+        </ul>
+      <% end %>
     </div>
   </nav>
 

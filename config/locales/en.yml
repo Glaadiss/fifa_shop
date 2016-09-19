@@ -1,7 +1,17 @@
 
 
 en:
-
+  console_type: 'Typ konsoli: '
+  console_email: 'Adres email konsoli: '
+  console_password: 'Hasło do konsoli: '
+  web_email: 'Adres email do WebApp: '
+  web_password: 'Hasło do WebApp: '
+  web_answer: 'Odpowiedź na sekretne pytanie do WebApp: '
+  origin_answer: 'Odpowiedź na sekretne pytanie do Origin: '
+  origin_email: 'Adres email do Origin: '
+  origin_password: 'Hasło do Origin: '
+  payment_method: 'Metoda płatności: '
+  payment_email: 'Adres email do płatności: '
   brown_footballer_for_4400_and_buy_now_for_10000_below_write_their_surnames_and_overall: bronze players for duration of 3 DAYS with start price 4400 and buy it now 10000. Write their names and enter overall ratings below
   put_out: List
   select_your_consolep:  Select your console

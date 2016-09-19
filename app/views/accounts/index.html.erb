@@ -3,6 +3,16 @@
 *{
   color: black;
 }
+
+.alert-success{
+  background-color: rgba(0,255,0,1);
+}
+.allert-info{
+  background-color: rgba(0, 0, 255, 1);
+}
+.alert-danger{
+  background-color: rgba(255, 0, 0, 1);
+}
 </style>
 
 <div class="container alert alert-info">
@@ -22,5 +32,6 @@
     <div class="col-md-2"><%= link_to ' Pokaż', account_path(account.token), class:'btn btn-info'%></div>
     <div class="col-md-2"></div>
     <!-- <div class="col-md-4"><%= link_to 'Usuń', account_path(account.token), method: :delete, class:'btn btn-danger', data:{confirm:'Napewno?'}%></div> -->
+
   </div><hr>
 <% end %>

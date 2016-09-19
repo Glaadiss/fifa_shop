@@ -8,14 +8,17 @@
 </style>
 <%= form_tag account_correction_path(@account.token), method: :put do %>
   <div class="row panel panel-info">
-    <div class="col-md-4">
+    <div class="col-md-3">
       <strong> Pole: </strong>
     </div>
-    <div class="col-md-4">
+    <div class="col-md-3">
       <strong> Wartość: </strong>
     </div>
-    <div class="col-md-4">
+    <div class="col-md-3">
       <strong> Zaznacz, jeżeli wymagana jest poprawa!</strong>
+    </div>
+    <div class="col-md-3">
+      <strong> Zamieniono na:</strong>
     </div>
   </div>
   <%
@@ -30,17 +33,17 @@
     <div class="panel-body">
       <% [1,2].each do |num| %>
         <div class="row">
-          <div class="col-md-4">
+          <div class="col-md-3">
             <% if num == 1 %>
               email
             <% else %>
             <%= t keys[num]  %>
             <% end %>
           </div>
-          <div class="col-md-4">
+          <div class="col-md-3">
             <%= values[num] %>
           </div>
-          <div class="col-md-4">
+          <div class="col-md-3">
             <%= check_box('account',keys[num], {}, keys[num]) %>
           </div>
         </div>
@@ -59,14 +62,18 @@
       <hr>
       <% [3,4,5,6].each do |num| %>
         <div class="row">
-          <div class="col-md-4">
+          <div class="col-md-3">
             <%= t keys[num] %>
           </div>
-          <div class="col-md-4">
+          <div class="col-md-3">
             <%= values[num] %>
           </div>
-          <div class="col-md-4">
+          <div class="col-md-1">
             <%= check_box('account',keys[num], {}, keys[num]) %>
+          </div>
+          <div class="col-md-5">
+            <%= hidden_field_tag( 'new_fields[]', "#{t keys[num]} ") if num == 4 || num == 5 %>
+            <%= text_field_tag('new_fields[]', nil, class: 'form-control', placeholder: (t keys[num])) if num == 4 || num == 5  %>
           </div>
         </div>
       <% end %>
@@ -81,14 +88,18 @@
       <hr>
       <% [7,8,9].each do |num| %>
         <div class="row">
-          <div class="col-md-4">
+          <div class="col-md-3">
             <%= t keys[num] %>
           </div>
-          <div class="col-md-4">
+          <div class="col-md-3">
             <%= values[num] %>
           </div>
-          <div class="col-md-4">
+          <div class="col-md-1">
             <%= check_box('account',keys[num], {}, keys[num]) %>
+          </div>
+          <div class="col-md-5">
+            <%= hidden_field_tag 'new_fields[]', "#{t keys[num]} " %>
+            <%= text_field_tag('new_fields[]', nil, class: 'form-control', placeholder: (t keys[num]))  %>
           </div>
         </div>
       <% end %>
@@ -103,36 +114,49 @@
       <%= link_to 'Poczta',  'http://'+values[11].partition('@').last, target: "_blank", class: 'btn btn-warning' %>
       <hr>
         <div class="row">
-          <div class="col-md-4">
+          <div class="col-md-3">
             <%= t keys[10] %>
           </div>
-          <div class="col-md-4">
+          <div class="col-md-3">
             <%= values[10] %>
           </div>
-          <div class="col-md-4">
+          <div class="col-md-1">
             <%= check_box('account',keys[10], {}, keys[10]) %>
           </div>
+          <div class="col-md-5">
+            <%= hidden_field_tag 'new_fields[]', "#{t keys[10]} " %>
+            <%= text_field_tag('new_fields[]', nil, class: 'form-control', placeholder: (t keys[10]))  %>
+          </div>
         </div>
+        <hr>
         <div class="row">
-          <div class="col-md-4">
+          <div class="col-md-3">
             Skrzynka email
           </div>
-          <div class="col-md-4">
+          <div class="col-md-3">
             <%= values[11] %>
           </div>
-          <div class="col-md-4">
+          <div class="col-md-1">
             <%= check_box('account',keys[11], {}, keys[11]) %>
+          </div>
+          <div class="col-md-5">
+            <%= hidden_field_tag 'new_fields[]', "#{t keys[11]} " %>
+            <%= text_field_tag('new_fields[]', nil, class: 'form-control', placeholder: (t keys[11]))  %>
           </div>
         </div>
         <div class="row">
-          <div class="col-md-4">
+          <div class="col-md-3">
             Hasło do skrzynki email
           </div>
-          <div class="col-md-4">
+          <div class="col-md-3">
             <%= values[12] %>
           </div>
-          <div class="col-md-4">
+          <div class="col-md-1">
             <%= check_box('account',keys[12], {}, keys[12]) %>
+          </div>
+          <div class="col-md-5">
+            <%= hidden_field_tag 'new_fields[]', "#{t keys[12]} " %>
+            <%= text_field_tag('new_fields[]', nil, class: 'form-control', placeholder: (t keys[12]))  %>
           </div>
         </div>
     </div>
@@ -143,14 +167,19 @@
     <div class="panel-body">
       <% [13,14].each do |num| %>
         <div class="row">
-          <div class="col-md-4">
+          <div class="col-md-3">
             <%= t keys[num] %>
           </div>
-          <div class="col-md-4">
+          <div class="col-md-3">
             <%= values[num] %>
           </div>
-          <div class="col-md-4">
+          <div class="col-md-3">
             <%= check_box('account',keys[num], {}, keys[num]) %>
+          </div>
+          <div class="col-md-3">
+            <% if num == 14 %>
+              <input type="checkbox" id="paid"> <strong>Zapłacono?</strong>
+            <% end %>
           </div>
         </div>
       <% end %>
@@ -164,24 +193,24 @@
     <div class="panel-heading"><h4>Zawodnicy do wymiany</h4></div>
     <div class="panel-body">
       <div class="row">
-        <div class="col-md-4">
+        <div class="col-md-3">
           Zawodnicy:
         </div>
-        <div class="col-md-4">
+        <div class="col-md-3">
 
         </div>
-        <div class="col-md-4">
+        <div class="col-md-3">
           <%= check_box('account','players', {}, 'players') %>
         </div>
       </div>
       <% @account.players.each do |player| %>
         <div class="row">
-          <div class="col-md-4">
+          <div class="col-md-3">
           </div>
-          <div class="col-md-4">
+          <div class="col-md-3">
             <%= player.name %> <strong> <%= player.overall %> </strong>
           </div>
-          <div class="col-md-4">
+          <div class="col-md-3">
 
           </div>
         </div>

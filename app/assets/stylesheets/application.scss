@@ -15,7 +15,50 @@
  @import "bootstrap-sprockets";
  @import "bootstrap";
 
+*{
+  font-family: 'Rajdhani', sans-serif ;
+}
+
 $opacity: 0.7;
+
+
+@media (min-width:768px) {
+/* centered navigation */
+ .nav.navbar-nav {
+     float: left;
+ }
+ .nav.navbar-nav {
+     clear: left;
+     float: left;
+     margin: 0;
+     margin-top: 20px;
+     padding: 0;
+     position: relative;
+     left: 50%;
+     text-align: center;
+ }
+ .nav.navbar-nav > li {
+     position: relative;
+     right: 50%;
+
+ }
+ .nav.navbar-nav li {
+    text-align: left;
+    background-color: rgba(40,40,40,0.5);
+    border-radius: 100px;
+    margin-left: 3px;
+    margin-right: 3px;
+ }
+}
+
+.navbar{
+  height: 80px;
+  margin-bottom: 120px;
+}
+.navbar-inverse{
+  background-image: url('/assets/images/belka2.png');
+
+}
 
 @media (max-width: 992px){
 
@@ -31,9 +74,12 @@ $opacity: 0.7;
 
 .panel-heading {
     padding: 1px 0px 0px 15px !important;
+    border-bottom: 0px;
+    padding-bottom: 8px !important;
 }
 .panel-success > .panel-heading {
-  background-color: rgba(223,255, 216, $opacity) !important;
+  background-image: url('/assets/images/belka.png');
+  color: black !important;
 }
 
 .panel-primary > .panel-heading {
@@ -57,7 +103,7 @@ $opacity: 0.7;
 }
 
 body{
-  background-image: url('https://weu1-api.asm.skype.com/v1/objects/0-weu-d1-95465e54d8d24712b47564b746e3c23f/views/imgpsh_fullsize');
+  background-image: url('/assets/images/background.png');
   background-attachment:fixed;
 
 }
