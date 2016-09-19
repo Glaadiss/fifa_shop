@@ -23,26 +23,29 @@ $opacity: 0.7;
 
 
 @media (min-width:768px) {
+  #logo{
+      position: absolute;
+      left: 50%;
+      margin-left: -130px !important;  /* 50% of your logo width */
+      display: block;
+  }
+  .navbar-left{
+    margin-left: 7%;
+  }
+  .navbar-right{
+    margin-right: 16%;
+  }
 /* centered navigation */
- .nav.navbar-nav {
-     float: left;
+ .navbar{
+   height: 80px !important;
  }
- .nav.navbar-nav {
-     clear: left;
-     float: left;
-     margin: 0;
-     margin-top: 20px;
-     padding: 0;
-     position: relative;
-     left: 50%;
-     text-align: center;
+ .navbar-nav{
+   margin-top: 20px;
  }
- .nav.navbar-nav > li {
-     position: relative;
-     right: 50%;
-
+ .nav.navbar-nav > li > a {
+     font-size: 18px;
  }
- .nav.navbar-nav li {
+ .navbar-nav > li {
     text-align: left;
     background-color: rgba(40,40,40,0.5);
     border-radius: 100px;
@@ -52,7 +55,7 @@ $opacity: 0.7;
 }
 
 .navbar{
-  height: 80px;
+  min-height: 80px;
   margin-bottom: 120px;
 }
 .navbar-inverse{
@@ -83,11 +86,14 @@ $opacity: 0.7;
 }
 
 .panel-primary > .panel-heading {
-  background-color: rgba(51,122, 183, $opacity) !important;
+  color: black !important;
+  // background-color: rgba(51,122, 183, $opacity) !important;
+  background-color: rgba(153,204, 119, 1) !important;
 }
 
 .panel-warning > .panel-heading {
-  background-color: rgba(252,248, 227, $opacity) !important;
+  color: black !important;
+  background-color: #6699cc !important;
 
 }
 
@@ -106,11 +112,14 @@ body{
   background-image: url('/assets/images/background.png');
   background-attachment:fixed;
 
+
 }
 *{
   color: white;
 }
-
+p{
+  font-size: 14px;
+}
 input[type='checkbox'] {
     -webkit-appearance:none;
     width:30px;

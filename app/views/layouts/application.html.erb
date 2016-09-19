@@ -12,28 +12,39 @@
   <nav class="navbar navbar-inverse">
     <div class="container">
 
-      <ul class="nav navbar-nav">
-        <li><a href="/accounts/new"> <%= t 'regulations' %></a></li>
+      <ul class="nav navbar-nav navbar-left">
         <li><a href="/accounts/new"> <%= t 'form' %></a></li>
+        <li><a href="/accounts/new"> <%= t 'regulations' %></a></li>
+      </ul>
 
-        <li style="background-color: rgba(0,0,0,0);"> <%= image_tag('/assets/images/logo.png', width: '240px')%> </li>
+        <li id="logo" style="background-color: rgba(0,0,0,0); margin-left:40px; margin-right: 40px;"> <%= image_tag('/assets/images/logo.png', width: '260px')%> </li>
 
-        <% if session[:locale] == 'en' %>
-          <li><%= link_to 'ustaw język polski', locale: 'pl' %></li>
-        <% else %>
-          <li><%= link_to 'set english', locale: 'en' %></li>
-        <% end %>
 
+
+
+
+      </ul>
+
+      <ul class="nav navbar-nav navbar-right">
         <% if user_signed_in? %>
           <li><%= link_to('<span class="glyphicon glyphicon-user"></span> Wyloguj'.html_safe, destroy_user_session_path, :method => :delete) %></li>
         <% else %>
           <li><%= link_to('<span class="glyphicon glyphicon-log-in"></span> Login'.html_safe, new_user_session_path)  %></li>
         <% end %>
+        <% if session[:locale] == 'en' %>
+          <!-- <li><%= link_to 'ustaw język polski', locale: 'pl' %></li> -->
+          <li>
+            <a style="float: left; margin:0; padding-right:2px;"href="/?locale=pl"><%= image_tag '/assets/images/en.png', width: '24px'%></a>
+            <a style="float: left; margin:0; padding-left:2px;" href="/?locale=pl"><%= image_tag '/assets/images/pl.png', width: '12px'%></a>
+          </li>
+        <% else %>
+          <li>
+            <a style="float: left; margin:0; padding-right:2px;"href="/?locale=en"><%= image_tag '/assets/images/pl.png', width: '24px'%></a>
+            <a style="float: left; margin:0; padding-left:2px;" href="/?locale=en"><%= image_tag '/assets/images/en.png', width: '12px'%></a>
+          </li>
+        <% end %>
 
-
-      </ul>
-      <% if user_signed_in? %>
-        <ul class="nav navbar-right">
+        <% if user_signed_in? %>
           <li class="dropdown">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Akcje<span class="caret"></span></a>
             <ul class="dropdown-menu">
@@ -46,8 +57,9 @@
               <% end %>
              </ul>
            </li>
-        </ul>
-      <% end %>
+        <% end %>
+      </ul>
+
     </div>
   </nav>
 
