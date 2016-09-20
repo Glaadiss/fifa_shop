@@ -4,8 +4,12 @@
   color:black;
 }
 
-
 </style>
+<div style="background-color: black;">
+<% if current_user.role == 2 && @account.confirmed == true%>
+  <h2 style="color: white;"> <%= @account.new_fields %> </h2>
+<% end %>
+</div>
 <%= form_tag account_correction_path(@account.token), method: :put do %>
   <div class="row panel panel-info">
     <div class="col-md-3">

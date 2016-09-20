@@ -22,6 +22,10 @@
 $opacity: 0.7;
 
 
+.navbar-inverse .navbar-left > li:first-child > a{
+  color: #FDCC00 !important;
+}
+
 .btn-success{
   color: black;
   border: 1px solid #FDCC00;
@@ -67,7 +71,7 @@ $opacity: 0.7;
 
 .navbar{
   min-height: 149px;
-  margin-bottom: 120px;
+  margin-bottom: 70px;
 }
 .navbar-inverse{
   background-image: url('/assets/images/belka2.png');
@@ -109,15 +113,20 @@ $opacity: 0.7;
 }
 
 .panel-danger > .panel-heading {
-  background-color: rgba(242,222, 222, $opacity) !important;
+  background-color: rgba(242,222, 222, $opacity);
 }
 .panel{
-  background-color: rgba(255,255, 255, 0.3) !important;
+  background-color: rgba(255,255, 255, 0.5);
 
 }
 .panel-body{
-  background-color: rgba(255,255, 255, 0.3) !important;
+  background-color: rgba(255,255, 255, 0.3);
 }
+.none {
+  background-color: rgba(255,255,255,0) !important;
+}
+
+
 
 body{
   background-image: url('/assets/images/background.png');
