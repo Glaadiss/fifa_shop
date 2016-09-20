@@ -178,7 +178,22 @@
           </div>
           <div class="col-md-3">
             <% if num == 14 %>
-              <input type="checkbox" id="paid"> <strong>Zapłacono?</strong>
+              <div id="paid" class='btn btn-success'> Prześlij informacje o zapłacie!</div>
+
+              <script>
+                $(document).ready(function(){
+                  var acc_id = "<%=@account.id%>"
+                  $('#paid').click(function(){
+                    alert('Wysłano informację o przesłaniu środków.')
+                    $.ajax({
+                      type: "POST",
+                      url: '/paid',
+                      data: {id: acc_id},
+                      success: function(){ }
+                    });
+                  })
+                })
+              </script>
             <% end %>
           </div>
         </div>

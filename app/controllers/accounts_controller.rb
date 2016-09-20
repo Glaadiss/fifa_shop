@@ -12,6 +12,7 @@ class AccountsController < ApplicationController
   end
 
   def show
+    @config = AppConfiguration.first
     @account = Account.find_by_token(params[:id])
   end
 
@@ -81,13 +82,22 @@ class AccountsController < ApplicationController
         end
       end
       if AppConfiguration.first.work?
-        AccountMailer.confirmation_email(@account).deliver
-        AccountMailer.notify_email(@account).deliver
+        AccountMailer.confirmation_email(@account).deliver_later
+        AccountMailer.notify_email(@account).deliver_later
       end
       redirect_to root_path, notice: 'Pomyślnie wypełniono formularz, sprawdź skrzynkę pocztową'
     else
       render 'edit', alert: 'Wypełnij jeszcze raz :('
     end
+  end
+
+  def paid
+    @config = AppConfiguration.first
+    @account = Account.find(params[:id])
+    if AppConfiguration.first.work?
+      AccountMailer.paid_email(@account).deliver_later
+    end
+    redirect_to root_path
   end
 
   private

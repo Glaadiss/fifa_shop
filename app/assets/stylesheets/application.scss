@@ -22,11 +22,22 @@
 $opacity: 0.7;
 
 
+.btn-success{
+  color: black;
+  border: 1px solid #FDCC00;
+  background-color: #FDCC00 !important;
+}
+.btn-success:hover{
+  color: black;
+  background-color: #ECBB00 !important;
+}
+
+
 @media (min-width:768px) {
   #logo{
       position: absolute;
       left: 50%;
-      margin-left: -130px !important;  /* 50% of your logo width */
+      margin-left: -150px !important;  /* 50% of your logo width */
       display: block;
   }
   .navbar-left{
@@ -40,7 +51,7 @@ $opacity: 0.7;
    height: 80px !important;
  }
  .navbar-nav{
-   margin-top: 20px;
+   margin-top: 50px;
  }
  .nav.navbar-nav > li > a {
      font-size: 18px;
@@ -55,7 +66,7 @@ $opacity: 0.7;
 }
 
 .navbar{
-  min-height: 80px;
+  min-height: 149px;
   margin-bottom: 120px;
 }
 .navbar-inverse{

@@ -16,12 +16,17 @@ class AccountMailer < ApplicationMailer
 
   def information_email(account)
     @account = account
-    mail(to: @account.email, subject: 'Dziękujemy transakcje' )
+    mail(to: @account.email, subject: 'Dziękujemy za transakcje' )
   end
 
   def edit_email(account)
     @account = account
 
     mail(to: @account.email, subject: 'Pola do poprawy')
+  end
+
+  def paid_email(account)
+    @account = account
+    mail(to: @account.email, subject: 'Środki przesłane')
   end
 end

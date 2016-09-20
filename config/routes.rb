@@ -8,6 +8,7 @@ Rails.application.routes.draw do
     resources :accounts do
       put '/correction' => 'accounts#correction'
     end
+    post 'paid' => 'accounts#paid'
     devise_for :users
     get '*path', to: redirect("/#{I18n.default_locale}/%path")
     get '', to: redirect("/#{I18n.default_locale}")

@@ -13,13 +13,14 @@
 
 <div class="panel panel-success">
   <div class="panel-heading"><h1> <%= t 'header' %> </h1></div>
-  <div class="panel-body"><p> <%= t 'second_header' %> </p>
+  <div class="panel-body"><h4> <%= t 'second_header' %> </h4>
 
 <div class="panel panel-primary">
   <div class="panel-heading"><h3> <%= t 'actual' %></h3></div>
   <div class="panel-body">
     <% if session[:locale] == 'pl' %>
-      <table class="table table-striped">
+
+      <table class="table table-striped" >
         <thead>
           <tr>
             <td> <strong> Konsola</strong></td>
@@ -94,13 +95,13 @@
 </div>
 <div class="panel panel-success">
   <div class="panel-heading"><h1> <%= t 'form_title' %></h1></div>
-  <div class="panel-body"> <p> <%= t 'form_header' %> </p>
+  <div class="panel-body"> <h4> <%= t 'form_header' %> </h4>
 
 
 <div class="panel panel-warning">
   <div class="panel-heading"><h2> <%= t 'instruction' %></h2></div>
   <div class="panel-body">
-    <h5> <%= t 'requirements' %></h5>
+    <h4> <%= t 'requirements' %></h4>
     <ul>
       <li> <%= t 'req_first' %> <%=link_to (t 'req_first_here'), "https://www.easports.com/fifa/ultimate-team/web-app", target: "_blank" %> <i><%= t 'req_first_next' %> </i> </li>
       <li> <%= t 'req_second' %> </li>
@@ -111,7 +112,7 @@
 
 <div class="panel panel-danger">
   <div class="panel-heading"><h2> <%= t 'warning' %> </h1></div>
-  <div class="panel-body"><p> <%= t 'final_info' %> </p> </div>
+  <div class="panel-body"><h4> <%= t 'final_info' %> </h4> </div>
 </div>
 
 <%= simple_form_for @account do |f| %>
@@ -290,13 +291,16 @@
       <div id="players"></div>
     </div>
   </div>
-   <div class="g-recaptcha" data-sitekey="6LerqCcTAAAAAPNQJVfRCx-9FeqVPL_31VYqTllc"></div>
-  <% if @account.confirmed == true %>
-    <%= f.button :submit, class: 'btn btn-warning', value: 'To konto zostało już potwierdzone!' %>
-  <% else %>
-    <%= f.button :submit, class: 'btn btn-success', value: (t 'send') %>
-  <% end %>
 
+   <div class="g-recaptcha" data-sitekey="6LerqCcTAAAAAPNQJVfRCx-9FeqVPL_31VYqTllc"></div>
+  <hr>
+  <% if @account.confirmed == true %>
+    <%= f.button :submit, class: 'btn btn-warning', value: 'To konto zostało już potwierdzone!', disabled: true %>
+  <% elsif @config.work?  %>
+    <%= f.button :submit, class: 'btn btn-success', value: (t 'send') %>
+  <% else %>
+    <%= f.button :submit, class: 'btn btn-warning', value: (t 'try_again_later'), disabled: true %>
+  <% end %>
   <% end %>
 </div>
 </div>

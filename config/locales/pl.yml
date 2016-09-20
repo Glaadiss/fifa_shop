@@ -8,6 +8,7 @@ pl:
       description: ' Opis qwewq ewqewqeq  '
   accounts:
     new:
+  try_again_later: Panel jest wyłączony, proszę spróbować później!
   select_your_consolep:  Wybierz typ konsoli
   console_email_adressp: Konsola / GamerTag adres email
   console_passwordp: Konsola / GamerTag hasło
