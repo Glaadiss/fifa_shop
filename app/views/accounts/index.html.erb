@@ -30,7 +30,9 @@
     <div class="col-md-2"> <strong><%= account.payment_method %></strong></div>
     <div class="col-md-2"> <strong> <%= account.user.email if account.user_id.present? %> </strong> </div>
     <div class="col-md-1"><%= link_to ' Pokaż', account_path(account.token), class:'btn btn-info'%></div>
-    <div class="col-md-1"><%= link_to 'Usuń', account_path(account.token), method: :delete, class:'btn btn-danger', data:{confirm:'Napewno?'}%></div>
+    <% if current_user.role == 2 %>
+      <div class="col-md-1"><%= link_to 'Usuń', account_path(account.token), method: :delete, class:'btn btn-danger', data:{confirm:'Napewno?'}%></div>
+    <% end %>
     <div class="col-md-2"> <strong> <%= account.created_at.strftime("%d %b. %Y %H:%M") %></strong></div>
 
   </div><hr>
