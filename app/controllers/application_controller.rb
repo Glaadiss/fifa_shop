@@ -4,7 +4,7 @@ class ApplicationController < ActionController::Base
   protect_from_forgery with: :exception
 
   before_action :set_locale
-  before_action :locale_from_ip
+  # before_action :locale_from_ip
 
   def set_locale
     session[:locale] = params[:locale] if params[:locale].present?
