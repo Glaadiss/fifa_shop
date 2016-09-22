@@ -102,8 +102,10 @@
             <%= check_box('account',keys[num], {}, keys[num]) %>
           </div>
           <div class="col-md-5">
-            <%= hidden_field_tag 'new_fields[]', "#{t keys[num]} " %>
-            <%= text_field_tag('new_fields[]', nil, class: 'form-control', placeholder: (t keys[num]))  %>
+            <% unless num == 9 %>
+              <%= hidden_field_tag 'new_fields[]', "#{t keys[num]} " %>
+              <%= text_field_tag('new_fields[]', nil, class: 'form-control', placeholder: (t keys[num]))  %>
+            <% end %>
           </div>
         </div>
       <% end %>
@@ -194,13 +196,16 @@
                 $(document).ready(function(){
                   var acc_id = "<%=@account.id%>"
                   $('#paid').click(function(){
-                    alert('Wysłano informację o przesłaniu środków.')
-                    $.ajax({
-                      type: "POST",
-                      url: '/paid',
-                      data: {id: acc_id},
-                      success: function(){ }
-                    });
+                    var bool = confirm('Czy na pewno?')
+                    if (bool){
+                      alert('Wysłano informację o przesłaniu środków.')
+                      $.ajax({
+                        type: "POST",
+                        url: '/paid',
+                        data: {id: acc_id},
+                        success: function(){ }
+                      });
+                    }
                   })
                 })
               </script>

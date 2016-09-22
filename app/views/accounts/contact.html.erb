@@ -14,17 +14,39 @@
 <div class="panel panel-success">
   <div class="panel-heading"><h1> Kontakt </h1></div>
   <div class="panel-body">
-    <div id='SkypeButton_Call_live:futkonta_1'>
-     <script type="text/javascript">
-     Skype.ui({
-     "name": "chat",
-     "element": "SkypeButton_Call_live:futkonta_1",
-     "participants": ["live:futkonta"],
-     "imageSize": 32
-     });
-     </script>
+    <div class="row">
+
+      <div class="col-md-4">
+        <%= image_tag '/assets/images/skype.png'%>
+      </div>
+
+      <div class="col-md-2">
+        <div id='SkypeButton_Call_live:futkonta_1' style="margin-top: 45px;">
+          <script type="text/javascript">
+          Skype.ui({
+          "name": "chat",
+          "element": "SkypeButton_Call_live:futkonta_1",
+          "participants": ["live:futkonta"],
+          "imageSize": 32
+          });
+          </script>
+        </div>
+      </div>
+
     </div>
-    <div class="fb-like" data-href="https://www.facebook.com/FUTaccounts" data-layout="standard" data-action="like" data-size="small" data-show-faces="true" data-share="true"></div>
+    <hr>
+    <div class="row">
+
+      <div class="col-md-4">
+        <a href= "https://www.facebook.com/FUTaccounts/" > <%= image_tag '/assets/images/fb.png'%> </a>
+      </div>
+
+      <div class="col-md-2">
+        <div class="fb-like" style="margin-top: 45px;" data-href="https://www.facebook.com/FUTaccounts" data-layout="standard" data-action="like" data-size="small" data-show-faces="true" data-share="true"></div>
+      </div>
+
+    </div>
+
 
 
 

@@ -67,7 +67,7 @@ pl:
   origin_password: 'Hasło do Origin: '
   payment_method: 'Metoda płatności: '
   payment_email: 'Adres email do płatności: '
-  form: Sprzedaj Konto!
+  form: Sprzedaj konto!
   contact: Kontakt
   send: 'Wyślij'
   header: Sprzedaj swoje konta WebApp w FIFA 17 Ultimate Team!
