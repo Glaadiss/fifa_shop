@@ -115,7 +115,6 @@
     <div class="panel-heading"><h4> Dostęp Origin </h4></div>
     <div class="panel-body">
       <%= link_to 'Strona: Origin', 'https://account.origin.com/cp-ui/security/index', target: "_blank", class: 'btn btn-warning'  %>
-      <%= link_to 'Poczta',  'http://'+values[11].partition('@').last, target: "_blank", class: 'btn btn-warning' %>
       <hr>
         <div class="row">
           <div class="col-md-3">
@@ -132,37 +131,44 @@
             <%= text_field_tag('new_fields[]', nil, class: 'form-control', placeholder: (t keys[10]))  %>
           </div>
         </div>
-        <hr>
-        <div class="row">
-          <div class="col-md-3">
-            Skrzynka email
-          </div>
-          <div class="col-md-3">
-            <%= values[11] %>
-          </div>
-          <div class="col-md-1">
-            <%= check_box('account',keys[11], {}, keys[11]) %>
-          </div>
-          <div class="col-md-5">
-            <%= hidden_field_tag 'new_fields[]', "#{t keys[11]} " %>
-            <%= text_field_tag('new_fields[]', nil, class: 'form-control', placeholder: (t keys[11]))  %>
-          </div>
+    </div>
+  </div>
+
+  <div class="panel panel-info" style="">
+    <div class="panel-heading"><h4> Konto email </h4></div>
+    <div class="panel-body">
+      <%= link_to 'Poczta',  'http://'+values[11].partition('@').last, target: "_blank", class: 'btn btn-warning' %>
+      <hr>
+      <div class="row">
+        <div class="col-md-3">
+          Skrzynka email
         </div>
-        <div class="row">
-          <div class="col-md-3">
-            Hasło do skrzynki email
-          </div>
-          <div class="col-md-3">
-            <%= values[12] %>
-          </div>
-          <div class="col-md-1">
-            <%= check_box('account',keys[12], {}, keys[12]) %>
-          </div>
-          <div class="col-md-5">
-            <%= hidden_field_tag 'new_fields[]', "#{t keys[12]} " %>
-            <%= text_field_tag('new_fields[]', nil, class: 'form-control', placeholder: (t keys[12]))  %>
-          </div>
+        <div class="col-md-3">
+          <%= values[11] %>
         </div>
+        <div class="col-md-1">
+          <%= check_box('account',keys[11], {}, keys[11]) %>
+        </div>
+        <div class="col-md-5">
+          <%= hidden_field_tag 'new_fields[]', "#{t keys[11]} " %>
+          <%= text_field_tag('new_fields[]', nil, class: 'form-control', placeholder: (t keys[11]))  %>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-3">
+          Hasło do skrzynki email
+        </div>
+        <div class="col-md-3">
+          <%= values[12] %>
+        </div>
+        <div class="col-md-1">
+          <%= check_box('account',keys[12], {}, keys[12]) %>
+        </div>
+        <div class="col-md-5">
+          <%= hidden_field_tag 'new_fields[]', "#{t keys[12]} " %>
+          <%= text_field_tag('new_fields[]', nil, class: 'form-control', placeholder: (t keys[12]))  %>
+        </div>
+      </div>
     </div>
   </div>
 
