@@ -4,20 +4,20 @@ class ApplicationController < ActionController::Base
   protect_from_forgery with: :exception
 
   before_action :set_locale
-  # before_action :locale_from_ip
+  before_action :locale_from_ip
 
   def set_locale
     session[:locale] = params[:locale] if params[:locale].present?
-    I18n.locale = params[:locale] if params[:locale].present?
+    session[:locale].present? ? I18n.locale = session[:locale] : I18n.locale = 'pl'
   end
 
-  # def locale_from_ip
-  #   if session[:locale].nil? && Geocoder.search(request.remote_ip).first.country == "Poland"
-  #     session[:locale] = "pl"
-  #   elsif session[:locale].nil?
-  #     session[:locale] = "en"
-  #   end
-  # end
+  def locale_from_ip
+    if session[:locale].nil? && Geocoder.search(request.remote_ip).first.country == "Poland"
+      session[:locale] = "pl"
+    elsif session[:locale].nil?
+      session[:locale] = "en"
+    end
+  end
 
   def default_url_option ( options = {})
     session[:locale] = I18n.locale
