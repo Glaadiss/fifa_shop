@@ -7,7 +7,34 @@ pl:
       regulations: ' Regulamin '
       description: ' Opis qwewq ewqewqeq  '
   accounts:
-    new:
+  newi: "Na każdej konsoli możliwe jest stworzenie 10 kont FUT co półtora miesiąca. Stwórz i sprzedaj 10 kont już teraz, za 45 dni możesz znów zarobić!"
+  privacy: Polityka prywatności
+  privacy_1: FUTaccounts.com dba o prywatność swoich użytkowników. Jesteśmy w 100% zaangażowani w zapewnianie bezpieczeństwa danych które nam dostarczacie. 
+  privacy_3: Nasza polityka zapewnia nie zbieranie żadnych danych od Ciebie jako klienta, bez poinformowania Cię o tym w pierwszej kolejności. Zawsze wyraźnie informujemy, jakie dane będą nam potrzebne do danego zamówienia.
+  privacy_2: Jeśli masz jakieś niejasności, lub chciałbyś zadać pytania na temat bezpieczeństwa swoich danych, skontaktuj się z nami.
+  terms: Regulamin
+  topic_1: Akceptacja warunków regulaminu
+  term_1: Za każdym razem Ty jako użytkownik korzystając z portalu zgadzasz się przestrzegać naszego regulaminu, zastrzegamy sobie wszelkie prawa do zmiany lub modyfikacji któregokolwiek z postanowień, kiedy uznamy to za konieczne.
+  topic_2:  Nasza działalność
+  term_2: Zgadzasz się, że właściciele tej strony internetowej rezerwują sobie wyłącznie prawo i mogą w każdej chwili i bez uprzedzenia oraz ponoszenia odpowiedzialności wobec Ciebie, zmieniać lub zamknąć niniejszą stronę internetową i swoje usługi, na stałe lub czasowo. Nie ponosimy odpowiedzialności za aktualność, usunięcie, usterki bazy danych, niedokładność lub nienależyte dostarczania danych lub informacji. Płatności za zlecenia są zazwyczaj wykonywane w czasie do 24 godzin, jednakże mogą one w niektórych przypadkach trwać do 5 dni roboczych.
+  topic_3: Co zapewniamy
+  term_3: 'FUTaccounts.com zapewnia użytkownikom usługę, która polega na kupnie od Ciebie dostępu do Twoich kont FIFA Ultimate Team i profili konsolowych. Nie kupujemy kont samych w sobie, lecz dostęp do nich.  Konta przez cały czas pozostają w grze, nie są z niej usuwane.Konta zawsze pozostają własnością EA Sports, FIFA, Sony i Microsoft. Nie jesteśmy w żaden sposób powiązani z EA Sports, FIFA, Sony lub Microsoft'
+  topic_4: 'Obowiążki użytkownika'
+  term_4: Korzystając z naszej witryny zgadzasz się aby dostarczać nam w 100% prawdziwe dane. Po przesłaniu formularza sprzedaży konta za pośrednictwem naszej strony internetowej, automatycznie wyrażasz zgodę na nasze Warunki Użytkowania, które możemy edytować w dowolnym czasie, gdy uznamy to za konieczne.
+  topic_5: Obowiążki Użytkownika
+  term_5: Dane rejestracyjne i inne dane osobowe, które możemy gromadzić podlegają warunkom naszej Polityki Prywatności.
+  topic_6: Reguły postępowania
+  term_6: 'Zgadzasz się, że nasza strona internetowa może narazić użytkownika na treści, które mogą być niewłaściwe lub obraźliwe. Nie będziemy odpowiedzialni w żaden sposób za treści, które pojawia się na tej stronie internetowej, ani za jakiekolwiek błędy lub omyłki.Świadomie zgadzasz się, że korzystając z tej witryny internetowej lub dowolnej usługi  tu dostępnej nie będziesz:  popełniać zachowań, które mogą być niezgodne z prawem, zawierające groźby, szkodliwe, obraźliwe, napastliwe, zniesławiające, oszczercze, wulgarne, obsceniczne, budzące zastrzeżenia, pornograficzne, zakłócające lub utrudniające pracę tego serwisu lub dowolnej usługi przez niego świadczonej, zakażanie wirusami lub innym szkodliwym oprogramowaniem, dające  podstawę do odpowiedzialności cywilnej lub karnej, które są lub mogą naruszyć obowiązujące prawo lokalne, krajowe lub międzynarodowe.'
+  topic_7: Usługi stron trzecich.
+  term_7: Towary i usługi stron trzecich mogą być reklamowane i / lub udostępniane na, lub za pośrednictwem tej strony internetowej. Oświadczenia złożone w odniesieniu do produktów i usług świadczonych przez strony trzecie są objęte polityką i oświadczeniami złożonymi przez strony trzecie. Nie ponosimy odpowiedzialności za kontakty lub interakcje z nimi.
+  topic_8: ZRZECZENIE SIĘ GWARANCJI. 
+  term_8: ROZUMIESZ I ZGADZASZ SIE ŻE TWOJE KORZYSTANIE ZE STRONY I USŁUG LUB ZAWARTOSCI JEST NA WŁASNĄ ODPOWIEDZIALNOŚĆ WSZYSTKO JEST DOSTARCZANE (TAK JAK JEST) WYRAŹNIE NIE AKCEPTUJEMY ŻADNYCH GWARANCJI WSZELKIEGO RODZAJU,W TYM GWARANCJI WARTOŚCI HANDLOWEJ, PRZYDATNOŚCI DO OKRESLONEGO CELU I NIENARUSZALNOŚCI,NIE AKCEPTUJEMY ŻADNYCH GWARANCJI WYRŹNYCH LUB DOROZUMIANYCH, NIE OBIECUJEMY ŻE JAKIEKOLWIEK CZĘŚCI USŁUGI BĘDĄ NIEPRZERWANE, BEZ BŁĘDÓW, NA CZAS, BEZPIECZNE, DOKŁADNE, PEWNE, JAKOŚCIOWE.
+  topic_9: Zastrzeżenie praw. 
+  term_9: Zastrzegamy sobie wszelkie nasze prawa, łącznie z wszystkimi prawami autorskimi, znakami towarowymi, patentami, tajemnicami handlowymi i innymi prawami własności które mogą zawierać nasze strony, nasza zawartość lub nasze usługi. Korzystanie z naszych praw i własności wymaga uprzedniej pisemnej zgody. Nie dostarczamy państwu jakichkolwiek wyraźnych lub dorozumiewanych licencji lub praw poprzez udostepnienie usług oraz żadnych praw do jakichkolwiek komercyjnych znaków naszej witryny lub usługi bez uprzedniej pisemnej zgody.
+  topic_10: Pozostałe informacje. 
+  term_10: (i) W przypadku gdy ten Regulamin wchodzi w konflikt z obowiązującym prawem, postanowienia będą interpretowane jako odzwierciedlające pierwotne intencje stron zgodnie z obowiązującym prawem, a pozostała część niniejszego Regulaminu będzie ważna i nienaruszalna.
+  topic_11: Polityka zwrotów 
+  term_11: Akceptujemy zwroty od klientów; jednak tylko w czasie pomiędzy wysłaniem formularza sprzedania konta a wysłaniem przez nas płatności.Jesli otrzymasz już zapłatę za swoje konto, nie jesteśmy w stanie przyjąć zwrotu wysłanej przez nas płatności i przywrócić Tobie dostępu do danego konta.
   try_again_later: Panel jest wyłączony, proszę spróbować później!
   select_your_consolep:  Wybierz typ konsoli
   console_email_adressp: Konsola / GamerTag adres email
@@ -40,7 +67,7 @@ pl:
   origin_password: 'Hasło do Origin: '
   payment_method: 'Metoda płatności: '
   payment_email: 'Adres email do płatności: '
-  form: Sprzedaj Konto
+  form: Sprzedaj Konto!
   contact: Kontakt
   send: 'Wyślij'
   header: Sprzedaj swoje konta WebApp w FIFA 17 Ultimate Team!

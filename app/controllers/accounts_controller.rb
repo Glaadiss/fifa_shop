@@ -1,6 +1,11 @@
 class AccountsController < ApplicationController
 
-  before_action :authenticate_user!, except: [:new, :create, :edit, :update]
+  before_action :authenticate_user!, except: [:new, :create, :edit, :update, :regulations, :contact]
+
+  def regulations
+  end
+  def contact
+  end
 
   def new
     @account = Account.new

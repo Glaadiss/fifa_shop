@@ -1,0 +1,27 @@
+<div class="panel panel-success">
+  <div class="panel-heading"><h1> <%= t 'privacy' %> </h1></div>
+  <div class="panel-body">
+
+  <p> <%= t 'privacy_1'%></p>
+  <br>
+  <p><%= t 'privacy_2'%></p>
+  <br>
+  <p><%= t 'privacy_3'%></p>
+
+  </div>
+</div>
+
+
+<div class="panel panel-success">
+  <div class="panel-heading"><h1> <%= t 'terms' %> </h1></div>
+  <div class="panel-body">
+
+  <% 11.times do |k| %>
+    <%id = k + 1 %>
+    <h4> <strong> <%=id%>. </strong> <%= t "topic_#{id}" %> </h4>
+    <p> <%= t "term_#{id}"%></p>
+    <br>
+  <% end %>
+
+  </div>
+</div>

@@ -29,9 +29,9 @@
     <div class="col-md-2"> <strong><%= account.web_email %></strong></div>
     <div class="col-md-2"> <strong><%= account.payment_method %></strong></div>
     <div class="col-md-2"> <strong> <%= account.user.email if account.user_id.present? %> </strong> </div>
-    <div class="col-md-2"><%= link_to ' Pokaż', account_path(account.token), class:'btn btn-info'%></div>
-    <div class="col-md-2"></div>
-    <!-- <div class="col-md-4"><%= link_to 'Usuń', account_path(account.token), method: :delete, class:'btn btn-danger', data:{confirm:'Napewno?'}%></div> -->
+    <div class="col-md-1"><%= link_to ' Pokaż', account_path(account.token), class:'btn btn-info'%></div>
+    <div class="col-md-1"><%= link_to 'Usuń', account_path(account.token), method: :delete, class:'btn btn-danger', data:{confirm:'Napewno?'}%></div>
+    <div class="col-md-2"> <strong> <%= account.created_at.strftime("%d %b. %Y") %></strong></div>
 
   </div><hr>
 <% end %>

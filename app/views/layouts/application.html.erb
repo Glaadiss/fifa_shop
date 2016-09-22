@@ -14,7 +14,7 @@
 
       <ul class="nav navbar-nav navbar-left">
         <li><a href="/accounts/new"> <%= t 'form' %></a></li>
-        <li><a href="/accounts/new"> <%= t 'regulations' %></a></li>
+        <li><a href="/regulations"> <%= t 'regulations' %></a></li>
       </ul>
 
         <li id="logo" style="background-color: rgba(0,0,0,0); margin-left:40px; margin-right: 40px;"> <%= image_tag('/assets/images/logo.png', width: '300px')%> </li>
@@ -28,7 +28,7 @@
       <ul class="nav navbar-nav navbar-right">
 
 
-        <li><a href="/accounts/new"> <%= t 'contact' %></a></li>
+        <li><a href="/contact"> <%= t 'contact' %></a></li>
         <% if session[:locale] == 'en' %>
           <!-- <li><%= link_to 'ustaw język polski', locale: 'pl' %></li> -->
           <li>
