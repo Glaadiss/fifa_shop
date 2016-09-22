@@ -11,13 +11,13 @@ class ApplicationController < ActionController::Base
     I18n.locale = params[:locale] if params[:locale].present?
   end
 
-  def locale_from_ip
-    if session[:locale].nil? && Geocoder.search(request.remote_ip).first.country == "Poland"
-      session[:locale] = "pl"
-    elsif session[:locale].nil?
-      session[:locale] = "en"
-    end
-  end
+  # def locale_from_ip
+  #   if session[:locale].nil? && Geocoder.search(request.remote_ip).first.country == "Poland"
+  #     session[:locale] = "pl"
+  #   elsif session[:locale].nil?
+  #     session[:locale] = "en"
+  #   end
+  # end
 
   def default_url_option ( options = {})
     session[:locale] = I18n.locale
