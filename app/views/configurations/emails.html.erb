@@ -1,0 +1,28 @@
+
+
+<hr>
+<div style="background-color: black; color: black !important; padding: 5px;">
+  <%= form_tag '/create_email', method: :post do %>
+    <textarea name="emails" style="color: black !important;" class="form-control"> </textarea>
+    <hr>
+    <%= submit_tag 'Wyślij', class: 'btn btn-success' %>
+  <% end %>
+</div>
+<hr>
+
+<div class="container" style="background-color: black;">
+  <div class="row">
+    <div class="col-md-4"> <strong> Adres email</strong></div>
+    <div class="col-md-4"> <strong> Hasło</strong></div>
+    <div class="col-md-4"> <strong> Wykorzystany?</strong></div>
+  </div>
+  <hr>
+  <% @emails.each do |email| %>
+    <div class="row">
+      <div class="col-md-4"> <%= email.name%></div>
+      <div class="col-md-4"> <%= email.password %></div>
+      <div class="col-md-4"> <%= email.complete? ? 'Tak' : 'Nie' %></div>
+    </div>
+    <br>
+  <% end %>
+</div>

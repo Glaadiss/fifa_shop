@@ -13,6 +13,16 @@ class ConfigurationsController < ApplicationController
     redirect_to root_path, notice: 'Zmieniono konfiguracje serwera'
   end
 
+  def emails
+    @emails = Email.order('created_at DESC')
+  end
+
+  def create_emails
+    emails = params[:emails].split(' ').map{|k| k.split(':')}
+    emails.each { |em| Email.create(name: em[0], password: em[1] ) }
+    redirect_to '/emails'
+  end
+
   def admin_authenticate
     redirect_to root_path unless current_user.role == 2
   end

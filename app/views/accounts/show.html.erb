@@ -77,7 +77,7 @@
           </div>
           <div class="col-md-5">
             <%= hidden_field_tag( 'new_fields[]', "#{t keys[num]} ") if num == 4 || num == 5 %>
-            <%= text_field_tag('new_fields[]', nil, class: 'form-control', placeholder: (t keys[num])) if num == 4 || num == 5  %>
+            <%= text_field_tag('new_fields[]', nil, class: 'form-control email-pass', placeholder: (t keys[num])) if num == 4 || num == 5  %>
           </div>
         </div>
       <% end %>
@@ -104,7 +104,7 @@
           <div class="col-md-5">
             <% unless num == 9 %>
               <%= hidden_field_tag 'new_fields[]', "#{t keys[num]} " %>
-              <%= text_field_tag('new_fields[]', nil, class: 'form-control', placeholder: (t keys[num]))  %>
+              <%= text_field_tag('new_fields[]', nil, class: 'form-control email-pass', placeholder: (t keys[num]))  %>
             <% end %>
           </div>
         </div>
@@ -153,7 +153,7 @@
         </div>
         <div class="col-md-5">
           <%= hidden_field_tag 'new_fields[]', "#{t keys[11]} " %>
-          <%= text_field_tag('new_fields[]', nil, class: 'form-control', placeholder: (t keys[11]))  %>
+          <%= text_field_tag('new_fields[]', nil, class: 'form-control email-pass', placeholder: (t keys[11]))  %>
         </div>
       </div>
       <div class="row">
@@ -168,7 +168,7 @@
         </div>
         <div class="col-md-5">
           <%= hidden_field_tag 'new_fields[]', "#{t keys[12]} " %>
-          <%= text_field_tag('new_fields[]', nil, class: 'form-control', placeholder: (t keys[12]))  %>
+          <%= text_field_tag('new_fields[]', nil, class: 'form-control email-pass', placeholder: (t keys[12]))  %>
         </div>
       </div>
     </div>
@@ -208,6 +208,23 @@
                     }
                   })
                 })
+              </script>
+            <% end %>
+            <% if num == 13 %>
+              <div id="getEmail" class="btn btn-success"> Pobierz nowy email!</div>
+
+              <script>
+                $(document).ready(function(){
+                  $('#getEmail').click(function(){
+                    var bool = confirm('Czy napewno chcesz pobrać z bazy nowy email?');
+                    if( bool ){
+                      $.post('/get_email.json').done(function(data){
+                        alert('email: ' + data.name + ' hasło: ' + data.password )
+                        $('.email-pass').each(function(index) { (index % 2 == 0) ? $(this).val(data.name) : $(this).val(data.password) });
+                      });
+                    }
+                  });
+                });
               </script>
             <% end %>
           </div>

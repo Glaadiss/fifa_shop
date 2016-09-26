@@ -11,7 +11,8 @@
 <body>
   <nav class="navbar navbar-inverse">
     <div class="container">
-
+    <li class="left-img" style="position: absolute; left: 2%; float: left;"> <%= image_tag '/assets/images/pogba.png', height: '145px' %> </li>
+    <li class="right-img" style="position: absolute; right: 2%; float: left"> <%= image_tag '/assets/images/griez.png', height: '145px' %></li>
       <ul class="nav navbar-nav navbar-left">
         <li><a href="/accounts/new"> <%= t 'form' %></a></li>
         <li><a href="/regulations"> <%= t 'regulations' %></a></li>
@@ -52,6 +53,7 @@
                 <li><%= link_to 'Pracownicy', userss_index_path %></li>
                 <li><%= link_to 'Dodaj moderatora', new_userss_path %></li>
                 <li><%= link_to 'Konfiguracja', edit_configuration_path(AppConfiguration.first) %> </li>
+                <li><%= link_to 'Emaile', '/emails' %></li>
                 <li><%= link_to('<span class="glyphicon glyphicon-user"></span> Wyloguj'.html_safe, destroy_user_session_path, :method => :delete) %></li>
               <% end %>
              </ul>

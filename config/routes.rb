@@ -8,6 +8,9 @@ Rails.application.routes.draw do
     resources :accounts do
       put '/correction' => 'accounts#correction'
     end
+    post '/get_email' => 'accounts#get_email', default: 'json'
+    get '/emails' => 'configurations#emails'
+    post '/create_email' => 'configurations#create_emails'
     post 'paid' => 'accounts#paid'
     get '/contact' => 'accounts#contact'
     get '/regulations' => 'accounts#regulations'

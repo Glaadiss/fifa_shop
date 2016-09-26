@@ -52,6 +52,13 @@ class AccountsController < ApplicationController
     redirect_to accounts_path
   end
 
+  def get_email
+    @email = Email.where(complete?: nil).first
+    @email.update(complete?: true) if @email.present?
+    respond_to do |f|
+      f.json { render json: @email }
+    end
+  end
 
   def create
     @config = AppConfiguration.first
