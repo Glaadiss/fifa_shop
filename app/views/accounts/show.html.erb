@@ -190,7 +190,15 @@
           </div>
           <div class="col-md-3">
             <% if num == 14 %>
-              <div id="paid" class='btn btn-success'> Prześlij informacje o zapłacie!</div>
+              <div class="row">
+                <div class="col-md-6">
+                  <div id="getEmail" class="btn btn-success"> Pobierz email!</div>
+
+                </div>
+                <div class="col-md-6">
+                  <a href="https://cl5.netmark.pl:2096/" class="btn btn-success" target="_blank"> WebMail </a>
+                </div>
+              </div>
 
               <script>
                 $(document).ready(function(){
@@ -211,7 +219,7 @@
               </script>
             <% end %>
             <% if num == 13 %>
-              <div id="getEmail" class="btn btn-success"> Pobierz nowy email!</div>
+              <div id="paid" class='btn btn-success'> Prześlij informacje o zapłacie!</div>
 
               <script>
                 $(document).ready(function(){
