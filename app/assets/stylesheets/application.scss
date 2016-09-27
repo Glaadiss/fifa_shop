@@ -36,13 +36,13 @@ $opacity: 0.7;
   background-color: #ECBB00 !important;
 }
 
+.socer{
+  display: none;
+}
 
-@media (min-width:768px) {
-  #logo{
-      position: absolute;
-      left: 50%;
-      margin-left: -150px !important;  /* 50% of your logo width */
-      display: block;
+@media ( min-width: 981px){
+  .socer{
+    display: block;
   }
   .navbar-left{
     margin-left: 3%;
@@ -50,6 +50,18 @@ $opacity: 0.7;
   .navbar-right{
     margin-right: 8%;
   }
+}
+
+
+@media (min-width:768px) {
+
+  #logo{
+      position: absolute;
+      left: 50%;
+      margin-left: -150px !important;  /* 50% of your logo width */
+      display: block;
+  }
+
 /* centered navigation */
  .navbar{
    height: 80px !important;
