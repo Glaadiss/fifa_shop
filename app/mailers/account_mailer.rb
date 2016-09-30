@@ -1,5 +1,5 @@
 class AccountMailer < ApplicationMailer
-  default from: "fifa16740@gmail.com"
+  default from: "futtaccounts@futtaccounts.com"
 
   def confirmation_email(account)
     @account = account

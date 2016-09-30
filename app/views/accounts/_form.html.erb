@@ -320,16 +320,16 @@
       var val = $('#account_console_type').val();
       switch(val){
         case 'Xbox One':
-          x = 5;
+          x = parseInt("<%= AppConfiguration.first.x1_coins / 1000 %>");
           break;
         case 'Xbox 360':
-          x = 2;
+          x = parseInt("<%= AppConfiguration.first.x3_coins / 1000 %>");;
           break;
         case 'PlayStation 4':
-          x = 5;
+          x = parseInt("<%= AppConfiguration.first.ps4_coins / 1000 %>");
           break;
         case 'PlayStation 3':
-          x = 1;
+          x = parseInt("<%= AppConfiguration.first.ps3_coins / 1000 %>");
       }
     }
 

@@ -24,6 +24,7 @@ gem 'devise'
 gem 'rails_12factor'
 gem "recaptcha", require: "recaptcha/rails"
 gem 'geocoder'
+gem 'mailgun_rails'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 gem 'devise-bootstrap-views'

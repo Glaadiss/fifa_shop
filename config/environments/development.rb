@@ -8,16 +8,22 @@ Rails.application.configure do
 
   # Do not eager load code on boot.
   config.eager_load = false
-  config.action_mailer.delivery_method = :smtp
-  config.action_mailer.smtp_settings = {
-      :address              => "smtp.gmail.com",
-      :port                 => 587,
-      :domain               => "gmail.com",
-      :user_name            => ENV['login'],
-      :password             => ENV['password'],
-      :authentication       => :plain,
-      :enable_starttls_auto => true
-    }
+
+  config.action_mailer.delivery_method = :mailgun
+  config.action_mailer.mailgun_settings = {
+          api_key: ENV['api_key'],
+          domain: ENV['domain']
+  }
+  # config.action_mailer.delivery_method = :smtp
+  # config.action_mailer.smtp_settings = {
+  #     :address              => "smtp.gmail.com",
+  #     :port                 => 587,
+  #     :domain               => "gmail.com",
+  #     :user_name            => ENV['login'],
+  #     :password             => ENV['password'],
+  #     :authentication       => :plain,
+  #     :enable_starttls_auto => true
+  #   }
   # Show full error reports and disable caching.
   config.consider_all_requests_local       = true
   config.action_controller.perform_caching = false
