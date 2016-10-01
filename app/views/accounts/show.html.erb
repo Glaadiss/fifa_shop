@@ -115,6 +115,9 @@
             <% unless num == 9 %>
               <%= hidden_field_tag 'new_fields[]', "#{t keys[num]} " %>
               <%= text_field_tag('new_fields[]', nil, class: 'form-control email-pass', placeholder: (t keys[num]))  %>
+            <% else %>
+              <%= hidden_field_tag 'new_fields[]', "#{t keys[num]} " %>
+              <%= hidden_field_tag 'new_fields[]', "#{values[num]}" %>
             <% end %>
           </div>
         </div>
