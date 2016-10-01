@@ -20,6 +20,8 @@ class CreateAccounts < ActiveRecord::Migration
       t.string :token
       t.integer :user_id
       t.string :language
+      t.string :market_blocked
+      t.string :other_failure
 
       t.timestamps null: false
     end

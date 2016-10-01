@@ -14,7 +14,9 @@
 <script>
 
   $(document).ready(function(){
-    $('#newFields').html(''+ $('#newFields').html().replace(/\|/g, '</br>') + '')
+    if( $('#newFields') ){
+      $('#newFields').html(''+ $('#newFields').html().replace(/\|/g, '</br>') + '')
+    }
   });
 
 </script>
@@ -177,6 +179,28 @@
         <div class="col-md-5">
           <%= hidden_field_tag 'new_fields[]', "#{t keys[12]} " %>
           <%= text_field_tag('new_fields[]', nil, class: 'form-control email-pass', placeholder: (t keys[12]))  %>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="pane panel-info">
+    <div class="panel-heading"><h4> Inne </h4></div>
+    <div class="panel-body">
+      <div class="row">
+
+      </div>
+      <div class="row">
+        <div class="col-md-6">Rynek zablokowany</div>
+        <div class="col-md-6">
+          <%= check_box_tag 'market' %>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6">Inny błąd(wpisz)</div>
+        <div class="col-md-6">
+          <%= text_field_tag 'other_failure', nil, class: 'form-control' %>
         </div>
       </div>
     </div>

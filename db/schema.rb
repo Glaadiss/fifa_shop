@@ -36,6 +36,8 @@ ActiveRecord::Schema.define(version: 20160925174128) do
     t.string   "token"
     t.integer  "user_id"
     t.string   "language"
+    t.string   "market_blocked"
+    t.string   "other_failure"
     t.datetime "created_at",        null: false
     t.datetime "updated_at",        null: false
     t.string   "new_fields"

@@ -7,6 +7,8 @@ pl:
       regulations: ' Regulamin '
       description: ' Opis qwewq ewqewqeq  '
   accounts:
+  req_fourth: Weryfikacja logowania musi być
+  turned_off: wyłączona
   newi: "Na każdej konsoli możliwe jest stworzenie 10 kont FUT co półtora miesiąca. Stwórz i sprzedaj 10 kont już teraz, za 45 dni możesz znów zarobić!"
   privacy: Polityka prywatności
   privacy_1: FUTaccounts.com dba o prywatność swoich użytkowników. Jesteśmy w 100% zaangażowani w zapewnianie bezpieczeństwa danych które nam dostarczacie. 
