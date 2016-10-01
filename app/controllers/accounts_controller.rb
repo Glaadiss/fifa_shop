@@ -27,15 +27,15 @@ class AccountsController < ApplicationController
               "email do płatnośći", "confirmed", "failures", "token", "user_id", "language", "created_at", "updated_at"]
     new_fields = params[:new_fields].each_slice(2).map{|k| [k[0] + k[1]] }.join(' | ')
     @account = Account.find_by_token(params[:account_id])
-    market_error = 'Market blocked' if params[:market]
-    market_error = 'Rynek zablokowany' if market_error && @account.language == 'pl'
-    other_failure = params[:other_failure] if params[:other_failure]
+    market_error = ',Market blocked' if params[:market]
+    market_error = ',Rynek zablokowany' if market_error && @account.language == 'pl'
+    other_failure = ',' +  params[:other_failure] if params[:other_failure]
     keys = @account.attributes.keys
     pl_hash = Hash[keys.zip(pl_keys)]
     failures = params[:account].to_a.select{ |par,val| val==par }.join(',')
     failures = failures.split(',').map{|k| pl_hash[k] }.join(',') if @account.language == 'pl'
-    failures << market_error if market_error.present?
-    failures << other_failure if other_failure.present?
+    failures += market_error if market_error.present?
+    failures += other_failure if other_failure.present?
     @account.update_attributes(failures: failures, user_id: current_user.id, new_fields: new_fields)
     if @account.failures.present?
       AccountMailer.edit_email(@account).deliver_later if AppConfiguration.first.work?
