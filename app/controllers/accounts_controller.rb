@@ -37,7 +37,7 @@ class AccountsController < ApplicationController
     failures += market_error if market_error.present?
     failures += other_failure if other_failure.present?
     @account.update_attributes(failures: failures, user_id: current_user.id, new_fields: new_fields)
-    if @account.failures.present?
+    if @account.failures.present? && @account.failures != ','
       AccountMailer.edit_email(@account).deliver_later if AppConfiguration.first.work?
     else
       @account.update_attributes(confirmed: true)
