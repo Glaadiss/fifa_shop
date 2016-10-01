@@ -12,16 +12,17 @@
 
 <div class="container" style="background-color: black;">
   <div class="row">
-    <div class="col-md-4"> <strong> Adres email</strong></div>
-    <div class="col-md-4"> <strong> Hasło</strong></div>
-    <div class="col-md-4"> <strong> Wykorzystany?</strong></div>
+    <div class="col-md-3"> <strong> Adres email</strong></div>
+    <div class="col-md-3"> <strong> Hasło</strong></div>
+    <div class="col-md-3"> <strong> Wykorzystany?</strong></div>
   </div>
   <hr>
   <% @emails.each do |email| %>
     <div class="row">
-      <div class="col-md-4"> <%= email.name%></div>
-      <div class="col-md-4"> <%= email.password %></div>
-      <div class="col-md-4"> <%= email.complete? ? 'Tak' : 'Nie' %></div>
+      <div class="col-md-3"> <%= email.name%></div>
+      <div class="col-md-3"> <%= email.password %></div>
+      <div class="col-md-3"> <%= email.complete? ? 'Tak' : 'Nie' %></div>
+      <div class="col-md-3"><%= link_to 'Usuń', "/emails?id=#{email.id}", method: :delete, class:'btn btn-danger', data:{confirm:'Napewno?'}%></div>
     </div>
     <br>
   <% end %>

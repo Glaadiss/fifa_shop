@@ -10,6 +10,7 @@ Rails.application.routes.draw do
     end
     post '/get_email' => 'accounts#get_email', default: 'json'
     get '/emails' => 'configurations#emails'
+    delete '/emails' => 'configurations#delete_email'
     post '/create_email' => 'configurations#create_emails'
     post 'paid' => 'accounts#paid'
     get '/contact' => 'accounts#contact'

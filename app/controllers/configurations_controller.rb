@@ -6,6 +6,7 @@ class ConfigurationsController < ApplicationController
   def edit
     @config = AppConfiguration.first
   end
+
   def update
     @config = AppConfiguration.first
     @config.update_attributes(config_params)
@@ -15,6 +16,12 @@ class ConfigurationsController < ApplicationController
 
   def emails
     @emails = Email.order('created_at DESC')
+  end
+
+  def delete_email
+    email = Email.find(params[:id])
+    email.destroy
+    redirect_to '/emails'
   end
 
   def create_emails
