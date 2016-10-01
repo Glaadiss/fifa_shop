@@ -29,7 +29,7 @@ class AccountsController < ApplicationController
     @account = Account.find_by_token(params[:account_id])
     market_error = ',Transfer market locked' if params[:market]
     market_error = ',Rynek zablokowany' if market_error && @account.language == 'pl'
-    other_failure = ',' +  params[:other_failure] if params[:other_failure]
+    other_failure = ",#{params[:other_failure]}" if params[:other_failure]
     keys = @account.attributes.keys
     pl_hash = Hash[keys.zip(pl_keys)]
     failures = params[:account].to_a.select{ |par,val| val==par }.join(',')
