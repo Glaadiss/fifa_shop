@@ -9,9 +9,7 @@ class AccountMailer < ApplicationMailer
 
   def notify_email(account)
     @account = account
-    User.all.each do |user|
-      mail(to: user.email, subject: 'Nowy klient')
-    end
+    mail(to: User.first.email, subject: 'Nowy klient')
   end
 
   def information_email(account)
