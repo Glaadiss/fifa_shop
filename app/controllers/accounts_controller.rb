@@ -13,7 +13,7 @@ class AccountsController < ApplicationController
   end
 
   def index
-    @accounts = Account.all.order('created_at DESC')
+    @accounts = Account.all.order('updated_at DESC')
   end
 
   def show
@@ -90,6 +90,7 @@ class AccountsController < ApplicationController
   def update
     @config = AppConfiguration.first
     @account = Account.find_by_token(params[:account][:token])
+    @accounts.update_attributes(failures: nil)
     if verify_recaptcha(model: @account) && @account.update_attributes(account_params)
       @account.players.destroy_all if @account.players.any?
       if params[:players].present?
