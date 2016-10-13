@@ -6,6 +6,7 @@ pl:
     index:
       regulations: ' Regulamin '
       description: ' Opis qwewq ewqewqeq  '
+  req_five: 'W przypadku kont Xbox One / Xbox 360 nalezy podać prawdziwy numer telefonu na który konto zostało utworzone i do którego dostęp posiadasz.'
   accounts:
   phone: 'Numer Telefonu'
   req_fourth: Weryfikacja logowania musi być
