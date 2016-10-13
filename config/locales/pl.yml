@@ -7,6 +7,7 @@ pl:
       regulations: ' Regulamin '
       description: ' Opis qwewq ewqewqeq  '
   accounts:
+  phone: 'Numer Telefonu'
   req_fourth: Weryfikacja logowania musi być
   turned_off: wyłączona
   newi: "Na każdej konsoli możliwe jest stworzenie 10 kont FUT co półtora miesiąca. Stwórz i sprzedaj 10 kont już teraz, za 45 dni możesz znów zarobić!"

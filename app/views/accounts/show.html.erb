@@ -91,6 +91,17 @@
           </div>
         </div>
       <% end %>
+        <div class="row">
+          <div class="col-md-3">
+            Telefon
+          </div>
+          <div class="col-md-3">
+            <%= @account.phone %>
+          </div>
+          <div class="col-md-1">
+            <%= check_box('account','phone', {}, 'phone') %>
+          </div>
+        </div>
 
     </div>
   </div>

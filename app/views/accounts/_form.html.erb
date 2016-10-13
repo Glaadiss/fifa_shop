@@ -119,6 +119,7 @@
 
 <%= simple_form_for @account do |f| %>
   <%= f.input :token, label: false, as: :hidden%>
+  <%= f.hidden_field :recommend, value: params[:recommend] %>
   <div class="panel panel-primary">
     <div class="panel-heading">  <h3><%=  t 'who_are_you'%></h3> </div>
     <div class="panel-body">
@@ -175,6 +176,16 @@
               <div class="col-md-1"><i> <%= image_tag 'klodka/lock-7-24.png'%> </i></div>
               <div class="col-md-11">
                 <%= f.input :console_password, label:false, placeholder: (t 'console_passwordp') %>
+              </div>
+            </div>
+            <div class="col-md-5"></div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-7">
+              <div class="col-md-1"><i> </i></div>
+              <div class="col-md-11">
+                <%= f.input :phone, label:false, placeholder: (t 'phone') %>
               </div>
             </div>
             <div class="col-md-5"></div>
