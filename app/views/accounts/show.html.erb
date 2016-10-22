@@ -54,7 +54,7 @@
             <%= t keys[num]  %>
             <% end %>
           </div>
-          <div class="col-md-3">
+          <div class="col-md-3" data-clipboard-text="<%= values[num] %>">
             <%= values[num] %>
           </div>
           <div class="col-md-3">
@@ -79,7 +79,7 @@
           <div class="col-md-3">
             <%= t keys[num] %>
           </div>
-          <div class="col-md-3">
+          <div class="col-md-3" data-clipboard-text="<%= values[num] %>">
             <%= values[num] %>
           </div>
           <div class="col-md-1">
@@ -95,7 +95,7 @@
           <div class="col-md-3">
             Telefon
           </div>
-          <div class="col-md-3">
+          <div class="col-md-3" data-clipboard-text="<%= @account.phone %>">
             <%= @account.phone %>
           </div>
           <div class="col-md-1">
@@ -116,7 +116,7 @@
           <div class="col-md-3">
             <%= t keys[num] %>
           </div>
-          <div class="col-md-3">
+          <div class="col-md-3" data-clipboard-text="<%= values[num] %>">
             <%= values[num] %>
           </div>
           <div class="col-md-1">
@@ -146,7 +146,7 @@
           <div class="col-md-3">
             <%= t keys[10] %>
           </div>
-          <div class="col-md-3">
+          <div class="col-md-3" data-clipboard-text="<%= values[10] %>">
             <%= values[10] %>
           </div>
           <div class="col-md-1">
@@ -169,7 +169,7 @@
         <div class="col-md-3">
           Skrzynka email
         </div>
-        <div class="col-md-3">
+        <div class="col-md-3" data-clipboard-text="<%= values[11] %>">
           <%= values[11] %>
         </div>
         <div class="col-md-1">
@@ -184,7 +184,7 @@
         <div class="col-md-3">
           Hasło do skrzynki email
         </div>
-        <div class="col-md-3">
+        <div class="col-md-3" data-clipboard-text="<%= values[12] %>">
           <%= values[12] %>
         </div>
         <div class="col-md-1">
@@ -226,7 +226,7 @@
           <div class="col-md-3">
             <%= t keys[num] %>
           </div>
-          <div class="col-md-3">
+          <div class="col-md-3" data-clipboard-text="<%= values[num] %>">
             <%= values[num] %>
           </div>
           <div class="col-md-3">
@@ -243,9 +243,11 @@
                   <a href="https://cl5.netmark.pl:2096/" class="btn btn-success" target="_blank"> WebMail </a>
                 </div>
               </div>
-
+              <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.5.13/clipboard.min.js"></script>
               <script>
                 $(document).ready(function(){
+
+                  var clipboard = new Clipboard('.col-md-3');
                   var acc_id = "<%=@account.id%>"
                   $('#paid').click(function(){
                     var bool = confirm('Czy na pewno?')
