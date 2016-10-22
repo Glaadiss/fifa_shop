@@ -8,14 +8,19 @@ class ApplicationController < ActionController::Base
 
   def set_locale
     session[:locale] = params[:locale] if params[:locale].present?
-    session[:locale].present? ? I18n.locale = session[:locale] : I18n.locale = 'pl'
+    session[:locale].present? ? I18n.locale = session[:locale] : locale_from_ip
   end
 
   def locale_from_ip
+    10.times { p ' ------------- '}
+    p Geocoder.search(request.remote_ip).first.country
+    p Geocoder.search(request.remote_ip).first
     if session[:locale].nil? && Geocoder.search(request.remote_ip).first.country == "Poland"
       session[:locale] = "pl"
+      I18n.locale = 'pl'
     elsif session[:locale].nil?
       session[:locale] = "en"
+      I18n.locale = 'en'
     end
   end
 
