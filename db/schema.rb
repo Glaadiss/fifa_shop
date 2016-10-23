@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20161013174246) do
+ActiveRecord::Schema.define(version: 20161023160335) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -43,6 +43,7 @@ ActiveRecord::Schema.define(version: 20161013174246) do
     t.string   "new_fields"
     t.string   "phone"
     t.string   "recommend"
+    t.boolean  "paid?"
   end
 
   create_table "app_configurations", force: :cascade do |t|

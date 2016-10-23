@@ -112,6 +112,7 @@ class AccountsController < ApplicationController
   def paid
     @config = AppConfiguration.first
     @account = Account.find(params[:id])
+    @account.update(paid?: true)
     if AppConfiguration.first.work?
       AccountMailer.paid_email(@account).deliver_later
     end
