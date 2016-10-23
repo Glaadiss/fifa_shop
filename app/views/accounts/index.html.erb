@@ -17,12 +17,12 @@
 
 <div class="container alert alert-info">
   <div class="col-md-9">
-    <div class="col-md-2"> <strong>Email: </strong></div>
-    <div class="col-md-2"> <strong> WebApp email: </strong></div>
+    <div class="col-md-3"> <strong>Email: </strong></div>
+    <div class="col-md-3"> <strong> WebApp email: </strong></div>
     <div class="col-md-2"> <strong> Płatność: </strong></div>
     <div class="col-md-2"> <strong> Sprawdzający: </strong></div>
-    <div class="col-md-2"> <strong> Typ konsoli: </strong></div>
-    <div class="col-md-2"> <strong> Zapłacone? </strong></div>
+    <div class="col-md-1"> <strong> Typ konsoli: </strong></div>
+    <div class="col-md-1"> <strong> Zapłacone? </strong></div>
   </div>
   <div class="col-md-3"></div>
 </div><hr>
@@ -30,12 +30,12 @@
 <% @accounts.each do |account| %>
   <div class="container alert alert-<%= return_color(account.confirmed, account.failures)%>">
     <div class="col-md-9">
-      <div class="col-md-2"> <strong><%= account.email %></strong></div>
-      <div class="col-md-2"> <strong><%= account.web_email %></strong></div>
+      <div class="col-md-3"> <strong><%= account.email %></strong></div>
+      <div class="col-md-3"> <strong><%= account.web_email %></strong></div>
       <div class="col-md-2"> <strong><%= account.payment_method %></strong></div>
       <div class="col-md-2"> <strong> <%= account.user.email if account.user_id.present? %> </strong> </div>
-      <div class="col-md-2"> <strong><%= account.console_type %></strong></div>
-      <div class="col-md-2"> <strong><%= account.paid? ? 'Tak' : 'Nie' %></strong></div>
+      <div class="col-md-1"> <strong><%= account.console_type %></strong></div>
+      <div class="col-md-1"> <strong><%= account.paid? ? 'Tak' : 'Nie' %></strong></div>
     </div>
     <div class="col-md-3">
       <div class="col-md-3"><%= link_to ' Pokaż', account_path(account.token), class:'btn btn-info'%></div>
