@@ -29,7 +29,7 @@
 
 <% @accounts.each do |account| %>
   <div class="container alert alert-<%= return_color(account.confirmed, account.failures)%>">
-    <div class="col-md-9">
+    <div class="col-md-9 small-letters">
       <div class="col-md-3"> <strong><%= account.email %></strong></div>
       <div class="col-md-3"> <strong><%= account.web_email %></strong></div>
       <div class="col-md-2"> <strong><%= account.payment_method %></strong></div>

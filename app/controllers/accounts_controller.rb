@@ -25,8 +25,9 @@ class AccountsController < ApplicationController
     pl_keys = ["id", "email", "facebook lub skype", "typ konsoli", "email konsoli", "hasło konsoli", "data urodzenia na konsoli", "web-app email",
               "hasło web-app", "odpowiedź na pytanie web-app", "odpowiedź na pytanie origin", "adres email", "hasło email", "metoda płatności",
               "email do płatnośći", "confirmed", "failures", "token", "user_id", "language", "created_at", "updated_at", 'Numer telefonu', 'Polecony przez']
-    new_fields = params[:new_fields].each_slice(2).map{|k| [k[0] + k[1]] }.join(' | ')
     @account = Account.find_by_token(params[:account_id])
+    new_fields = params[:new_fields].each_slice(2).map{|k| [k[0] + k[1]] }.join(' | ')
+    new_fields += " | rekomendacja: #{@account.try(:recommend)}" if new_fields.present?
     market_error = ',Transfer market locked' if params[:market]
     market_error = ',Rynek zablokowany' if market_error && @account.language == 'pl'
     other_failure = ",#{params[:other_failure]}" if params[:other_failure]
