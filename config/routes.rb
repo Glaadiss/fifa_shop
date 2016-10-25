@@ -15,7 +15,7 @@ Rails.application.routes.draw do
     post 'paid' => 'accounts#paid'
     get '/contact' => 'accounts#contact'
     get '/regulations' => 'accounts#regulations'
-    devise_for :users
+    devise_for :users, :controllers => {:registrations => "registrations"}
     get '*path', to: redirect("/#{I18n.default_locale}/%path")
     get '', to: redirect("/#{I18n.default_locale}")
 
