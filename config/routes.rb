@@ -13,10 +13,13 @@ Rails.application.routes.draw do
     delete '/emails' => 'configurations#delete_email'
     post '/create_email' => 'configurations#create_emails'
     post 'paid' => 'accounts#paid'
+    get '/generate' => 'accounts#generate', default: 'csv'
+    delete '/delete_between' => 'accounts#delete_between'
     get '/contact' => 'accounts#contact'
     get '/regulations' => 'accounts#regulations'
     devise_for :users, :controllers => {:registrations => "registrations"}
     get '*path', to: redirect("/#{I18n.default_locale}/%path")
     get '', to: redirect("/#{I18n.default_locale}")
+
 
 end

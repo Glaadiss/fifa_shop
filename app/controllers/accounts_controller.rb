@@ -7,6 +7,20 @@ class AccountsController < ApplicationController
   def contact
   end
 
+  def generate
+    @accounts = params[:green] ? Account.where(confirmed: true) : Account.all
+    respond_to do |format|
+      format.csv { send_data @accounts.to_csv, filename: "accounts-#{Date.today}.csv" }
+    end
+  end
+
+  def delete_between
+    from = Time.parse(params[:from].gsub(' ', ''))
+    to = Time.parse(params[:to].gsub(' ', ''))
+    Account.where(updated_at: from..to).destroy_all
+    redirect_to accounts_path
+  end
+
   def new
     @account = Account.new
     @config = AppConfiguration.first

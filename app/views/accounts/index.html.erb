@@ -15,6 +15,55 @@
 }
 </style>
 
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-8">
+          <%= form_tag delete_between_path, method: :delete do %>
+            <div class="row">
+                <div class='col-md-8'>
+                    <div class="form-group">
+                        <div class="col-md-5">
+                          <div class='input-group date datetimepicker1'>
+                              <input type='text' name="from" class="form-control" />
+                              <span class="input-group-addon">
+                                  <span class="glyphicon glyphicon-calendar"></span>
+                              </span>
+                          </div>
+                        </div>
+                        <div class="col-md-5">
+                          <div class='input-group date datetimepicker1'>
+                              <input type='text' name="to" class="form-control" />
+                              <span class="input-group-addon">
+                                  <span class="glyphicon glyphicon-calendar"></span>
+                              </span>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                  <%= submit_tag 'Usuń rekordy', class:'btn btn-danger', data:{confirm:'Napewno?'}%>
+                </div>
+                <script type="text/javascript">
+                    $(function () {
+                        $('.datetimepicker1').datetimepicker();
+                    });
+                </script>
+            </div>
+          <% end %>
+    </div>
+    <div class="col-md-4">
+      <div class="col-md-6">
+        <%= link_to 'Pobierz całą bazę', generate_path(format: 'csv') , class:'btn btn-success'%>
+      </div>
+      <div class="col-md-6">
+        <%= link_to 'Pobierz zaakceptowane rekordy', generate_path(green: true, format: 'csv') , class:'btn btn-success'%>
+      </div>
+    </div>
+  </div>
+</div>
+<hr>
+
 <div class="container alert alert-info">
   <div class="col-md-9">
     <div class="col-md-3"> <strong>Email: </strong></div>
