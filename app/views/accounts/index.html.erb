@@ -91,7 +91,7 @@
       <% if current_user.role == 2 %>
         <div class="col-md-3"><%= link_to 'Usuń', account_path(account.token), method: :delete, class:'btn btn-danger', data:{confirm:'Napewno?'}%></div>
       <% end %>
-      <div class="col-md-6"> <strong> <%= account.created_at.strftime("%d %b. %Y %H:%M") %></strong></div>
+      <div class="col-md-6"> <strong> <small> <%= account.created_at.strftime("%d %b. %Y %H:%M") %> </small> </strong></div>
     </div>
   </div><hr>
 <% end %>
