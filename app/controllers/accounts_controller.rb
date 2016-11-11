@@ -51,6 +51,7 @@ class AccountsController < ApplicationController
     failures = failures.split(',').map{|k| pl_hash[k] }.join(',') if @account.language == 'pl'
     failures += market_error if market_error.present?
     failures += other_failure if other_failure.present?
+    failures.gsub!('origin_password', 'password to email from origin')
     @account.update_attributes(failures: failures, user_id: current_user.id, new_fields: new_fields)
     if @account.failures.present? && @account.failures != ','
       AccountMailer.edit_email(@account).deliver_later if AppConfiguration.first.work?
