@@ -7,9 +7,9 @@ class AccountMailer < ApplicationMailer
     mail(to: @account.email, subject: 'Potwierdzenie ' )
   end
 
-  def notify_email(account)
+  def notify_email(account, to)
     @account = account
-    mail(to: User.first.email, subject: 'Nowy klient')
+    mail(to: to.email, subject: 'Nowy klient')
   end
 
   def information_email(account)

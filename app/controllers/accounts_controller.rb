@@ -94,7 +94,9 @@ class AccountsController < ApplicationController
       end
       if AppConfiguration.first.work?
         AccountMailer.confirmation_email(@account).deliver_later
-        AccountMailer.notify_email(@account).deliver_later
+        User.all.each do |usr|
+          AccountMailer.notify_email(@account, usr).deliver_later
+        end
       end
       redirect_to root_path, notice: 'Pomyślnie wypełniono formularz, sprawdź skrzynkę pocztową'
     else
@@ -117,7 +119,9 @@ class AccountsController < ApplicationController
       end
       if AppConfiguration.first.work?
         AccountMailer.confirmation_email(@account).deliver_later
-        AccountMailer.notify_email(@account).deliver_later
+        User.all.each do |usr|
+          AccountMailer.notify_email(@account, usr).deliver_later
+        end
       end
       redirect_to root_path, notice: 'Pomyślnie wypełniono formularz, sprawdź skrzynkę pocztową'
     else
