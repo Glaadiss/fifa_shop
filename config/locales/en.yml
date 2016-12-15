@@ -13,7 +13,7 @@ en:
   topic_1: Acceptance of Terms of Use and Amendments.
   term_1: Each and every time you as a user enter this website you are agreeing to abide by our terms of use, we reserve all rights to amend or change any of these terms when we deem necessary. Also if you are using any service through or on this website, you will be subject to the rules or guidelines set by us applicable to these services (these will be found within the Terms of Use). 
   topic_2: Our Service. 
-  term_2: Our web site and services provided to you on and through our web site on an "AS IS" basis. You agree that the owners of this web site exclusively reserve the right and may, at any time and without notice and any liability to you, edit or terminate this web site and its services or delete the data you provide, whether temporarily or permanently. We shall have no responsibility or liability for the timeliness, deletion, failure to store, inaccuracy, or improper delivery of any data or information. Payments of orders are usually made in less than 24 hours, however they may in some circumstances take up to 5 working days. 
+  term_2: "Account verification usually takes from 24 to 72 hours, sending payment for verified accounts take up to 48 hours. However they may in some circumstances take up to 5 working days each."
   topic_3: What We Are Providing
   term_3: FUTaccounts.com only provides the users with a service, this service is that we buy ACCESS to Your FIFA Ultimate Team & console accounts. What you are selling is NOT actually the accounts, but Your access to them instead. These accounts will at ALL times remain in game, and never be removed from the game These accounts will also ALWAYS remain property of EA SPORTS, FIFA, Sony and Microsoft. We are not in any way associated with EA SPORTS, FIFA, Sony or Microsoft.  
   topic_4: Your Responsibilities and Registration Obligations. 
@@ -83,8 +83,8 @@ en:
   req_second: "Should have a minimum of 150 coins."
   req_third: "Should not have a backup email address registered in Origin."
   warning: Warning!
-  final_info: "We will change all login information. Please make sure you no longer need access to the account and ensure the account
-              has no valuables."
+  final_info: "We will change all login information. Please make sure you no longer need access to the account and ensure the account has no valuables."
+  final_info2: ""
   who_are_you: "Who are you"
   which_account: "Which account do you want to sell to us?"
   login_data: "Console login information"

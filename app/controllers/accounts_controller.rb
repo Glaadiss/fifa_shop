@@ -108,7 +108,7 @@ class AccountsController < ApplicationController
   def update
     @config = AppConfiguration.first
     @account = Account.find_by_token(params[:account][:token])
-    @accounts.update_attributes(failures: nil)
+    @account.update_attributes(failures: nil)
     if verify_recaptcha(model: @account) && @account.update_attributes(account_params)
       @account.players.destroy_all if @account.players.any?
       if params[:players].present?

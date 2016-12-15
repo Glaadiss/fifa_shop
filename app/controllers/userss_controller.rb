@@ -5,6 +5,7 @@ class UserssController  < ApplicationController
 
   def index
     @users = User.all
+    @counter = Account.where(paid?: nil , confirmed: true).count
   end
 
   def new

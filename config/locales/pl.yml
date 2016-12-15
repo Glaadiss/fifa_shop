@@ -20,7 +20,7 @@ pl:
   topic_1: Akceptacja warunków regulaminu
   term_1: Za każdym razem Ty jako użytkownik korzystając z portalu zgadzasz się przestrzegać naszego regulaminu, zastrzegamy sobie wszelkie prawa do zmiany lub modyfikacji któregokolwiek z postanowień, kiedy uznamy to za konieczne.
   topic_2:  Nasza działalność
-  term_2: Zgadzasz się, że właściciele tej strony internetowej rezerwują sobie wyłącznie prawo i mogą w każdej chwili i bez uprzedzenia oraz ponoszenia odpowiedzialności wobec Ciebie, zmieniać lub zamknąć niniejszą stronę internetową i swoje usługi, na stałe lub czasowo. Nie ponosimy odpowiedzialności za aktualność, usunięcie, usterki bazy danych, niedokładność lub nienależyte dostarczania danych lub informacji. Płatności za zlecenia są zazwyczaj wykonywane w czasie do 24 godzin, jednakże mogą one w niektórych przypadkach trwać do 5 dni roboczych.
+  term_2: "Weryfikacja zlecen odbywa sie zazwyczaj w czasie 24-72 godzin, platnosc wysylamy do 48h od pomyslnego zweryfikowania. W wyjatkowych przypadkach oba terminy moga sie wydluzyc do 5 dni roboczych kazdy."
   topic_3: Co zapewniamy
   term_3: 'FUTaccounts.com zapewnia użytkownikom usługę, która polega na kupnie od Ciebie dostępu do Twoich kont FIFA Ultimate Team i profili konsolowych. Nie kupujemy kont samych w sobie, lecz dostęp do nich.  Konta przez cały czas pozostają w grze, nie są z niej usuwane.Konta zawsze pozostają własnością EA Sports, FIFA, Sony i Microsoft. Nie jesteśmy w żaden sposób powiązani z EA Sports, FIFA, Sony lub Microsoft'
   topic_4: 'Obowiążki użytkownika'
@@ -89,8 +89,8 @@ pl:
   req_second: "Posiadać minimum 150 coins."
   req_third: "Nie może posiadać dodatkowych adresów email dopisanych do konta na Origin.com "
   warning: Uwaga!
-  final_info: "Zmienimy wszystkie dane logowania. Upewnij się, że nie potrzebujesz już dostępu do konta oraz czy nie zostawiłeś na
-              nim czegoś wartościowego :)"
+  final_info: "Zmienimy wszystkie dane logowania. Upewnij się, że nie potrzebujesz już dostępu do konta oraz czy nie zostawiłeś na nim czegoś wartościowegoZmienimy wszystkie dane logowania. Upewnij się, że nie potrzebujesz już dostępu do konta oraz czy nie zostawiłeś na nim czegoś wartościowego."
+  final_info2: UWAGA obecnie nie przyjmujemy kont utworzonych na skrzynkach serwisu INTERIA.PL z powodu opóźnień w otrzymywania kodów zabezpieczających.
   who_are_you: "Kim jesteś?"
   which_account: "Które konto chciałbyś nam sprzedać?"
   login_data: "Dane logowania na konsoli"
