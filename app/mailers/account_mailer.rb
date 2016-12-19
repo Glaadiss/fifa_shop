@@ -1,5 +1,5 @@
 class AccountMailer < ApplicationMailer
-  default from: "futtaccounts@futtaccounts.com"
+  default from: "futaccounts@futaccounts.com"
 
   def confirmation_email(account)
     @account = account
