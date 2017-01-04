@@ -10,6 +10,11 @@
   <h2 style="color: white;" id='newFields'> <%= @account.new_fields %> </h2>
 <% end %>
 </div>
+<div style="background-color: black;">
+  <% if @account.failures %>
+      <h2 style="color: white;"> <%= @account.failures %> </h2>
+  <% end %>
+</div>
 
 <script>
 

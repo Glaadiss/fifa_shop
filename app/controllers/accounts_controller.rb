@@ -27,7 +27,11 @@ class AccountsController < ApplicationController
   end
 
   def index
-    @accounts = Account.all.order('updated_at DESC')
+    if params[:type]
+      @accounts = Account.where(confimerd: params[:type][:confirmed],failures: params[:type][:failures]).order('updated_at DESC')
+    else
+      @accounts = Account.order('updated_at DESC')
+    end
   end
 
   def show

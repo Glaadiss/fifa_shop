@@ -65,6 +65,17 @@
 <hr>
 
 <div class="container alert alert-info">
+  <div class="row">
+    <div class="col-md-2">
+      <%= link_to "Kupione", account_path(type: { confrimed: true }), class: 'btn btn-success'%>
+    </div>
+    <div class="col-md-2">
+      <%= link_to "Nie sprawdzone", account_path(type: { confrimed: nil }), class: 'btn btn-warning'%>
+    </div>
+    <div class="col-md-2">
+      <%= link_to "Złe dane", account_path(type: { failures: true }), class: 'btn btn-danger' %>
+    </div>
+  </div>
   <div class="col-md-9">
     <div class="col-md-3"> <strong>Email: </strong></div>
     <div class="col-md-3"> <strong> WebApp email: </strong></div>
