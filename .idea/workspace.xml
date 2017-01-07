@@ -1,286 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="84d57a2b-69dc-4aca-9e78-b6611febd35a" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/images/.keep" afterPath="$PROJECT_DIR$/app/assets/images/.keep" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/images/coins/Thumbs.db" afterPath="$PROJECT_DIR$/app/assets/images/coins/Thumbs.db" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/images/coins/coins-16.png" afterPath="$PROJECT_DIR$/app/assets/images/coins/coins-16.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/images/coins/coins-24.png" afterPath="$PROJECT_DIR$/app/assets/images/coins/coins-24.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/images/coins/coins-32.png" afterPath="$PROJECT_DIR$/app/assets/images/coins/coins-32.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/images/ea_32x32.png" afterPath="$PROJECT_DIR$/app/assets/images/ea_32x32.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/images/email/Thumbs.db" afterPath="$PROJECT_DIR$/app/assets/images/email/Thumbs.db" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/images/email/new-post-16.png" afterPath="$PROJECT_DIR$/app/assets/images/email/new-post-16.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/images/email/new-post-24.png" afterPath="$PROJECT_DIR$/app/assets/images/email/new-post-24.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/images/email/new-post-32.png" afterPath="$PROJECT_DIR$/app/assets/images/email/new-post-32.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/images/facebook/Thumbs.db" afterPath="$PROJECT_DIR$/app/assets/images/facebook/Thumbs.db" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/images/facebook/facebook-3-16.png" afterPath="$PROJECT_DIR$/app/assets/images/facebook/facebook-3-16.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/images/facebook/facebook-3-24.png" afterPath="$PROJECT_DIR$/app/assets/images/facebook/facebook-3-24.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/images/facebook/facebook-3-32.png" afterPath="$PROJECT_DIR$/app/assets/images/facebook/facebook-3-32.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/images/klodka/Thumbs.db" afterPath="$PROJECT_DIR$/app/assets/images/klodka/Thumbs.db" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/images/klodka/lock-7-16.png" afterPath="$PROJECT_DIR$/app/assets/images/klodka/lock-7-16.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/images/klodka/lock-7-24.png" afterPath="$PROJECT_DIR$/app/assets/images/klodka/lock-7-24.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/images/klodka/lock-7-32.png" afterPath="$PROJECT_DIR$/app/assets/images/klodka/lock-7-32.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/images/origin_32x32.png" afterPath="$PROJECT_DIR$/app/assets/images/origin_32x32.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/images/ps_32x32.png" afterPath="$PROJECT_DIR$/app/assets/images/ps_32x32.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/images/skype/Thumbs.db" afterPath="$PROJECT_DIR$/app/assets/images/skype/Thumbs.db" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/images/skype/skype-16.png" afterPath="$PROJECT_DIR$/app/assets/images/skype/skype-16.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/images/skype/skype-24.gif" afterPath="$PROJECT_DIR$/app/assets/images/skype/skype-24.gif" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/images/skype/skype-24.png" afterPath="$PROJECT_DIR$/app/assets/images/skype/skype-24.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/images/skype/skype-32.png" afterPath="$PROJECT_DIR$/app/assets/images/skype/skype-32.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/images/xb_32x32.png" afterPath="$PROJECT_DIR$/app/assets/images/xb_32x32.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/concerns/.keep" afterPath="$PROJECT_DIR$/app/controllers/concerns/.keep" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/mailers/.keep" afterPath="$PROJECT_DIR$/app/mailers/.keep" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/.keep" afterPath="$PROJECT_DIR$/app/models/.keep" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/concerns/.keep" afterPath="$PROJECT_DIR$/app/models/concerns/.keep" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/assets/.keep" afterPath="$PROJECT_DIR$/lib/assets/.keep" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/tasks/.keep" afterPath="$PROJECT_DIR$/lib/tasks/.keep" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/log/.keep" afterPath="$PROJECT_DIR$/log/.keep" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/application-195b7ce7ee5795f9dd847e69ce2626b25f69426dada4350e2d2e60885c46ad03.css.gz" afterPath="$PROJECT_DIR$/public/assets/application-195b7ce7ee5795f9dd847e69ce2626b25f69426dada4350e2d2e60885c46ad03.css.gz" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/application-259cc9c7845b045ad0ab52108992ef22f6853a03586d3ab230ffdc6309c04ddb.css.gz" afterPath="$PROJECT_DIR$/public/assets/application-259cc9c7845b045ad0ab52108992ef22f6853a03586d3ab230ffdc6309c04ddb.css.gz" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/application-281c6da8937b07f227c28bca6560e9b09214bfcc98f12d32d48b4225ba8087ad.css.gz" afterPath="$PROJECT_DIR$/public/assets/application-281c6da8937b07f227c28bca6560e9b09214bfcc98f12d32d48b4225ba8087ad.css.gz" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/application-2a93e7104e835cfbd9c785a2094760297cb7c99384ee978704da7d904dccfcc1.css.gz" afterPath="$PROJECT_DIR$/public/assets/application-2a93e7104e835cfbd9c785a2094760297cb7c99384ee978704da7d904dccfcc1.css.gz" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/application-2ba15ed852ddf1988080de7426fdd3083dd35e7a8911c068388694774faf106a.css.gz" afterPath="$PROJECT_DIR$/public/assets/application-2ba15ed852ddf1988080de7426fdd3083dd35e7a8911c068388694774faf106a.css.gz" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/application-314cc5751f650ec75eec969c1faf48e345318785c521b3ff3045d6e52f0ac5bf.js.gz" afterPath="$PROJECT_DIR$/public/assets/application-314cc5751f650ec75eec969c1faf48e345318785c521b3ff3045d6e52f0ac5bf.js.gz" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/application-3eeb95c085de0f7c87b59baf4b80520fe5d1c7b9ec701f6cd843bc5f004650c3.css.gz" afterPath="$PROJECT_DIR$/public/assets/application-3eeb95c085de0f7c87b59baf4b80520fe5d1c7b9ec701f6cd843bc5f004650c3.css.gz" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/application-3f5966a862a6672aecac11d3fa84629ecbc0765f3fef87e6410657424c2904bb.css.gz" afterPath="$PROJECT_DIR$/public/assets/application-3f5966a862a6672aecac11d3fa84629ecbc0765f3fef87e6410657424c2904bb.css.gz" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/application-41a996471265902ca48c46d99c073042ab6855e07e97b701c57982b8fb934ae4.css.gz" afterPath="$PROJECT_DIR$/public/assets/application-41a996471265902ca48c46d99c073042ab6855e07e97b701c57982b8fb934ae4.css.gz" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/application-442e0dd12f93a85b4399bb58d1f9df6af18c5d2e9620ce45d1bd851574a34447.css.gz" afterPath="$PROJECT_DIR$/public/assets/application-442e0dd12f93a85b4399bb58d1f9df6af18c5d2e9620ce45d1bd851574a34447.css.gz" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/application-530de52a90b04d2ae4d49554c2728f2209a5f75eb9048975d6ddf8d8a0e4bbdc.css.gz" afterPath="$PROJECT_DIR$/public/assets/application-530de52a90b04d2ae4d49554c2728f2209a5f75eb9048975d6ddf8d8a0e4bbdc.css.gz" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/application-5b767cb1c4b2b62d55122124ba1f4128b20f41dfbbbc9fad07f57906ad09b8e2.css.gz" afterPath="$PROJECT_DIR$/public/assets/application-5b767cb1c4b2b62d55122124ba1f4128b20f41dfbbbc9fad07f57906ad09b8e2.css.gz" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/application-5bf3edbe1285ccb41720892cffc340c965191c352a349ddcb8f3deffb8718291.css.gz" afterPath="$PROJECT_DIR$/public/assets/application-5bf3edbe1285ccb41720892cffc340c965191c352a349ddcb8f3deffb8718291.css.gz" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/application-7a1a4bab1c9d79a927b8bb7c49fda64f8981538a1d92d08628bddcdb50186450.css.gz" afterPath="$PROJECT_DIR$/public/assets/application-7a1a4bab1c9d79a927b8bb7c49fda64f8981538a1d92d08628bddcdb50186450.css.gz" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/application-99e434e8d556bed82753dba1bad6126d80a9ffb10c0cd37920e728c5a40072e1.css.gz" afterPath="$PROJECT_DIR$/public/assets/application-99e434e8d556bed82753dba1bad6126d80a9ffb10c0cd37920e728c5a40072e1.css.gz" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/application-d498c129b0f4504a6ec00aaeba7cb18b4671c5462198d0e10e5ef392a661346e.js.gz" afterPath="$PROJECT_DIR$/public/assets/application-d498c129b0f4504a6ec00aaeba7cb18b4671c5462198d0e10e5ef392a661346e.js.gz" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/application-d94eddb6a6832b1684427ddf0c17eb9390457a514bf8b6404823a794c6941569.js.gz" afterPath="$PROJECT_DIR$/public/assets/application-d94eddb6a6832b1684427ddf0c17eb9390457a514bf8b6404823a794c6941569.js.gz" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/application-dcddeb7f647fb1152e0c3fe39cdbdc47c6add54bf35c6cfc153b95ef7c1c4b71.js.gz" afterPath="$PROJECT_DIR$/public/assets/application-dcddeb7f647fb1152e0c3fe39cdbdc47c6add54bf35c6cfc153b95ef7c1c4b71.js.gz" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/application-f02d8d82db18f2e157b13c62ffde2e27b53065ae8902b492c14714d109a85770.css.gz" afterPath="$PROJECT_DIR$/public/assets/application-f02d8d82db18f2e157b13c62ffde2e27b53065ae8902b492c14714d109a85770.css.gz" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/bootstrap/glyphicons-halflings-regular-13634da87d9e23f8c3ed9108ce1724d183a39ad072e73e1b3d8cbf646d2d0407.eot" afterPath="$PROJECT_DIR$/public/assets/bootstrap/glyphicons-halflings-regular-13634da87d9e23f8c3ed9108ce1724d183a39ad072e73e1b3d8cbf646d2d0407.eot" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/bootstrap/glyphicons-halflings-regular-13634da87d9e23f8c3ed9108ce1724d183a39ad072e73e1b3d8cbf646d2d0407.eot.gz" afterPath="$PROJECT_DIR$/public/assets/bootstrap/glyphicons-halflings-regular-13634da87d9e23f8c3ed9108ce1724d183a39ad072e73e1b3d8cbf646d2d0407.eot.gz" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/bootstrap/glyphicons-halflings-regular-42f60659d265c1a3c30f9fa42abcbb56bd4a53af4d83d316d6dd7a36903c43e5.svg.gz" afterPath="$PROJECT_DIR$/public/assets/bootstrap/glyphicons-halflings-regular-42f60659d265c1a3c30f9fa42abcbb56bd4a53af4d83d316d6dd7a36903c43e5.svg.gz" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/bootstrap/glyphicons-halflings-regular-a26394f7ede100ca118eff2eda08596275a9839b959c226e15439557a5a80742.woff" afterPath="$PROJECT_DIR$/public/assets/bootstrap/glyphicons-halflings-regular-a26394f7ede100ca118eff2eda08596275a9839b959c226e15439557a5a80742.woff" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/bootstrap/glyphicons-halflings-regular-e395044093757d82afcb138957d06a1ea9361bdcf0b442d06a18a8051af57456.ttf" afterPath="$PROJECT_DIR$/public/assets/bootstrap/glyphicons-halflings-regular-e395044093757d82afcb138957d06a1ea9361bdcf0b442d06a18a8051af57456.ttf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/bootstrap/glyphicons-halflings-regular-e395044093757d82afcb138957d06a1ea9361bdcf0b442d06a18a8051af57456.ttf.gz" afterPath="$PROJECT_DIR$/public/assets/bootstrap/glyphicons-halflings-regular-e395044093757d82afcb138957d06a1ea9361bdcf0b442d06a18a8051af57456.ttf.gz" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/bootstrap/glyphicons-halflings-regular-fe185d11a49676890d47bb783312a0cda5a44c4039214094e7957b4c040ef11c.woff2" afterPath="$PROJECT_DIR$/public/assets/bootstrap/glyphicons-halflings-regular-fe185d11a49676890d47bb783312a0cda5a44c4039214094e7957b4c040ef11c.woff2" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/coins/Thumbs-d56b9bff3ed321d23ddba451a1090e3759e5afe516a787e6048a80c1cf32613e.db" afterPath="$PROJECT_DIR$/public/assets/coins/Thumbs-d56b9bff3ed321d23ddba451a1090e3759e5afe516a787e6048a80c1cf32613e.db" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/coins/coins-16-af6d533a578af2e82d4f1790865785d5842e6f7810073c72f57dce2f6768cdc6.png" afterPath="$PROJECT_DIR$/public/assets/coins/coins-16-af6d533a578af2e82d4f1790865785d5842e6f7810073c72f57dce2f6768cdc6.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/coins/coins-24-a25d205bf7a0ef70a6c976a00f427c189b4b6cec9204baa81015102333dcdaf4.png" afterPath="$PROJECT_DIR$/public/assets/coins/coins-24-a25d205bf7a0ef70a6c976a00f427c189b4b6cec9204baa81015102333dcdaf4.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/coins/coins-32-af8d8abbabd8e7c974528529ad3a19acf1aa0f9883030145f7018dd0114da023.png" afterPath="$PROJECT_DIR$/public/assets/coins/coins-32-af8d8abbabd8e7c974528529ad3a19acf1aa0f9883030145f7018dd0114da023.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/ea_32x32-d75ad7ee57bf08dc563ce498def924084ceaf7f22475ed6c46de7dc2c9c88aad.png" afterPath="$PROJECT_DIR$/public/assets/ea_32x32-d75ad7ee57bf08dc563ce498def924084ceaf7f22475ed6c46de7dc2c9c88aad.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/email/Thumbs-57181e5a838f1cb7448ce97a2267bb3122c33b8ca4805f288feedf80d8bc476d.db" afterPath="$PROJECT_DIR$/public/assets/email/Thumbs-57181e5a838f1cb7448ce97a2267bb3122c33b8ca4805f288feedf80d8bc476d.db" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/email/new-post-16-926cb60bad2e217dbd5096fdff1e34b0d036b403feff46f3b4d35027a0c808e7.png" afterPath="$PROJECT_DIR$/public/assets/email/new-post-16-926cb60bad2e217dbd5096fdff1e34b0d036b403feff46f3b4d35027a0c808e7.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/email/new-post-24-5996d1e68f53ddd20f3d5d51f3e317b07016c11cd89964ac51c03025a72628ae.png" afterPath="$PROJECT_DIR$/public/assets/email/new-post-24-5996d1e68f53ddd20f3d5d51f3e317b07016c11cd89964ac51c03025a72628ae.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/email/new-post-32-326ee25e31b32363196e502c408e4b1e31c0f4ab5a0298df9c8ada30f611d234.png" afterPath="$PROJECT_DIR$/public/assets/email/new-post-32-326ee25e31b32363196e502c408e4b1e31c0f4ab5a0298df9c8ada30f611d234.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/facebook/Thumbs-2a0b4143579e36bd59d0433214fad59b525b5925e5257e97839695b06715a061.db" afterPath="$PROJECT_DIR$/public/assets/facebook/Thumbs-2a0b4143579e36bd59d0433214fad59b525b5925e5257e97839695b06715a061.db" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/facebook/facebook-3-16-2e9e8e5bf96f1ef19476b05df01b1b5b20e9510e176a5bfc67680ecc38aa5505.png" afterPath="$PROJECT_DIR$/public/assets/facebook/facebook-3-16-2e9e8e5bf96f1ef19476b05df01b1b5b20e9510e176a5bfc67680ecc38aa5505.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/facebook/facebook-3-24-ae0cec737383d0174aea58790bea857710a224cb9590ef111fa58559f6590999.png" afterPath="$PROJECT_DIR$/public/assets/facebook/facebook-3-24-ae0cec737383d0174aea58790bea857710a224cb9590ef111fa58559f6590999.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/facebook/facebook-3-32-94a6442ccad8ad02b1800d8dcd709b1a3cd8822b55f24ac2d6f2f1e4610272ed.png" afterPath="$PROJECT_DIR$/public/assets/facebook/facebook-3-32-94a6442ccad8ad02b1800d8dcd709b1a3cd8822b55f24ac2d6f2f1e4610272ed.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/images/.keep" afterPath="$PROJECT_DIR$/public/assets/images/.keep" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/images/background.png" afterPath="$PROJECT_DIR$/public/assets/images/background.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/images/belka.png" afterPath="$PROJECT_DIR$/public/assets/images/belka.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/images/belka2.png" afterPath="$PROJECT_DIR$/public/assets/images/belka2.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/images/coins/Thumbs.db" afterPath="$PROJECT_DIR$/public/assets/images/coins/Thumbs.db" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/images/coins/coins-16.png" afterPath="$PROJECT_DIR$/public/assets/images/coins/coins-16.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/images/coins/coins-24.png" afterPath="$PROJECT_DIR$/public/assets/images/coins/coins-24.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/images/coins/coins-32.png" afterPath="$PROJECT_DIR$/public/assets/images/coins/coins-32.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/images/ea_32x32.png" afterPath="$PROJECT_DIR$/public/assets/images/ea_32x32.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/images/email/Thumbs.db" afterPath="$PROJECT_DIR$/public/assets/images/email/Thumbs.db" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/images/email/new-post-16.png" afterPath="$PROJECT_DIR$/public/assets/images/email/new-post-16.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/images/email/new-post-24.png" afterPath="$PROJECT_DIR$/public/assets/images/email/new-post-24.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/images/email/new-post-32.png" afterPath="$PROJECT_DIR$/public/assets/images/email/new-post-32.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/images/en.png" afterPath="$PROJECT_DIR$/public/assets/images/en.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/images/facebook/Thumbs.db" afterPath="$PROJECT_DIR$/public/assets/images/facebook/Thumbs.db" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/images/facebook/facebook-3-16.png" afterPath="$PROJECT_DIR$/public/assets/images/facebook/facebook-3-16.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/images/facebook/facebook-3-24.png" afterPath="$PROJECT_DIR$/public/assets/images/facebook/facebook-3-24.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/images/facebook/facebook-3-32.png" afterPath="$PROJECT_DIR$/public/assets/images/facebook/facebook-3-32.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/images/fb.png" afterPath="$PROJECT_DIR$/public/assets/images/fb.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/images/griez.png" afterPath="$PROJECT_DIR$/public/assets/images/griez.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/images/klodka/Thumbs.db" afterPath="$PROJECT_DIR$/public/assets/images/klodka/Thumbs.db" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/images/klodka/lock-7-16.png" afterPath="$PROJECT_DIR$/public/assets/images/klodka/lock-7-16.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/images/klodka/lock-7-24.png" afterPath="$PROJECT_DIR$/public/assets/images/klodka/lock-7-24.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/images/klodka/lock-7-32.png" afterPath="$PROJECT_DIR$/public/assets/images/klodka/lock-7-32.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/images/logo.png" afterPath="$PROJECT_DIR$/public/assets/images/logo.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/images/origin_32x32.png" afterPath="$PROJECT_DIR$/public/assets/images/origin_32x32.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/images/pl.png" afterPath="$PROJECT_DIR$/public/assets/images/pl.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/images/pogba.png" afterPath="$PROJECT_DIR$/public/assets/images/pogba.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/images/ps_32x32.png" afterPath="$PROJECT_DIR$/public/assets/images/ps_32x32.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/images/skype.png" afterPath="$PROJECT_DIR$/public/assets/images/skype.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/images/skype/Thumbs.db" afterPath="$PROJECT_DIR$/public/assets/images/skype/Thumbs.db" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/images/skype/skype-16.png" afterPath="$PROJECT_DIR$/public/assets/images/skype/skype-16.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/images/skype/skype-24.gif" afterPath="$PROJECT_DIR$/public/assets/images/skype/skype-24.gif" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/images/skype/skype-24.png" afterPath="$PROJECT_DIR$/public/assets/images/skype/skype-24.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/images/skype/skype-32.png" afterPath="$PROJECT_DIR$/public/assets/images/skype/skype-32.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/images/xb_32x32.png" afterPath="$PROJECT_DIR$/public/assets/images/xb_32x32.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/klodka/Thumbs-f432d44ea947b4f4f04f6ed9e3831708f3fda34fe1b180fc4454ab2c60191bde.db" afterPath="$PROJECT_DIR$/public/assets/klodka/Thumbs-f432d44ea947b4f4f04f6ed9e3831708f3fda34fe1b180fc4454ab2c60191bde.db" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/klodka/lock-7-16-8484f803ad0162d5f293b16c31ef519a062d1a9532a280b4d0f24886044fef74.png" afterPath="$PROJECT_DIR$/public/assets/klodka/lock-7-16-8484f803ad0162d5f293b16c31ef519a062d1a9532a280b4d0f24886044fef74.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/klodka/lock-7-24-221c1d0cd5e46ce4c65751aa5ed889d14642ecce8900a8c01ce88887a71ec789.png" afterPath="$PROJECT_DIR$/public/assets/klodka/lock-7-24-221c1d0cd5e46ce4c65751aa5ed889d14642ecce8900a8c01ce88887a71ec789.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/klodka/lock-7-32-2ce06bcee3977303f5abb8be6163704e4fee3ece0191aa0af6c29dbe2adbddbb.png" afterPath="$PROJECT_DIR$/public/assets/klodka/lock-7-32-2ce06bcee3977303f5abb8be6163704e4fee3ece0191aa0af6c29dbe2adbddbb.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/origin_32x32-65a4792b116d72dec4cf137d08f60033cf0fd2c1d287d04553621f38977ecd92.png" afterPath="$PROJECT_DIR$/public/assets/origin_32x32-65a4792b116d72dec4cf137d08f60033cf0fd2c1d287d04553621f38977ecd92.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/ps_32x32-6d2874c10cd76dc31473bf1008c65b56c9b5216ad8e1fc77358dbe6f616b7bf9.png" afterPath="$PROJECT_DIR$/public/assets/ps_32x32-6d2874c10cd76dc31473bf1008c65b56c9b5216ad8e1fc77358dbe6f616b7bf9.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/skype/Thumbs-52632bc8a6e39bcc179e59193160db6b1154edc7b425eae0bdf5a94bf1ff9244.db" afterPath="$PROJECT_DIR$/public/assets/skype/Thumbs-52632bc8a6e39bcc179e59193160db6b1154edc7b425eae0bdf5a94bf1ff9244.db" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/skype/skype-16-9380b2ba409cf660e6c1640275cbfc87f215303b49aaf6245be31736aa7b5c5a.png" afterPath="$PROJECT_DIR$/public/assets/skype/skype-16-9380b2ba409cf660e6c1640275cbfc87f215303b49aaf6245be31736aa7b5c5a.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/skype/skype-24-a9d5a7dc4abe8854a2c67ddf0f18ba50fff4d835bcf0c421a03a2d0e72d20c7d.png" afterPath="$PROJECT_DIR$/public/assets/skype/skype-24-a9d5a7dc4abe8854a2c67ddf0f18ba50fff4d835bcf0c421a03a2d0e72d20c7d.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/skype/skype-24-b0de10e6dc0cff8c8f8d750798084a51d62340da64dad61b5e7de6d9f590d29d.gif" afterPath="$PROJECT_DIR$/public/assets/skype/skype-24-b0de10e6dc0cff8c8f8d750798084a51d62340da64dad61b5e7de6d9f590d29d.gif" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/skype/skype-32-b2865e8d3c7b5cf2732615332968fb6c798fabb662ffd0ab4114344a5cece337.png" afterPath="$PROJECT_DIR$/public/assets/skype/skype-32-b2865e8d3c7b5cf2732615332968fb6c798fabb662ffd0ab4114344a5cece337.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/xb_32x32-1b09de2716d137de4199f22109bec0c302f18c8601c51bbfa11d3341e2f0d41e.png" afterPath="$PROJECT_DIR$/public/assets/xb_32x32-1b09de2716d137de4199f22109bec0c302f18c8601c51bbfa11d3341e2f0d41e.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/favicon.ico" afterPath="$PROJECT_DIR$/public/favicon.ico" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/controllers/.keep" afterPath="$PROJECT_DIR$/test/controllers/.keep" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/fixtures/.keep" afterPath="$PROJECT_DIR$/test/fixtures/.keep" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/helpers/.keep" afterPath="$PROJECT_DIR$/test/helpers/.keep" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/integration/.keep" afterPath="$PROJECT_DIR$/test/integration/.keep" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/mailers/.keep" afterPath="$PROJECT_DIR$/test/mailers/.keep" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/models/.keep" afterPath="$PROJECT_DIR$/test/models/.keep" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/assets/javascripts/.keep" afterPath="$PROJECT_DIR$/vendor/assets/javascripts/.keep" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/assets/stylesheets/.keep" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/.keep" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile" afterPath="$PROJECT_DIR$/Gemfile" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile.lock" afterPath="$PROJECT_DIR$/Gemfile.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.rdoc" afterPath="$PROJECT_DIR$/README.rdoc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Rakefile" afterPath="$PROJECT_DIR$/Rakefile" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/javascripts/accounts.js" afterPath="$PROJECT_DIR$/app/assets/javascripts/accounts.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/javascripts/application.js" afterPath="$PROJECT_DIR$/app/assets/javascripts/application.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/javascripts/configurations.js" afterPath="$PROJECT_DIR$/app/assets/javascripts/configurations.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/javascripts/home.js" afterPath="$PROJECT_DIR$/app/assets/javascripts/home.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/accounts.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/accounts.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/application.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/application.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/configurations.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/configurations.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/home.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/home.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/users.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/users.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/accounts_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/accounts_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/application_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/application_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/configurations_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/configurations_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/home_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/home_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/registrations_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/registrations_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/userss_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/userss_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/helpers/accounts_helper.rb" afterPath="$PROJECT_DIR$/app/helpers/accounts_helper.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/helpers/application_helper.rb" afterPath="$PROJECT_DIR$/app/helpers/application_helper.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/helpers/configurations_helper.rb" afterPath="$PROJECT_DIR$/app/helpers/configurations_helper.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/helpers/home_helper.rb" afterPath="$PROJECT_DIR$/app/helpers/home_helper.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/mailers/account_mailer.rb" afterPath="$PROJECT_DIR$/app/mailers/account_mailer.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/mailers/application_mailer.rb" afterPath="$PROJECT_DIR$/app/mailers/application_mailer.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/account.rb" afterPath="$PROJECT_DIR$/app/models/account.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/app_configuration.rb" afterPath="$PROJECT_DIR$/app/models/app_configuration.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/concerns/tokenable.rb" afterPath="$PROJECT_DIR$/app/models/concerns/tokenable.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/email.rb" afterPath="$PROJECT_DIR$/app/models/email.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/player.rb" afterPath="$PROJECT_DIR$/app/models/player.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/user.rb" afterPath="$PROJECT_DIR$/app/models/user.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/account_mailer/confirmation_email.html.erb" afterPath="$PROJECT_DIR$/app/views/account_mailer/confirmation_email.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/account_mailer/confirmation_email.text.erb" afterPath="$PROJECT_DIR$/app/views/account_mailer/confirmation_email.text.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/account_mailer/edit_email.html.erb" afterPath="$PROJECT_DIR$/app/views/account_mailer/edit_email.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/account_mailer/edit_email.text.erb" afterPath="$PROJECT_DIR$/app/views/account_mailer/edit_email.text.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/account_mailer/information_email.html.erb" afterPath="$PROJECT_DIR$/app/views/account_mailer/information_email.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/account_mailer/information_email.text.erb" afterPath="$PROJECT_DIR$/app/views/account_mailer/information_email.text.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/account_mailer/notify_email.html.erb" afterPath="$PROJECT_DIR$/app/views/account_mailer/notify_email.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/account_mailer/notify_email.text.erb" afterPath="$PROJECT_DIR$/app/views/account_mailer/notify_email.text.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/account_mailer/paid_email.html.erb" afterPath="$PROJECT_DIR$/app/views/account_mailer/paid_email.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/account_mailer/paid_email.text.erb" afterPath="$PROJECT_DIR$/app/views/account_mailer/paid_email.text.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/accounts/_form.html.erb" afterPath="$PROJECT_DIR$/app/views/accounts/_form.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/accounts/contact.html.erb" afterPath="$PROJECT_DIR$/app/views/accounts/contact.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/accounts/edit.html.erb" afterPath="$PROJECT_DIR$/app/views/accounts/edit.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/accounts/index.html.erb" afterPath="$PROJECT_DIR$/app/views/accounts/index.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/accounts/new.html.erb" afterPath="$PROJECT_DIR$/app/views/accounts/new.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/accounts/regulations.html.erb" afterPath="$PROJECT_DIR$/app/views/accounts/regulations.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/accounts/show.html.erb" afterPath="$PROJECT_DIR$/app/views/accounts/show.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/configurations/edit.html.erb" afterPath="$PROJECT_DIR$/app/views/configurations/edit.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/configurations/emails.html.erb" afterPath="$PROJECT_DIR$/app/views/configurations/emails.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/devise/confirmations/new.html.erb" afterPath="$PROJECT_DIR$/app/views/devise/confirmations/new.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/devise/mailer/confirmation_instructions.html.erb" afterPath="$PROJECT_DIR$/app/views/devise/mailer/confirmation_instructions.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/devise/mailer/password_change.html.erb" afterPath="$PROJECT_DIR$/app/views/devise/mailer/password_change.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/devise/mailer/reset_password_instructions.html.erb" afterPath="$PROJECT_DIR$/app/views/devise/mailer/reset_password_instructions.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/devise/mailer/unlock_instructions.html.erb" afterPath="$PROJECT_DIR$/app/views/devise/mailer/unlock_instructions.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/devise/passwords/edit.html.erb" afterPath="$PROJECT_DIR$/app/views/devise/passwords/edit.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/devise/passwords/new.html.erb" afterPath="$PROJECT_DIR$/app/views/devise/passwords/new.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/devise/registrations/edit.html.erb" afterPath="$PROJECT_DIR$/app/views/devise/registrations/edit.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/devise/registrations/new.html.erb" afterPath="$PROJECT_DIR$/app/views/devise/registrations/new.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/devise/sessions/new.html.erb" afterPath="$PROJECT_DIR$/app/views/devise/sessions/new.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/devise/shared/_links.html.erb" afterPath="$PROJECT_DIR$/app/views/devise/shared/_links.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/devise/unlocks/new.html.erb" afterPath="$PROJECT_DIR$/app/views/devise/unlocks/new.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/home/index.html.erb" afterPath="$PROJECT_DIR$/app/views/home/index.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/application.html.erb" afterPath="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/mailer.html.erb" afterPath="$PROJECT_DIR$/app/views/layouts/mailer.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/mailer.text.erb" afterPath="$PROJECT_DIR$/app/views/layouts/mailer.text.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/userss/edit.html.erb" afterPath="$PROJECT_DIR$/app/views/userss/edit.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/userss/index.html.erb" afterPath="$PROJECT_DIR$/app/views/userss/index.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/userss/new.html.erb" afterPath="$PROJECT_DIR$/app/views/userss/new.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config.ru" afterPath="$PROJECT_DIR$/config.ru" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/application.rb" afterPath="$PROJECT_DIR$/config/application.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/boot.rb" afterPath="$PROJECT_DIR$/config/boot.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/database.yml" afterPath="$PROJECT_DIR$/config/database.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/environment.rb" afterPath="$PROJECT_DIR$/config/environment.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/environments/development.rb" afterPath="$PROJECT_DIR$/config/environments/development.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/environments/production.rb" afterPath="$PROJECT_DIR$/config/environments/production.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/environments/test.rb" afterPath="$PROJECT_DIR$/config/environments/test.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/initializers/assets.rb" afterPath="$PROJECT_DIR$/config/initializers/assets.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/initializers/backtrace_silencers.rb" afterPath="$PROJECT_DIR$/config/initializers/backtrace_silencers.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/initializers/cookies_serializer.rb" afterPath="$PROJECT_DIR$/config/initializers/cookies_serializer.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/initializers/devise.rb" afterPath="$PROJECT_DIR$/config/initializers/devise.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/initializers/filter_parameter_logging.rb" afterPath="$PROJECT_DIR$/config/initializers/filter_parameter_logging.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/initializers/inflections.rb" afterPath="$PROJECT_DIR$/config/initializers/inflections.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/initializers/mime_types.rb" afterPath="$PROJECT_DIR$/config/initializers/mime_types.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/initializers/session_store.rb" afterPath="$PROJECT_DIR$/config/initializers/session_store.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/initializers/simple_form.rb" afterPath="$PROJECT_DIR$/config/initializers/simple_form.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/initializers/simple_form_bootstrap.rb" afterPath="$PROJECT_DIR$/config/initializers/simple_form_bootstrap.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/initializers/wrap_parameters.rb" afterPath="$PROJECT_DIR$/config/initializers/wrap_parameters.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/locales/devise.en.yml" afterPath="$PROJECT_DIR$/config/locales/devise.en.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/locales/devise.views.it.yml" afterPath="$PROJECT_DIR$/config/locales/devise.views.it.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/locales/en.yml" afterPath="$PROJECT_DIR$/config/locales/en.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/locales/pl.yml" afterPath="$PROJECT_DIR$/config/locales/pl.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/locales/simple_form.en.yml" afterPath="$PROJECT_DIR$/config/locales/simple_form.en.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/routes.rb" afterPath="$PROJECT_DIR$/config/routes.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/secrets.yml" afterPath="$PROJECT_DIR$/config/secrets.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/migrate/20160809160631_devise_create_users.rb" afterPath="$PROJECT_DIR$/db/migrate/20160809160631_devise_create_users.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/migrate/20160809162940_create_accounts.rb" afterPath="$PROJECT_DIR$/db/migrate/20160809162940_create_accounts.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/migrate/20160814222859_add_role_to_user.rb" afterPath="$PROJECT_DIR$/db/migrate/20160814222859_add_role_to_user.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/migrate/20160815190013_create_players.rb" afterPath="$PROJECT_DIR$/db/migrate/20160815190013_create_players.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/migrate/20160825185034_create_app_configurations.rb" afterPath="$PROJECT_DIR$/db/migrate/20160825185034_create_app_configurations.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/migrate/20160917221819_add_new_fields_to_account.rb" afterPath="$PROJECT_DIR$/db/migrate/20160917221819_add_new_fields_to_account.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/migrate/20160925174128_create_emails.rb" afterPath="$PROJECT_DIR$/db/migrate/20160925174128_create_emails.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/migrate/20161013174246_add_phone_to_account.rb" afterPath="$PROJECT_DIR$/db/migrate/20161013174246_add_phone_to_account.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/migrate/20161023160335_add_paid_to_account.rb" afterPath="$PROJECT_DIR$/db/migrate/20161023160335_add_paid_to_account.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/schema.rb" afterPath="$PROJECT_DIR$/db/schema.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/seeds.rb" afterPath="$PROJECT_DIR$/db/seeds.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/templates/erb/scaffold/_form.html.erb" afterPath="$PROJECT_DIR$/lib/templates/erb/scaffold/_form.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/404.html" afterPath="$PROJECT_DIR$/public/404.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/422.html" afterPath="$PROJECT_DIR$/public/422.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/500.html" afterPath="$PROJECT_DIR$/public/500.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/.sprockets-manifest-6fb7206572d91042eb8d559c4639c8f2.json" afterPath="$PROJECT_DIR$/public/assets/.sprockets-manifest-6fb7206572d91042eb8d559c4639c8f2.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/application-195b7ce7ee5795f9dd847e69ce2626b25f69426dada4350e2d2e60885c46ad03.css" afterPath="$PROJECT_DIR$/public/assets/application-195b7ce7ee5795f9dd847e69ce2626b25f69426dada4350e2d2e60885c46ad03.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/application-259cc9c7845b045ad0ab52108992ef22f6853a03586d3ab230ffdc6309c04ddb.css" afterPath="$PROJECT_DIR$/public/assets/application-259cc9c7845b045ad0ab52108992ef22f6853a03586d3ab230ffdc6309c04ddb.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/application-281c6da8937b07f227c28bca6560e9b09214bfcc98f12d32d48b4225ba8087ad.css" afterPath="$PROJECT_DIR$/public/assets/application-281c6da8937b07f227c28bca6560e9b09214bfcc98f12d32d48b4225ba8087ad.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/application-2a93e7104e835cfbd9c785a2094760297cb7c99384ee978704da7d904dccfcc1.css" afterPath="$PROJECT_DIR$/public/assets/application-2a93e7104e835cfbd9c785a2094760297cb7c99384ee978704da7d904dccfcc1.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/application-2ba15ed852ddf1988080de7426fdd3083dd35e7a8911c068388694774faf106a.css" afterPath="$PROJECT_DIR$/public/assets/application-2ba15ed852ddf1988080de7426fdd3083dd35e7a8911c068388694774faf106a.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/application-314cc5751f650ec75eec969c1faf48e345318785c521b3ff3045d6e52f0ac5bf.js" afterPath="$PROJECT_DIR$/public/assets/application-314cc5751f650ec75eec969c1faf48e345318785c521b3ff3045d6e52f0ac5bf.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/application-3eeb95c085de0f7c87b59baf4b80520fe5d1c7b9ec701f6cd843bc5f004650c3.css" afterPath="$PROJECT_DIR$/public/assets/application-3eeb95c085de0f7c87b59baf4b80520fe5d1c7b9ec701f6cd843bc5f004650c3.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/application-3f5966a862a6672aecac11d3fa84629ecbc0765f3fef87e6410657424c2904bb.css" afterPath="$PROJECT_DIR$/public/assets/application-3f5966a862a6672aecac11d3fa84629ecbc0765f3fef87e6410657424c2904bb.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/application-41a996471265902ca48c46d99c073042ab6855e07e97b701c57982b8fb934ae4.css" afterPath="$PROJECT_DIR$/public/assets/application-41a996471265902ca48c46d99c073042ab6855e07e97b701c57982b8fb934ae4.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/application-442e0dd12f93a85b4399bb58d1f9df6af18c5d2e9620ce45d1bd851574a34447.css" afterPath="$PROJECT_DIR$/public/assets/application-442e0dd12f93a85b4399bb58d1f9df6af18c5d2e9620ce45d1bd851574a34447.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/application-530de52a90b04d2ae4d49554c2728f2209a5f75eb9048975d6ddf8d8a0e4bbdc.css" afterPath="$PROJECT_DIR$/public/assets/application-530de52a90b04d2ae4d49554c2728f2209a5f75eb9048975d6ddf8d8a0e4bbdc.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/application-5b767cb1c4b2b62d55122124ba1f4128b20f41dfbbbc9fad07f57906ad09b8e2.css" afterPath="$PROJECT_DIR$/public/assets/application-5b767cb1c4b2b62d55122124ba1f4128b20f41dfbbbc9fad07f57906ad09b8e2.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/application-5bf3edbe1285ccb41720892cffc340c965191c352a349ddcb8f3deffb8718291.css" afterPath="$PROJECT_DIR$/public/assets/application-5bf3edbe1285ccb41720892cffc340c965191c352a349ddcb8f3deffb8718291.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/application-7a1a4bab1c9d79a927b8bb7c49fda64f8981538a1d92d08628bddcdb50186450.css" afterPath="$PROJECT_DIR$/public/assets/application-7a1a4bab1c9d79a927b8bb7c49fda64f8981538a1d92d08628bddcdb50186450.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/application-99e434e8d556bed82753dba1bad6126d80a9ffb10c0cd37920e728c5a40072e1.css" afterPath="$PROJECT_DIR$/public/assets/application-99e434e8d556bed82753dba1bad6126d80a9ffb10c0cd37920e728c5a40072e1.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/application-d498c129b0f4504a6ec00aaeba7cb18b4671c5462198d0e10e5ef392a661346e.js" afterPath="$PROJECT_DIR$/public/assets/application-d498c129b0f4504a6ec00aaeba7cb18b4671c5462198d0e10e5ef392a661346e.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/application-d94eddb6a6832b1684427ddf0c17eb9390457a514bf8b6404823a794c6941569.js" afterPath="$PROJECT_DIR$/public/assets/application-d94eddb6a6832b1684427ddf0c17eb9390457a514bf8b6404823a794c6941569.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/application-dcddeb7f647fb1152e0c3fe39cdbdc47c6add54bf35c6cfc153b95ef7c1c4b71.js" afterPath="$PROJECT_DIR$/public/assets/application-dcddeb7f647fb1152e0c3fe39cdbdc47c6add54bf35c6cfc153b95ef7c1c4b71.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/application-f02d8d82db18f2e157b13c62ffde2e27b53065ae8902b492c14714d109a85770.css" afterPath="$PROJECT_DIR$/public/assets/application-f02d8d82db18f2e157b13c62ffde2e27b53065ae8902b492c14714d109a85770.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/bootstrap/glyphicons-halflings-regular-42f60659d265c1a3c30f9fa42abcbb56bd4a53af4d83d316d6dd7a36903c43e5.svg" afterPath="$PROJECT_DIR$/public/assets/bootstrap/glyphicons-halflings-regular-42f60659d265c1a3c30f9fa42abcbb56bd4a53af4d83d316d6dd7a36903c43e5.svg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/robots.txt" afterPath="$PROJECT_DIR$/public/robots.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/controllers/accounts_controller_test.rb" afterPath="$PROJECT_DIR$/test/controllers/accounts_controller_test.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/controllers/configurations_controller_test.rb" afterPath="$PROJECT_DIR$/test/controllers/configurations_controller_test.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/controllers/home_controller_test.rb" afterPath="$PROJECT_DIR$/test/controllers/home_controller_test.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/fixtures/accounts.yml" afterPath="$PROJECT_DIR$/test/fixtures/accounts.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/fixtures/app_configurations.yml" afterPath="$PROJECT_DIR$/test/fixtures/app_configurations.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/fixtures/emails.yml" afterPath="$PROJECT_DIR$/test/fixtures/emails.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/fixtures/players.yml" afterPath="$PROJECT_DIR$/test/fixtures/players.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/fixtures/users.yml" afterPath="$PROJECT_DIR$/test/fixtures/users.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/mailers/account_mailer_test.rb" afterPath="$PROJECT_DIR$/test/mailers/account_mailer_test.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/mailers/previews/account_mailer_preview.rb" afterPath="$PROJECT_DIR$/test/mailers/previews/account_mailer_preview.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/models/account_test.rb" afterPath="$PROJECT_DIR$/test/models/account_test.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/models/app_configuration_test.rb" afterPath="$PROJECT_DIR$/test/models/app_configuration_test.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/models/email_test.rb" afterPath="$PROJECT_DIR$/test/models/email_test.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/models/player_test.rb" afterPath="$PROJECT_DIR$/test/models/player_test.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/models/user_test.rb" afterPath="$PROJECT_DIR$/test/models/user_test.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/test_helper.rb" afterPath="$PROJECT_DIR$/test/test_helper.rb" />
-    </list>
+    <list default="true" id="84d57a2b-69dc-4aca-9e78-b6611febd35a" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/.bundle/" />
     <ignored path="$PROJECT_DIR$/components/" />
     <ignored path="$PROJECT_DIR$/public/system/" />
@@ -298,11 +19,11 @@
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="accounts_controller.rb" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/accounts_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="134">
+            <state relative-caret-position="435">
               <caret line="29" column="20" lean-forward="false" selection-start-line="29" selection-start-column="20" selection-end-line="29" selection-end-column="20" />
               <folding />
             </state>
@@ -312,14 +33,9 @@
       <file leaf-file-name="show.html.erb" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/accounts/show.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="13" column="28" lean-forward="true" selection-start-line="13" selection-start-column="28" selection-end-line="13" selection-end-column="28" />
-              <folding>
-                <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#h2#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#1;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#h2#0;n#div#1;n#!!top" expanded="true" />
-              </folding>
+            <state relative-caret-position="90">
+              <caret line="6" column="8" lean-forward="false" selection-start-line="6" selection-start-column="8" selection-end-line="6" selection-end-column="8" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -327,8 +43,8 @@
       <file leaf-file-name="index.html.erb" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/accounts/index.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="74" column="26" lean-forward="true" selection-start-line="74" selection-start-column="26" selection-end-line="74" selection-end-column="26" />
+            <state relative-caret-position="1110">
+              <caret line="74" column="26" lean-forward="false" selection-start-line="74" selection-start-column="26" selection-end-line="74" selection-end-column="26" />
               <folding />
             </state>
           </provider>
@@ -338,7 +54,7 @@
         <entry file="file://$PROJECT_DIR$/app/helpers/application_helper.rb">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="150">
-              <caret line="10" column="19" lean-forward="true" selection-start-line="10" selection-start-column="19" selection-end-line="10" selection-end-column="19" />
+              <caret line="10" column="19" lean-forward="false" selection-start-line="10" selection-start-column="19" selection-end-line="10" selection-end-column="19" />
               <folding />
             </state>
           </provider>
@@ -347,8 +63,8 @@
       <file leaf-file-name="schema.rb" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/db/schema.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="34" column="22" lean-forward="true" selection-start-line="34" selection-start-column="22" selection-end-line="34" selection-end-column="22" />
+            <state relative-caret-position="510">
+              <caret line="34" column="22" lean-forward="false" selection-start-line="34" selection-start-column="22" selection-end-line="34" selection-end-column="22" />
               <folding />
             </state>
           </provider>
@@ -358,7 +74,7 @@
         <entry file="file://$PROJECT_DIR$/app/controllers/userss_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="90">
-              <caret line="6" column="21" lean-forward="true" selection-start-line="6" selection-start-column="21" selection-end-line="6" selection-end-column="21" />
+              <caret line="6" column="21" lean-forward="false" selection-start-line="6" selection-start-column="21" selection-end-line="6" selection-end-column="21" />
               <folding />
             </state>
           </provider>
@@ -392,8 +108,9 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
+    <option name="y" value="36" />
     <option name="width" value="1280" />
-    <option name="height" value="800" />
+    <option name="height" value="729" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -533,8 +250,8 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
       <pane id="RailsProjectView" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -592,104 +309,6 @@
       <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_OPTION_PREREQS" VALUE="false" />
       <method />
     </configuration>
-    <configuration default="false" name="test: fifa_shop" type="RakeRunConfigurationType" factoryName="Rake">
-      <module name="fifa_shop" />
-      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
-      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="$MODULE_DIR$" />
-      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="SHOULD_USE_SDK" VALUE="false" />
-      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="ALTERN_SDK_NAME" VALUE="" />
-      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
-      <envs>
-        <env name="RAILS_ENV" value="test" />
-      </envs>
-      <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="false" />
-      <EXTENSION ID="JRubyRunConfigurationExtension" NailgunExecEnabled="false" />
-      <EXTENSION ID="RubyCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" track_test_folders="true" runner="rcov">
-        <COVERAGE_PATTERN ENABLED="true">
-          <PATTERN REGEXPS="/.rvm/" INCLUDED="false" />
-        </COVERAGE_PATTERN>
-      </EXTENSION>
-      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_NAME" VALUE="test" />
-      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_ARGS" VALUE="" />
-      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_ATTACHED_TEST_FRAMEWORKS" VALUE=":test_unit " />
-      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_OPTION_TRACE" VALUE="false" />
-      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_OPTION_DRYRUN" VALUE="false" />
-      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_OPTION_PREREQS" VALUE="false" />
-      <method />
-    </configuration>
-    <configuration default="false" name="spec: fifa_shop" type="RakeRunConfigurationType" factoryName="Rake">
-      <module name="fifa_shop" />
-      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
-      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="$MODULE_DIR$" />
-      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="SHOULD_USE_SDK" VALUE="false" />
-      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="ALTERN_SDK_NAME" VALUE="" />
-      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
-      <envs />
-      <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="false" />
-      <EXTENSION ID="JRubyRunConfigurationExtension" NailgunExecEnabled="false" />
-      <EXTENSION ID="RubyCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" track_test_folders="true" runner="rcov">
-        <COVERAGE_PATTERN ENABLED="true">
-          <PATTERN REGEXPS="/.rvm/" INCLUDED="false" />
-        </COVERAGE_PATTERN>
-      </EXTENSION>
-      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_NAME" VALUE="spec" />
-      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_ARGS" VALUE="" />
-      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_ATTACHED_TEST_FRAMEWORKS" VALUE=":rspec " />
-      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_OPTION_TRACE" VALUE="false" />
-      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_OPTION_DRYRUN" VALUE="false" />
-      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_OPTION_PREREQS" VALUE="false" />
-      <method />
-    </configuration>
-    <configuration default="false" name="Production: fifa_shop" type="RailsRunConfigurationType" factoryName="Rails">
-      <predefined_log_file id="RUBY_RAILS_SERVER" enabled="true" />
-      <module name="fifa_shop" />
-      <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
-      <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="$MODULE_DIR$" />
-      <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="SHOULD_USE_SDK" VALUE="false" />
-      <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="ALTERN_SDK_NAME" VALUE="" />
-      <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
-      <envs />
-      <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="false" />
-      <EXTENSION ID="JRubyRunConfigurationExtension" NailgunExecEnabled="false" />
-      <EXTENSION ID="RubyCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" track_test_folders="true" runner="rcov">
-        <COVERAGE_PATTERN ENABLED="true">
-          <PATTERN REGEXPS="/.rvm/" INCLUDED="false" />
-        </COVERAGE_PATTERN>
-      </EXTENSION>
-      <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="SCRIPT_ARGS" VALUE="" />
-      <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="PORT" VALUE="3000" />
-      <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="IP" VALUE="0.0.0.0" />
-      <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="DUMMY_APP" VALUE="test/dummy" />
-      <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="RAILS_SERVER_TYPE" VALUE="Default" />
-      <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="ENVIRONMENT_TYPE" VALUE="production" />
-      <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="LAUNCH_JS" VALUE="false" />
-      <method />
-    </configuration>
-    <configuration default="false" name="Development: fifa_shop" type="RailsRunConfigurationType" factoryName="Rails">
-      <predefined_log_file id="RUBY_RAILS_SERVER" enabled="true" />
-      <module name="fifa_shop" />
-      <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
-      <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="$MODULE_DIR$" />
-      <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="SHOULD_USE_SDK" VALUE="false" />
-      <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="ALTERN_SDK_NAME" VALUE="" />
-      <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
-      <envs />
-      <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="false" />
-      <EXTENSION ID="JRubyRunConfigurationExtension" NailgunExecEnabled="false" />
-      <EXTENSION ID="RubyCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" track_test_folders="true" runner="rcov">
-        <COVERAGE_PATTERN ENABLED="true">
-          <PATTERN REGEXPS="/.rvm/" INCLUDED="false" />
-        </COVERAGE_PATTERN>
-      </EXTENSION>
-      <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="SCRIPT_ARGS" VALUE="" />
-      <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="PORT" VALUE="3000" />
-      <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="IP" VALUE="0.0.0.0" />
-      <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="DUMMY_APP" VALUE="test/dummy" />
-      <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="RAILS_SERVER_TYPE" VALUE="Default" />
-      <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="ENVIRONMENT_TYPE" VALUE="development" />
-      <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="LAUNCH_JS" VALUE="false" />
-      <method />
-    </configuration>
     <list size="4">
       <item index="0" class="java.lang.String" itemvalue="Rake.test: fifa_shop" />
       <item index="1" class="java.lang.String" itemvalue="Rake.spec: fifa_shop" />
@@ -711,34 +330,35 @@
       <option name="presentableId" value="Default" />
       <updated>1483530519500</updated>
       <workItem from="1483530523666" duration="1590000" />
+      <workItem from="1483748867796" duration="15000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1590000" />
+    <option name="totallyTimeSpent" value="1605000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1280" height="800" extended-state="0" />
+    <frame x="0" y="36" width="1280" height="729" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.29011554" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.29011554" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -752,17 +372,41 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$USER_HOME$/.rbenv/versions/2.3.3/lib/ruby/2.3.0/delegate.rb">
+    <entry file="file://$PROJECT_DIR$/app/controllers/accounts_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="383" column="8" lean-forward="false" selection-start-line="383" selection-start-column="8" selection-end-line="383" selection-end-column="8" />
+        <state relative-caret-position="435">
+          <caret line="29" column="20" lean-forward="false" selection-start-line="29" selection-start-column="20" selection-end-line="29" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/accounts/show.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/accounts/index.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1110">
+          <caret line="74" column="26" lean-forward="true" selection-start-line="74" selection-start-column="26" selection-end-line="74" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/helpers/application_helper.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="19" lean-forward="true" selection-start-line="10" selection-start-column="19" selection-end-line="10" selection-end-column="19" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/db/schema.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
+        <state relative-caret-position="510">
           <caret line="34" column="22" lean-forward="true" selection-start-line="34" selection-start-column="22" selection-end-line="34" selection-end-column="22" />
           <folding />
         </state>
@@ -776,10 +420,33 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$USER_HOME$/.rbenv/versions/2.3.3/lib/ruby/2.3.0/delegate.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="383" column="8" lean-forward="false" selection-start-line="383" selection-start-column="8" selection-end-line="383" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/schema.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="34" column="22" lean-forward="false" selection-start-line="34" selection-start-column="22" selection-end-line="34" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/userss_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="21" lean-forward="false" selection-start-line="6" selection-start-column="21" selection-end-line="6" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/helpers/application_helper.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
-          <caret line="10" column="19" lean-forward="true" selection-start-line="10" selection-start-column="19" selection-end-line="10" selection-end-column="19" />
+          <caret line="10" column="19" lean-forward="false" selection-start-line="10" selection-start-column="19" selection-end-line="10" selection-end-column="19" />
           <folding />
         </state>
       </provider>
@@ -788,7 +455,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
           <caret line="9" column="5" lean-forward="false" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -796,21 +462,20 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
           <caret line="2" column="0" lean-forward="true" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/accounts/index.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="74" column="26" lean-forward="true" selection-start-line="74" selection-start-column="26" selection-end-line="74" selection-end-column="26" />
+        <state relative-caret-position="1110">
+          <caret line="74" column="26" lean-forward="false" selection-start-line="74" selection-start-column="26" selection-end-line="74" selection-end-column="26" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/accounts_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="134">
+        <state relative-caret-position="435">
           <caret line="29" column="20" lean-forward="false" selection-start-line="29" selection-start-column="20" selection-end-line="29" selection-end-column="20" />
           <folding />
         </state>
@@ -818,14 +483,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/accounts/show.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="28" lean-forward="true" selection-start-line="13" selection-start-column="28" selection-end-line="13" selection-end-column="28" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#h2#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#h2#0;n#div#1;n#!!top" expanded="true" />
-          </folding>
+        <state relative-caret-position="90">
+          <caret line="6" column="8" lean-forward="false" selection-start-line="6" selection-start-column="8" selection-end-line="6" selection-end-column="8" />
+          <folding />
         </state>
       </provider>
     </entry>
