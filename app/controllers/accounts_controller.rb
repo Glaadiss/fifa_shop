@@ -32,9 +32,9 @@ class AccountsController < ApplicationController
     elsif params[:type] && params[:type][:confirmed]
       @accounts = Account.where(confirmed: params[:type][:confirmed], paid?: params[:type][:paid]).order('updated_at DESC')
     elsif params[:type]
-      @accounts = Account.where(confirmed: nil, failures: nil)
+      @accounts = Account.where(confirmed: nil, failures: nil).order('updated_at DESC')
     else
-       @accounts = Account.all.order('updated_at DESC')
+      @accounts = Account.all.order('updated_at DESC')
     end
   end
 

@@ -73,7 +73,7 @@
       <%= link_to "Nie zapłacone", accounts_path(type: { confirmed: true }), class: 'btn btn-warning'%>
     </div>
     <div class="col-md-2">
-      <%= link_to "Nie sprawdzone", accounts_path(type: { confirmed: nil }), class: 'btn btn-warning'%>
+      <%= link_to "Nie sprawdzone", accounts_path(type: true), class: 'btn btn-warning'%>
     </div>
     <div class="col-md-2">
       <%= link_to "Złe dane", accounts_path(type: { failures: true }), class: 'btn btn-danger' %>
