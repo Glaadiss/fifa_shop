@@ -27,8 +27,11 @@ class AccountsController < ApplicationController
   end
 
   def index
-    if params[:type]
-      @accounts = Account.where(confirmed: params[:type][:confirmed],failures: params[:type][:failures]).order('updated_at DESC')
+    if params[:type][:failures]
+      @accounts = Account.where.not(failures: nil).order('updated_at DESC')
+    elsif params[:type]
+      @accounts = Account.where(confirmed: params[:type][:confirmed], paid?: params[:type][:paid]).order('updated_at DESC')
+
     else
       @accounts = Account.order('updated_at DESC')
     end

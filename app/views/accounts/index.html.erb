@@ -67,15 +67,22 @@
 <div class="container alert alert-info">
   <div class="row">
     <div class="col-md-2">
-      <%= link_to "Kupione", accounts_path(type: { confrimed: true }), class: 'btn btn-success'%>
+      <%= link_to "Kupione", accounts_path(type: { confirmed: true, paid: true }), class: 'btn btn-success'%>
     </div>
     <div class="col-md-2">
-      <%= link_to "Nie sprawdzone", accounts_path(type: { confrimed: nil }), class: 'btn btn-warning'%>
+      <%= link_to "Nie zapłacone", accounts_path(type: { confirmed: true }), class: 'btn btn-warning'%>
+    </div>
+    <div class="col-md-2">
+      <%= link_to "Nie sprawdzone", accounts_path(type: { confirmed: nil }), class: 'btn btn-warning'%>
     </div>
     <div class="col-md-2">
       <%= link_to "Złe dane", accounts_path(type: { failures: true }), class: 'btn btn-danger' %>
     </div>
+    <div class="col-md-2">
+      <%= link_to "Wszystkie", accounts_path(type: {}), class: 'btn btn-success' %>
+    </div>
   </div>
+  <br />
   <div class="col-md-9">
     <div class="col-md-3"> <strong>Email: </strong></div>
     <div class="col-md-3"> <strong> WebApp email: </strong></div>
