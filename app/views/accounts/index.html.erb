@@ -41,9 +41,11 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4">
-                  <%= submit_tag 'Usuń rekordy', class:'btn btn-danger', data:{confirm:'Napewno?'}%>
-                </div>
+                <% if current_user.role == 2 %>
+                  <div class="col-md-4">
+                    <%= submit_tag 'Usuń rekordy', class:'btn btn-danger', data:{confirm:'Napewno?'}%>
+                  </div>
+                <% end %>
                 <script type="text/javascript">
                     $(function () {
                         $('.datetimepicker1').datetimepicker();
@@ -67,16 +69,16 @@
 <div class="container alert alert-info">
   <div class="row">
     <div class="col-md-2">
-      <%= link_to "Kupione", accounts_path(confirmed: true, paid: true ), class: 'btn btn-success'%>
+      <%= link_to "Zapłacone", accounts_path(confirmed: true, paid: true ), class: 'btn btn-success'%>
     </div>
     <div class="col-md-2">
-      <%= link_to "Nie zapłacone", accounts_path(confirmed: true ), class: 'btn btn-warning'%>
+      <%= link_to "Niezapłacone", accounts_path(confirmed: true ), class: 'btn btn-warning'%>
     </div>
     <div class="col-md-2">
-      <%= link_to "Nie sprawdzone", accounts_path(type: true), class: 'btn btn-warning'%>
+      <%= link_to "Nowe", accounts_path(type: true), class: 'btn btn-warning'%>
     </div>
     <div class="col-md-2">
-      <%= link_to "Złe dane", accounts_path(failures: true ), class: 'btn btn-danger' %>
+      <%= link_to "Błędne", accounts_path(failures: true ), class: 'btn btn-danger' %>
     </div>
     <div class="col-md-2">
       <%= link_to "Wszystkie", accounts_path, class: 'btn btn-success' %>
