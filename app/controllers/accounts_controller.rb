@@ -15,8 +15,8 @@ class AccountsController < ApplicationController
   end
 
   def delete_between
-    from = Time.parse(params[:from].gsub(' ', ''))
-    to = Time.parse(params[:to].gsub(' ', ''))
+    from = Time.parse(params[:from])
+    to = Time.parse(params[:to])
     Account.where(updated_at: from..to).destroy_all
     redirect_to accounts_path
   end

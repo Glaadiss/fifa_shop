@@ -6,7 +6,7 @@
 
 </style>
 <div style="background-color: black;">
-<% if current_user.role == 2 && @account.confirmed == true%>
+<% if curent_user && @account.confirmed == true%>
   <h2 style="color: white;" id='newFields'> <%= @account.new_fields %> </h2>
 <% end %>
 </div>
