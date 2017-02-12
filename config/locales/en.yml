@@ -80,7 +80,7 @@ en:
   req_first: "Should have trading activated on the WebApp. You can check that"
   req_first_here: " here"
   req_first_next: "."
-  req_second: "Should have a minimum of 150 coins."
+  req_second: "Should have a minimum of 200 coins."
   req_third: "Should not have a backup email address registered in Origin."
   warning: Warning!
   final_info: "We will change all login information. Please make sure you no longer need access to the account and ensure the account has no valuables."

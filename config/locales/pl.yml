@@ -86,7 +86,7 @@ pl:
   req_first: "Rynek transferowy w WebApp'ie musi być odblokowany, możesz to sprawdzić"
   req_first_here: "tutaj"
   req_first_next: ". Wskazówka: Aby odblokować rynek na koncie, rozegraj kilka spotkań lub wykonaj zadania menedżera."
-  req_second: "Posiadać minimum 150 coins."
+  req_second: "Posiadać minimum 200 coins."
   req_third: "Nie może posiadać dodatkowych adresów email dopisanych do konta na Origin.com "
   warning: Uwaga!
   final_info: "Zmienimy wszystkie dane logowania. Upewnij się, że nie potrzebujesz już dostępu do konta oraz czy nie zostawiłeś na nim czegoś wartościowegoZmienimy wszystkie dane logowania. Upewnij się, że nie potrzebujesz już dostępu do konta oraz czy nie zostawiłeś na nim czegoś wartościowego."
