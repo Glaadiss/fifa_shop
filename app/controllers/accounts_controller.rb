@@ -15,9 +15,15 @@ class AccountsController < ApplicationController
   end
 
   def delete_between
-    from = Time.parse(params[:from])
-    to = Time.parse(params[:to])
-    Account.where(updated_at: from..to).destroy_all
+    from_obj = { y: params[:from][6..9], m: params[:from][0..1], d: params[:from][3..4] }
+    to_obj = { y: params[:to][6..9], m: params[:to][0..1], d: params[:to][3..4] }
+    begin
+      from = Time.new(from_obj[:y], from_obj[:m], from_obj[:d] )
+      to = Time.new(to_obj[:y], to_obj[:m], to_obj[:d] )
+      Account.where(updated_at: from..to).destroy_all
+    rescue Exception => msg
+      puts msg
+    end
     redirect_to accounts_path
   end
 

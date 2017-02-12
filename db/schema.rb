@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20161023160335) do
+ActiveRecord::Schema.define(version: 20170212135927) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -48,24 +48,24 @@ ActiveRecord::Schema.define(version: 20161023160335) do
 
   create_table "app_configurations", force: :cascade do |t|
     t.boolean  "work?",      default: false
-    t.integer  "x1_pln",     default: 20
-    t.integer  "x1_coins",   default: 50000
-    t.integer  "x1_psc",     default: 20
-    t.integer  "x1_eur",     default: 5
-    t.integer  "x3_pln",     default: 10
-    t.integer  "x3_coins",   default: 20000
-    t.integer  "x3_psc",     default: 10
-    t.integer  "x3_eur",     default: 3
-    t.integer  "ps4_pln",    default: 20
-    t.integer  "ps4_coins",  default: 50000
-    t.integer  "ps4_psc",    default: 20
-    t.integer  "ps4_eur",    default: 5
-    t.integer  "ps3_pln",    default: 10
-    t.integer  "ps3_coins",  default: 10000
-    t.integer  "ps3_psc",    default: 5
-    t.integer  "ps3_eur",    default: 4
-    t.datetime "created_at",                 null: false
-    t.datetime "updated_at",                 null: false
+    t.float    "x1_pln",     default: 20.0
+    t.float    "x1_coins",   default: 50000.0
+    t.float    "x1_psc",     default: 20.0
+    t.float    "x1_eur",     default: 5.0
+    t.float    "x3_pln",     default: 10.0
+    t.float    "x3_coins",   default: 20000.0
+    t.float    "x3_psc",     default: 10.0
+    t.float    "x3_eur",     default: 3.0
+    t.float    "ps4_pln",    default: 20.0
+    t.float    "ps4_coins",  default: 50000.0
+    t.float    "ps4_psc",    default: 20.0
+    t.float    "ps4_eur",    default: 5.0
+    t.float    "ps3_pln",    default: 10.0
+    t.float    "ps3_coins",  default: 10000.0
+    t.float    "ps3_psc",    default: 5.0
+    t.float    "ps3_eur",    default: 4.0
+    t.datetime "created_at",                   null: false
+    t.datetime "updated_at",                   null: false
   end
 
   create_table "emails", force: :cascade do |t|
