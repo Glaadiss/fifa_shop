@@ -99,7 +99,8 @@ class AccountsController < ApplicationController
     @config = AppConfiguration.first
     @account = Account.new(account_params)
     @account.language = session[:locale]
-    if verify_recaptcha(model: @account) && BlockedIp.where(ip: request.remote_ip).count == 0 && @account.save
+    blocked_ip= BlockedIp.where(ip: request.remote_ip).exists?
+    if verify_recaptcha(model: @account) && !blocked_ip  && @account.save
       if params[:players].present?
         players = params[:players].values.zip(params[:overalls].values)
         players.each do |player|
