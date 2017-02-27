@@ -59,7 +59,7 @@ pl:
   regulations: 'Regulamin'
   intro: 'Zamień swoje konto w grze na prawdziwe pieniądze'
   email: 'Twój email'
-  facebook_or_skype: "Link do profilu Facebook lub login Skype"
+  facebook_or_skype: "Link do profilu Facebook"
   console_type: 'Typ konsoli: '
   console_email: 'Adres email konsoli: '
   console_password: 'Hasło do konsoli: '

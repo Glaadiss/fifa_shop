@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
 
+  resources :blocked_ips
   get 'configurations/edit'
 
     root 'accounts#new'

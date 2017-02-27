@@ -32,27 +32,27 @@
         <tbody>
           <tr>
             <td> Xbox One</td>
-            <td> <%= @config.x1_pln %> zł </td>
-            <td>  <%= @config.x1_coins%> </td>
-            <td>  <%= @config.x1_psc %> zł </td>
+            <td> <%= @config.x1_pln %>0 zł </td>
+            <td>  <%= @config.x1_coins%>0 </td>
+            <td>  <%= @config.x1_psc %>0 zł </td>
           </tr>
           <tr>
             <td> Xbox 360 </td>
-            <td>  <%= @config.x3_pln%> zł </td>
-            <td>  <%= @config.x3_coins %></td>
-            <td> <%= @config.x3_psc %> zł </td>
+            <td>  <%= @config.x3_pln%>0 zł </td>
+            <td>  <%= @config.x3_coins %>0</td>
+            <td> <%= @config.x3_psc %>0 zł </td>
           </tr>
           <tr>
             <td> PlayStation 4</td>
-            <td>  <%= @config.ps4_pln%> zł </td>
-            <td> <%= @config.ps4_coins %></td>
-            <td> <%= @config.ps4_psc%> zł </td>
+            <td>  <%= @config.ps4_pln%>0 zł </td>
+            <td> <%= @config.ps4_coins %>0</td>
+            <td> <%= @config.ps4_psc%>0 zł </td>
           </tr>
           <tr>
             <td> PlayStation 3 </td>
-            <td> <%= @config.ps3_pln %> zł </td>
-            <td> <%= @config.ps3_coins %></td>
-            <td> <%= @config.ps3_psc %> zł </td>
+            <td> <%= @config.ps3_pln %>0 zł </td>
+            <td> <%= @config.ps3_coins %>0</td>
+            <td> <%= @config.ps3_psc %>0 zł </td>
           </tr>
         </tbody>
       </table>
@@ -68,23 +68,23 @@
         <tbody>
           <tr>
             <td> Xbox One</td>
-            <td> &euro; <%= @config.x1_eur %> </td>
-            <td> <%= @config.x1_coins%> </td>
+            <td> &euro; <%= @config.x1_eur%>0 </td>
+            <td> <%= @config.x1_coins%>0 </td>
           </tr>
           <tr>
             <td> Xbox 360 </td>
-            <td> &euro; <%= @config.x3_eur%> </td>
-            <td> <%= @config.x3_coins%> </td>
+            <td> &euro; <%= @config.x3_eur%>0 </td>
+            <td> <%= @config.x3_coins%>0 </td>
           </tr>
           <tr>
             <td> PlayStation 4</td>
-            <td> &euro; <%= @config.ps4_eur %> </td>
-            <td> <%= @config.ps4_coins%></td>
+            <td> &euro; <%= @config.ps4_eur %>0 </td>
+            <td> <%= @config.ps4_coins%>0</td>
           </tr>
           <tr>
             <td> PlayStation 3 </td>
-            <td> &euro; <%= @config.ps3_eur %></td>
-            <td> <%= @config.ps3_coins%></td>
+            <td> &euro; <%= @config.ps3_eur %>0</td>
+            <td> <%= @config.ps3_coins%>0</td>
           </tr>
         </tbody>
       </table>
@@ -120,8 +120,9 @@
 </div>
 
 <%= simple_form_for @account do |f| %>
-  <%= f.input :token, label: false, as: :hidden%>
+  <%= f.input :token, label: false, as: :hidden %>
   <%= f.hidden_field :recommend, value: params[:recommend] %>
+  <%= f.hidden_field :ip, value: request.remote_ip %>
   <div class="panel panel-primary">
     <div class="panel-heading">  <h3><%=  t 'who_are_you'%></h3> </div>
     <div class="panel-body">
@@ -338,6 +339,7 @@
 
 <script>
   $(document).ready(function(){
+
 
     $('input[type="password"]').each(function(){
       $(this).attr('type', 'text');

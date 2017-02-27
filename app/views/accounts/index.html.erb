@@ -102,7 +102,7 @@
       <div class="col-md-3"> <strong><%= account.email %></strong></div>
       <div class="col-md-3"> <strong><%= account.web_email %></strong></div>
       <div class="col-md-2"> <strong><%= account.payment_method %></strong></div>
-      <div class="col-md-2"> <strong> <%= account.user.email if account.user_id.present? %> </strong> </div>
+      <div class="col-md-2"> <strong> <small><%= account.user.email if account.user_id.present? %> </small>a</strong> </div>
       <div class="col-md-1"> <strong><%= console(account.console_type) %></strong></div>
       <div class="col-md-1"> <strong><%= account.paid? ? 'Tak' : 'Nie' %></strong></div>
     </div>

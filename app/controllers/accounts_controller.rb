@@ -156,6 +156,6 @@ class AccountsController < ApplicationController
   private
 
   def account_params
-    params.require(:account).permit(:email, :facebook_or_skype, :console_type, :console_email, :console_password, :console_data, :web_email, :web_password, :web_answer, :origin_answer, :origin_email, :origin_password, :payment_method, :payment_email, :phone, :recommend)
+    params.require(:account).permit(:ip, :email, :facebook_or_skype, :console_type, :console_email, :console_password, :console_data, :web_email, :web_password, :web_answer, :origin_answer, :origin_email, :origin_password, :payment_method, :payment_email, :phone, :recommend)
   end
 end

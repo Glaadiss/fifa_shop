@@ -53,6 +53,16 @@
   <div class="panel panel-info" style="">
     <div class="panel-heading"><h4> Dane kontaktowe klienta</h4></div>
     <div class="panel-body">
+      <div class="row">
+        <div class="col-md-3">
+              IP:
+        </div>
+        <div class="col-md-3" data-clipboard-text="<%= values[num] %>">
+            <%= @account.ip%>
+        </div>
+        <div class="col-md-3">
+        </div>
+      </div>
       <% [1,2].each do |num| %>
         <div class="row">
           <div class="col-md-3">

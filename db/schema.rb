@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170212135927) do
+ActiveRecord::Schema.define(version: 20170227225446) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -44,6 +44,7 @@ ActiveRecord::Schema.define(version: 20170212135927) do
     t.string   "phone"
     t.string   "recommend"
     t.boolean  "paid?"
+    t.string   "ip"
   end
 
   create_table "app_configurations", force: :cascade do |t|
@@ -66,6 +67,14 @@ ActiveRecord::Schema.define(version: 20170212135927) do
     t.float    "ps3_eur",    default: 4.0
     t.datetime "created_at",                   null: false
     t.datetime "updated_at",                   null: false
+  end
+
+  create_table "blocked_ips", force: :cascade do |t|
+    t.string   "ip"
+    t.string   "name"
+    t.string   "descrption"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
   create_table "emails", force: :cascade do |t|
