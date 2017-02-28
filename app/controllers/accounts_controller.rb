@@ -99,8 +99,9 @@ class AccountsController < ApplicationController
     @config = AppConfiguration.first
     @account = Account.new(account_params)
     @account.language = session[:locale]
-    # blocked_ip= BlockedIp.where(ip: @account.ip).exists?
-    if verify_recaptcha(model: @account) && @account.save
+    blocked_ip= BlockedIp.where(ip: @account.ip).exists?
+    # verify_recaptcha(model: @account) &&
+    if @account.save && !blocked_ip
       if params[:players].present?
         players = params[:players].values.zip(params[:overalls].values)
         players.each do |player|
@@ -124,7 +125,7 @@ class AccountsController < ApplicationController
     @config = AppConfiguration.first
     @account = Account.find_by_token(params[:account][:token])
     @account.update_attributes(failures: nil)
-    if verify_recaptcha(model: @account) && @account.update_attributes(account_params)
+    if @account.update_attributes(account_params)
       @account.players.destroy_all if @account.players.any?
       if params[:players].present?
         players = params[:players].values.zip(params[:overalls].values)
