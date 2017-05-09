@@ -4,6 +4,7 @@ class Account < ActiveRecord::Base
   include Tokenable
   belongs_to :user
   validates :email, presence: true
+  validates :facebook_or_skype, presence: true
   validates :payment_email, presence: true, unless: "payment_method == 'FUT 17 Coins'"
   has_many :players, dependent: :destroy
   def self.to_csv
